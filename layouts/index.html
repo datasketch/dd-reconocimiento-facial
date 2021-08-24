@@ -1,5 +1,114 @@
 {{ define "main" }}
-    <section>
-        CONTENIDO
-    </section>
+{{/* BANNER HOME */}}
+<div class="bg-cover bg-center bg-banner-home-lg lg:py-32">
+    <div class="w-10/12 mx-auto grid grid-cols-1 lg:mb-32 lg:grid-cols-12 lg:items-center">
+        <img class="lg:col-start-1 lg:col-end-6" src="/images/home/human-home.png" alt="human image">
+        <div class="text-white lg:col-start-6 lg:col-end-13">
+            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">Reconocimiento Facial en América Latina</h1>
+            <p class="lg:text-2xl lg:w-11/12">
+                Las organizaciones reunidas en al Sur hemos mapeado 40 sistemas de reconocimiento facial en América
+                Latina, desarrolladas en el marco de políticas públicas.
+            </p>
+        </div>
+    </div>
+    <div class="mx-auto w-10/12 grid grid-cols-1 lg:w-9/12 lg:grid-cols-12 lg:items-center">
+        <div class="text-white lg:col-start-1 lg:col-end-8">
+            <h2 class="font-merriweather-sans lg:text-4xl lg:mb-8">Iniciativas mapeadas</h2>
+            <p class="lg:text-xl lg:w-11/12 lg:mb-8">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat.
+            </p>
+            <button class="p-4 bg-blue-dark text-white lg:text-xl">Conocer iniciativas</button>
+        </div>
+        <img class="lg:col-start-8 lg:col-end-13" src="/images/home/mapa.svg" alt="human image">
+    </div>
+</div>
+{{/* BANNER HOME END */}}
+
+{{/* DATA EXPLORE */}}
+<section class="bg-cover bg-center bg-banner-explore-data-home-lg lg:py-32">
+    <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
+        <img class="lg:col-start-1 lg:col-end-6" src="/images/home/blue-graphic.png" alt="blue graphic">
+        <div class="text-white lg:col-start-7 lg:col-end-12">
+            <h2 class="font-merriweather-sans lg:text-4xl lg:mb-8">Lorem ipsum dolor</h2>
+            <p class="lg:text-xl lg:mb-8">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="p-4 bg-blue-dark text-white lg:text-xl">Explora los datos</button>
+        </div>
+        <div class="text-white lg:col-start-1 lg:col-end-6">
+            <h2 class="font-merriweather-sans lg:text-4xl lg:mb-8">Lorem ipsum dolor</h2>
+            <p class="lg:text-xl lg:mb-8">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="p-4 bg-blue-dark text-white lg:text-xl">Explora los datos</button>
+        </div>
+        <img class="lg:col-start-7 lg:col-end-12" src="/images/home/blue-graphic.png" alt="blue graphic">
+    </div>
+</section>
+{{/* DATA EXPLORE END */}}
+
+{{/* KNOW THE METHODOLOGY */}}
+<section class="lg:py-20">
+    <div class="bg-methodology-lg bg-cover bg-center mx-auto w-10/12 lg:w-6/12 text-center p-12">
+        <h2 class="font-merriweather-sans text-blue-title lg:text-6xl lg:mb-10"><span class="block lg:text-4xl">Conoce
+                la</span>Metodología</h2>
+        <p class="lg:text-xl lg:mb-10">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+        <button class="p-4 bg-blue-dark text-white lg:text-xl">Conocer metogología</button>
+    </div>
+</section>
+{{/* KNOW THE METHODOLOGY END */}}
+
+{{/*  FACIAL RECOGNITION  */}}
+<section class="bg-blue-dark lg:py-24">
+    <div class="mx-auto w-10/12">
+        <div class="text-center text-white w-10/12 lg:w-8/12 mx-auto">
+            <h2 class="font-merriweather-sans lg:text-6xl lg:mb-10">Reconocimiento facial</h2>
+            <p class="lg:text-xl lg:mb-10 mx-auto lg:w-10/12">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat
+            </p>
+        </div>
+        <img class="mx-auto lg:mb-10" src="/images/home/humans-home.png" alt="humans home">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 text-white lg:mb-20">
+            <div class="text-center">
+                <h3 class="font-merriweather-sans lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
+                <p class="text-xl mx-auto lg:w-10/12">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+            <div class="text-center">
+                <h3 class="font-merriweather-sans lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
+                <p class="text-xl mx-auto lg:w-10/12">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+            <div class="text-center">
+                <h3 class="font-merriweather-sans lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
+                <p class="text-xl mx-auto lg:w-10/12">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="p-4 bg-lemon-green text-white lg:text-xl">Conocer más</button>
+        </div>
+    </div>
+</section>
+{{/*  FACIAL RECOGNITION END  */}}
 {{ end }}
