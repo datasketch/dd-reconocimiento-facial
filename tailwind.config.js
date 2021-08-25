@@ -17,11 +17,14 @@ module.exports = {
         'banner-home-lg': 'url(/images/home/banner-home-lg.png)',
         'banner-explore-data-home-lg': 'url(/images/home/banner-explore-data-lg.png)',
         'methodology-lg': 'url(/images/home/methodology.png)',
-        'footer-lg': 'url(/images/public/footer.png)'
+        'footer-lg': 'url(/images/public/footer.png)',
+        'banner-iniciativas-lg': 'url(/images/iniciativas-mapeadas/banner-iniciativas-lg.png)',
+        'box-lemon-green-lg': 'url(/images/iniciativas-mapeadas/box-lemon-green-lg.png)',
       },
       colors: {
         white: '#FBF9F3',
         'lemon-green': '#00E5BA',
+        'blue': '#006999',
         'blue-dark': '#29366D',
         'blue-title': '#006999',
       }
