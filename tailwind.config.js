@@ -19,6 +19,7 @@ module.exports = {
         'footer-lg': 'url(/images/public/footer.png)',
         'banner-iniciativas-lg': 'url(/images/iniciativas-mapeadas/banner-iniciativas-lg.png)',
         'banner-proveedores-lg': 'url(/images/proveedores/banner-proveedores-lg.png)',
+        'banner-datos-lg': 'url(/images/explorador-datos/banner-datos-lg.png)',
       },
       colors: {
         white: '#FBF9F3',
