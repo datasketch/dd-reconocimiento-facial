@@ -13,6 +13,11 @@
         {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ $tippy := resources.Get "js/utils/tippy.js" | js.Build (dict "minify" true)}}
+    {{ $default := resources.Get "js/default.js" | js.Build (dict "minify" true)}}
+    <script src="{{ $tippy.Permalink }}"></script>
+    <script src="{{ $default.Permalink }}"></script>
+    {{ block "js" . }}{{ end }}
 </body>
 
 </html>

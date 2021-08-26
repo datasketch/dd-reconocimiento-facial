@@ -2,6 +2,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{{ $awesome := resources.Get "styles/all.css" | toCSS | postCSS | minify }}
+{{ $tippy := resources.Get "styles/tippy.css" | toCSS | postCSS | minify }}
 {{ $styles := resources.Get "styles/tailwind.pcss" | toCSS | postCSS | minify }}
+
 <link rel="stylesheet" href="https://use.typekit.net/nxa4zfx.css">
+<link rel="stylesheet" href="{{ $awesome.Permalink }}">
+<link rel="stylesheet" href="{{ $tippy.Permalink }}">
 <link rel="stylesheet" href="{{ $styles.Permalink }}">

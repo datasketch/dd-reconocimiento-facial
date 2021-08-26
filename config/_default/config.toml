@@ -13,3 +13,7 @@ weight = 1
 contentDir = "content/en"
 languageName = "English"
 weight = 2
+[languages.pt]
+contentDir = "content/pt"
+languageName = "Português"
+weight = 3
