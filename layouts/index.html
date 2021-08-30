@@ -1,91 +1,99 @@
 {{ define "main" }}
 {{/* BANNER HOME */}}
-<div class="bg-cover bg-center bg-banner-home-lg lg:py-32">
-    <div class="w-10/12 mx-auto grid grid-cols-1 lg:mb-32 lg:grid-cols-12 lg:items-center">
-        <img class="lg:col-start-1 lg:col-end-6" src="/images/home/human-home.png" alt="human image">
-        <div class="text-white lg:col-start-6 lg:col-end-13">
-            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">Reconocimiento Facial en América Latina</h1>
-            <p class="lg:text-2xl lg:w-11/12">
-                Las organizaciones reunidas en al Sur hemos mapeado 40 sistemas de reconocimiento facial en América
-                Latina, desarrolladas en el marco de políticas públicas.
+<div class="py-20 bg-cover bg-center bg-banner-home-lg lg:py-32">
+    <div class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-11/12 lg:mb-32 lg:grid-cols-12 lg:items-center">
+        <img class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1" src="/images/home/human-home.png" alt="human image">
+        <div class="order-1 text-center text-white lg:order-2 lg:text-left lg:col-start-6 lg:col-end-13 lg:w-11/12">
+            <h1 class="font-merriweather-sans mb-10 text-4xl md:text-5xl xl:text-6xl lg:mb-8"><span class="block lg:inline-block">Reconocimiento Facial</span> en América
+                Latina</h1>
+            <p class="text-lg lg:text-xl lg:w-11/12">
+                El reconocimiento facial ha avanzado rápida y silenciosamente en nuestra región. Aquí podrás conocer
+                algunas de las iniciativas existentes, sus objetivos, las empresas responsables de su implementación y
+                los riesgos en materia de derechos humanos que conlleva su uso.
             </p>
         </div>
     </div>
-    <div class="mx-auto w-10/12 grid grid-cols-1 lg:w-9/12 lg:grid-cols-12 lg:items-center">
-        <div class="text-white lg:col-start-1 lg:col-end-8">
-            <h2 class="font-merriweather-sans lg:text-4xl lg:mb-8">Iniciativas mapeadas</h2>
-            <p class="lg:text-xl lg:w-11/12 lg:mb-8">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat.
+    <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-10/12 lg:grid-cols-12 lg:items-center">
+        <div class="mb-20 text-white text-center lg:mb-0 lg:text-left lg:col-start-1 lg:col-end-8">
+            <h2 class="font-merriweather-sans mb-10 text-4xl lg:text-4xl lg:mb-8">Iniciativas mapeadas</h2>
+            <p class="text-lg lg:text-xl lg:w-11/12 lg:mb-8">
+                La investigación da cuenta de la existencia de diversos sistemas de reconocimiento facial desarrollados
+                e implementados al alero de distintas políticas públicas, en áreas tales como la seguridad pública, el
+                control migratorio y el transporte.
             </p>
-            <button class="py-4 px-6 bg-blue-dark text-white lg:text-xl">
+            <button class="hidden lg:block py-4 px-6 bg-blue-dark text-white text-xl">
                 <a class="flex items-center" href="#">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     Conocer iniciativas
                 </a>
             </button>
         </div>
-        <img class="lg:col-start-8 lg:col-end-13" src="/images/home/mapa.svg" alt="human image">
+        <img class="mb-16 mx-auto lg:mb-0 lg:mx-0 lg:col-start-8 lg:col-end-13" src="/images/home/mapa.svg"
+            alt="human image">
+        <button class="mx-auto w-10/12 py-4 px-6 bg-blue-dark text-white lg:text-xl lg:hidden ">
+            <a class="flex items-center text-xl" href="#">
+                <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                Conocer iniciativas
+            </a>
+        </button>
     </div>
 </div>
 {{/* BANNER HOME END */}}
 
 {{/* DATA EXPLORE */}}
-<section class="bg-cover bg-center bg-banner-explore-data-home-lg lg:py-32">
+<section class="py-20 bg-cover bg-center bg-banner-explore-data-home-lg lg:py-32">
     <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
-        <img class="lg:col-start-1 lg:col-end-6" src="/images/home/blue-graphic.png" alt="blue graphic">
-        <div class="text-white lg:col-start-7 lg:col-end-12">
-            <h2 class="font-merriweather-sans lg:text-4xl lg:mb-8">Lorem ipsum dolor</h2>
-            <p class="lg:text-xl lg:mb-8">
+        <img class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1" src="/images/home/blue-graphic.png"
+            alt="blue graphic">
+        <div class="order-1 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-2">
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Lorem ipsum dolor</h2>
+            <p class="text-xl mb-8">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
                 ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             </p>
-            <button class="py-4 px-6 bg-blue-dark text-white lg:text-xl">
+            <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="#">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     Explora los datos
                 </a>
             </button>
         </div>
-        <div class="text-white lg:col-start-1 lg:col-end-6">
-            <h2 class="font-merriweather-sans lg:text-4xl lg:mb-8">Lorem ipsum dolor</h2>
-            <p class="lg:text-xl lg:mb-8">
+        <div class="order-3 text-white text-center lg:text-left lg:col-start-1 lg:col-end-6 lg:order-3">
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Lorem ipsum dolor</h2>
+            <p class="text-xl mb-8">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
                 ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             </p>
-            <button class="py-4 px-6 bg-blue-dark text-white lg:text-xl">
+            <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="#">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     Explora los datos
                 </a>
             </button>
         </div>
-        <img class="lg:col-start-7 lg:col-end-12" src="/images/home/blue-graphic.png" alt="blue graphic">
+        <img class="order-4 lg:col-start-7 lg:col-end-12 lg:order-4" src="/images/home/blue-graphic.png"
+            alt="blue graphic">
     </div>
 </section>
 {{/* DATA EXPLORE END */}}
 
 {{/* KNOW THE METHODOLOGY */}}
-<section class="lg:py-20">
+<section class="py-16 lg:py-20">
     <div class="relative mx-auto w-10/12 lg:w-7/12 text-center">
-        <img src="/images/home/methodology.png" alt="methodology">
-        <div class="absolute center-box w-9/12">
-            <h2 class="font-merriweather-sans text-blue-title lg:text-6xl lg:mb-8"><span
-                    class="block lg:text-4xl">Conoce
-                    la</span>Metodología</h2>
-            <p class="lg:text-xl lg:mb-10">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        <img class="hidden lg:block" src="/images/home/methodology.png" alt="methodology">
+        <div class="relative lg:absolute center-box lg:w-9/12">
+            <h2 class="font-merriweather-sans text-blue-dark text-4xl mb-10 lg:text-6xl lg:mb-8">Descarga el reporte
+            </h2>
+            <p class="text-xl mb-10">
+                Haz clic aquí y descarga [Nombre del reporte] preparado por Al Sur, con toda la información detallada
+                respecto al funcionamiento y despliegue de las tecnologías de reconocimiento facial en nuestra región.
             </p>
-            <button class="py-4 px-6 bg-blue-dark text-white lg:text-xl">
+            <button class="py-4 px-6 bg-blue-dark text-white text-xl">
                 <a class="flex items-center" href="#">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Conocer metogología
+                    Descargar el reporte
                 </a>
             </button>
         </div>
@@ -94,48 +102,56 @@
 {{/* KNOW THE METHODOLOGY END */}}
 
 {{/* FACIAL RECOGNITION */}}
-<section class="bg-blue-dark lg:py-24">
-    <div class="mx-auto w-10/12">
-        <div class="text-center text-white w-10/12 lg:w-8/12 mx-auto">
-            <h2 class="font-merriweather-sans lg:text-6xl lg:mb-10">Reconocimiento facial</h2>
-            <p class="lg:text-xl lg:mb-10 mx-auto lg:w-10/12">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat
+<section class="py-16 bg-blue-dark lg:py-24">
+    <div class="mx-auto w-11/12 lg:w-10/12">
+        <div class="text-center mb-10 text-white w-11/12 lg:w-8/12 mx-auto lg:mb-0">
+            <h2 class="font-merriweather-sans text-4xl mb-5 lg:text-6xl lg:mb-10">Reconocimiento facial</h2>
+            <p class="text-lg lg:mb-10 mx-auto lg:w-10/12 lg:text-xl">
+                El reconocimiento facial es una tecnología de identificación biométrica que, por medio del análisis de
+                rasgos característicos del rostro humano, busca establecer la identidad de una persona. El despliegue de
+                esta tecnología sin los necesarios resguardos ni controles apropiados puede tener como consecuencia
+                graves vulneraciones a los derechos fundamentales, especialmente de personas pertenecientes a grupos
+                históricamente marginados.
             </p>
         </div>
-        <img class="mx-auto lg:mb-10" src="/images/home/humans-home.png" alt="humans home">
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 text-white lg:mb-20">
+        <img class="mx-auto mb-14 lg:mb-10" src="/images/home/humans-home.png" alt="humans home">
+        <div class="grid grid-cols-1 mb-16 gap-y-24 lg:grid-cols-2 lg:items-center lg:gap-x-16 text-white lg:mb-20">
             <div class="text-center">
-                <h3 class="font-merriweather-sans lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
-                <p class="text-xl mx-auto lg:w-10/12">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7"><span class="block lg:inline-block">Peligros del</span> reconocimiento facial</h3>
+                <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
+                    El reconocimiento facial erosiona la autonomía de las personas en favor de un sistema que pretende
+                    el control absoluto, mediante la gestión técnica de las identidades, reproduciendo las desigualdades
+                    y exclusiones históricas.
+
                 </p>
+                <button class="py-4 px-6 bg-lemon-green text-white text-xl">
+                    <a class="flex items-center" href="#">
+                        <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                        Más información
+                    </a>
+                </button>
             </div>
             <div class="text-center">
-                <h3 class="font-merriweather-sans lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
-                <p class="text-xl mx-auto lg:w-10/12">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
+                <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
+                    La investigación realizada por el Consorcio Al Sur tiene por objetivo dibujar un panorama general
+                    del despliegue de las tecnologías de reconocimiento facial en América Latina, sus usos y
+                    proveedores, caracterizado hasta ahora por una opacidad excesiva y escasa discusión pública.
                 </p>
-            </div>
-            <div class="text-center">
-                <h3 class="font-merriweather-sans lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
-                <p class="text-xl mx-auto lg:w-10/12">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat.
-                </p>
+                <button class="py-4 px-6 bg-lemon-green text-white text-xl">
+                    <a class="flex items-center" href="#">
+                        <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                        Descarga el reporte
+                    </a>
+                </button>
             </div>
         </div>
-        <div class="text-center">
-            <button class="py-4 px-6 bg-lemon-green text-white lg:text-xl">
-                <a class="flex items-center" href="#">
-                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Conocer más
-                </a>
-            </button>
+        <div class="text-center mx-auto lg:w-8/12">
+            <h4 class="text-white text-xl lg:text-2xl">
+                La presente investigación fue realizada por el consorcio Al Sur, con el financiamiento del National
+                Endowment for Democracy (NED). El sitio web fue desarrollado por Datasketch, bajo la supervisión de
+                Derechos Digitales.
+            </h4>
         </div>
     </div>
 </section>

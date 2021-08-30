@@ -1,5 +1,5 @@
 ---
-title: About the project
+title: Home
 weight: 1
 menu: main
 ---

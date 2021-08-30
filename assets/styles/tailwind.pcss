@@ -3,21 +3,92 @@
 @tailwind utilities;
 
 /* TITLES */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap");
 
 /* NAVBAR AND FOOTER */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 @layer base {
 }
 
 @layer components {
+  /*                     Nav                      */
+  .nav {
+    @apply absolute top-0 -right-full h-screen lg:h-auto bg-blue-dark lg:bg-transparent;
+    width: 70vw;
+    transition: all 0.3s ease;
+  }
+
+  @screen lg {
+    .nav {
+      @apply lg:left-0 lg:w-full;
+    }
+  }
+
+  .nav--active {
+    right: 0 !important;
+  }
+
+  /*                     nav end                      */
+
+  /*             Button Hamburguer               */
+  .menu-button {
+    @apply relative cursor-pointer lg:hidden;
+  }
+
+  .menu-icon {
+    @apply relative;
+  }
+
+  .menu-icon,
+  .menu-icon::before,
+  .menu-icon::after {
+    @apply block bg-lemon-green w-8;
+    height: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    @apply absolute left-0;
+    content: "";
+  }
+
+  .menu-icon::before {
+    top: 10px;
+  }
+
+  .menu-icon::after {
+    top: -10px;
+  }
+
+  .menu-icon--active {
+    background-color: transparent !important;
+  }
+
+  .menu-icon--active::before,
+  .menu-icon--active::after {
+    @apply bg-white;
+    top: 0 !important;
+  }
+
+  .menu-icon--active::before {
+    transform: rotate(-135deg) !important;
+  }
+
+  .menu-icon--active::after {
+    transform: rotate(135deg) !important;
+  }
+
+  /*             Button Hamburguer end              */
 }
 
 @layer utilities {
+  @screen lg {
     .center-box {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
+  }
 }
