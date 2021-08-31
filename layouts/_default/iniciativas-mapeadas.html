@@ -68,7 +68,7 @@
 
         </button>
     </div>
-    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12">
+    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 countries-container">
         <div class="border border-blue">
             <div class="p-8">
                 <span class="block mb-4 italic text-blue">País</span>
@@ -77,7 +77,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -89,7 +89,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -101,7 +101,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -113,7 +113,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -125,7 +125,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -137,7 +137,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -149,7 +149,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -161,7 +161,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -173,7 +173,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -185,7 +185,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -197,7 +197,7 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
@@ -209,11 +209,20 @@
                     Santiago
                 </h3>
             </div>
-            <button class="bg-blue grid place-items-center py-4 w-full">
+            <button data-id="1" class="bg-blue grid place-items-center py-4 w-full modal-button--open">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
         </div>
     </div>
 </section>
 <!-- COUNTRIES END -->
+
+<!-- MODAL -->
+{{ partial "modal-initiatives.html" . }}
+<!-- MODAL END -->
+{{ end }}
+
+{{ define "js" }}
+{{ $modal := resources.Get "js/utils/modal.js" | js.Build (dict "minify" true) }}
+<script src="{{ $modal.Permalink }}"></script>
 {{ end }}

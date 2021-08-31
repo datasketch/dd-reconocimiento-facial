@@ -90,6 +90,37 @@
   .hidde {
     @apply invisible opacity-0;
   }
+  /* Overlay end */
+
+  /* Modal content */
+  .modal {
+    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 grid grid-cols-1 lg:grid-cols-12 w-11/12 xl:w-10/12 duration-300;
+  }
+
+  .modal-left {
+    @apply bg-white lg:col-start-1 lg:col-end-7 xl:col-start-1 xl:col-end-8;
+  }
+
+  .modal-right {
+    @apply bg-blue-dark lg:col-start-7 lg:col-end-13 xl:col-start-8 xl:col-end-13;
+  }
+
+  .modal-button--close {
+    @apply absolute top-2 right-4;
+  }
+
+  .modal-hidden {
+    @apply invisible opacity-0 scale-0;
+  }
+
+  .modal-overlay {
+    @apply fixed top-0 left-0 h-screen w-full bg-black opacity-25 cursor-pointer duration-300;
+  }
+
+  .modal-overlay-hidden {
+    @apply invisible opacity-0;
+  }
+  /* Modal content end */
 }
 
 @layer utilities {

@@ -1,17 +1,12 @@
 {{/* NAVBAR */}}
 <header class="absolute text-white font-raleway py-4 lg:py-6 xl:py-9 w-full">
     <div class="flex justify-between lg:grid lg:grid-cols-12 lg:items-center w-11/12 xl:w-10/12 mx-auto">
-        {{/* <img class="h-20" src="/images/public/logo-rc-es.png" alt="Logo rc"> */}}
         <div class="lg:hidden">&nbsp;</div>
         <nav class="nav pt-16 lg:relative lg:pt-0 lg:col-start-5 lg:col-end-13" id="nav">
             <ul class="w-9/12 mx-auto lg:w-auto lg:mx-auto lg:flex lg:items-center lg:justify-between">
                 {{ range .Site.Menus.main }}
                 <li class="mb-10"><a class="text-lg hover:text-lemon-green duration-300" href="{{ .URL }}">{{ .Title }}</a></li>
                 {{ end }}
-                {{/* <button class="flex items-center" id="button-language">
-                    <i class="fas fa-globe-americas mr-1"></i>
-                    <i class="fas fa-caret-down"></i>
-                </button> */}}
             </ul>
         </nav>
 
