@@ -14,7 +14,7 @@
 @layer components {
   /*                     Nav                      */
   .nav {
-    @apply absolute top-0 -right-full h-screen lg:h-auto bg-blue-dark lg:bg-transparent;
+    @apply absolute top-0 -left-full h-screen lg:h-auto bg-blue-dark lg:bg-transparent z-50;
     width: 70vw;
     transition: all 0.3s ease;
   }
@@ -26,14 +26,14 @@
   }
 
   .nav--active {
-    right: 0 !important;
+    left: 0 !important;
   }
 
   /*                     nav end                      */
 
   /*             Button Hamburguer               */
   .menu-button {
-    @apply relative cursor-pointer lg:hidden;
+    @apply relative cursor-pointer lg:hidden z-50;
   }
 
   .menu-icon {
@@ -81,6 +81,15 @@
   }
 
   /*             Button Hamburguer end              */
+
+  /* Overlay */
+  .overlay {
+    @apply fixed top-0 left-0 h-screen w-full bg-black opacity-50 z-10 cursor-pointer duration-300;
+  }
+
+  .hidde {
+    @apply invisible opacity-0;
+  }
 }
 
 @layer utilities {
