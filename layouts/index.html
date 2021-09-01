@@ -79,27 +79,9 @@
 </section>
 {{/* DATA EXPLORE END */}}
 
-{{/* KNOW THE METHODOLOGY */}}
-<section class="py-16 lg:py-20">
-    <div class="relative mx-auto w-10/12 lg:w-7/12 text-center">
-        <img class="hidden lg:block" src="/images/home/methodology.png" alt="methodology">
-        <div class="relative lg:absolute center-box lg:w-9/12">
-            <h2 class="font-merriweather-sans text-blue-dark text-4xl mb-10 lg:text-6xl lg:mb-8">Descarga el reporte
-            </h2>
-            <p class="text-xl mb-10">
-                Haz clic aquí y descarga [Nombre del reporte] preparado por Al Sur, con toda la información detallada
-                respecto al funcionamiento y despliegue de las tecnologías de reconocimiento facial en nuestra región.
-            </p>
-            <button class="py-4 px-6 bg-blue-dark text-white text-xl">
-                <a class="flex items-center" href="#">
-                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Descargar el reporte
-                </a>
-            </button>
-        </div>
-    </div>
-</section>
-{{/* KNOW THE METHODOLOGY END */}}
+{{/* DOWNLAD THE REPORT */}}
+{{ partial "download-report.html" . }}
+{{/* DOWNLAD THE REPORT END */}}
 
 {{/* FACIAL RECOGNITION */}}
 <section class="py-16 bg-blue-dark lg:py-24">
