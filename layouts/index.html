@@ -1,10 +1,13 @@
 {{ define "main" }}
 {{/* BANNER HOME */}}
-<div class="py-32 bg-cover bg-center bg-banner-home-lg lg:py-32" id="banner">
-    <div class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-10/12 lg:mb-32 lg:grid-cols-12 lg:items-center">
-        <img class="mx-auto order-2 lg:col-start-1 lg:col-end-6 lg:order-1 lg:mx-0" src="/images/home/facial-human.png" alt="human image">
+<div class="py-32 bg-cover bg-center bg-banner-home-lg lg:py-44" id="banner">
+    <div
+        class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-10/12 lg:mb-32 lg:grid-cols-12 lg:items-center">
+        <img class="mx-auto order-2 lg:col-start-1 lg:col-end-6 lg:order-1 lg:mx-0" src="/images/home/facial-human.png"
+            alt="human image">
         <div class="order-1 text-center text-white lg:order-2 lg:text-left lg:col-start-6 lg:col-end-13 lg:w-11/12">
-            <h1 class="font-merriweather-sans mb-10 text-4xl md:text-5xl xl:text-6xl lg:mb-8"><span class="block lg:inline-block">Reconocimiento Facial</span> en América
+            <h1 class="font-merriweather-sans mb-10 text-4xl md:text-5xl xl:text-6xl lg:mb-8"><span
+                    class="block lg:inline-block">Reconocimiento Facial</span> en América
                 Latina</h1>
             <p class="text-lg lg:text-xl lg:w-11/12">
                 El reconocimiento facial ha avanzado rápida y silenciosamente en nuestra región. Aquí podrás conocer
@@ -22,7 +25,7 @@
                 control migratorio y el transporte.
             </p>
             <button class="hidden lg:block py-4 px-6 bg-blue-dark text-white text-xl">
-                <a class="flex items-center" href="{{ relref . "iniciativas-mapeadas.md" }}">
+                <a class="flex items-center" href="{{ relref . " iniciativas-mapeadas.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     Conocer iniciativas
                 </a>
@@ -31,7 +34,7 @@
         <img class="mb-16 mx-auto lg:mb-0 lg:mx-0 lg:col-start-8 lg:col-end-13" src="/images/home/mapa.svg"
             alt="human image">
         <button class="mx-auto w-10/12 py-4 px-6 bg-blue-dark text-white lg:text-xl lg:hidden ">
-            <a class="flex items-center text-xl" href="{{ relref . "iniciativas-mapeadas.md" }}">
+            <a class="flex items-center text-xl" href="{{ relref . " iniciativas-mapeadas.md" }}">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                 Conocer iniciativas
             </a>
@@ -53,7 +56,7 @@
                 ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
-                <a class="flex items-center" href="{{ relref . "explorador-de-datos.md" }}">
+                <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     Explora los datos
                 </a>
@@ -67,7 +70,7 @@
                 ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
-                <a class="flex items-center" href="{{ relref . "explorador-de-datos.md" }}">
+                <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     Explora los datos
                 </a>
@@ -99,7 +102,8 @@
         <img class="mx-auto mb-14 lg:mb-10" src="/images/home/facial-humans.png" alt="humans home">
         <div class="grid grid-cols-1 mb-16 gap-y-24 lg:grid-cols-2 lg:items-center lg:gap-x-16 text-white lg:mb-20">
             <div class="text-center">
-                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7"><span class="block lg:inline-block">Peligros del</span> reconocimiento facial</h3>
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7"><span
+                        class="block lg:inline-block">Peligros del</span> reconocimiento facial</h3>
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
                     El reconocimiento facial erosiona la autonomía de las personas en favor de un sistema que pretende
                     el control absoluto, mediante la gestión técnica de las identidades, reproduciendo las desigualdades
@@ -107,7 +111,7 @@
 
                 </p>
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
-                    <a class="flex items-center" href="{{ relref . "iniciativas-mapeadas.md" }}">
+                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/" target="_blank">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         Más información
                     </a>
@@ -136,10 +140,11 @@
             </h4>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-4 items-center gap-y-12">
-            <img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-al-sur.png" alt="Logo al sur">
-            <img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-ned.svg" alt="Logo ned">
-            <img class="h-16 lg:h-20 mx-auto" src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial">
-            <img class="mx-auto" src="/images/public/datasketch-large.svg" alt="Logo al sur">
+            <a target="_blank" href="https://www.alsur.lat/"><img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+            <a target="_blank" href="https://www.ned.org/"> <img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-ned.svg" alt="Logo ned"></a>
+            <a target="_blank" href="https://www.derechosdigitales.org/"><img class="h-16 lg:h-20 mx-auto" src="/images/public/logo-rc-es.png"
+                    alt="Logo reconocimiento facial"></a>
+            <a target="_blank" href="https://www.datasketch.co/"><img class="mx-auto" src="/images/public/datasketch-large.svg" alt="Logo al sur"></a>
         </div>
     </div>
 </section>
