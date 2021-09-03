@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{/* BANNER HOME */}}
-<div class="py-20 bg-cover bg-center bg-banner-home-lg lg:py-32" id="banner">
-    <div class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-11/12 lg:mb-32 lg:grid-cols-12 lg:items-center">
-        <img class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1" src="/images/home/human-home.png" alt="human image">
+<div class="py-32 bg-cover bg-center bg-banner-home-lg lg:py-32" id="banner">
+    <div class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-10/12 lg:mb-32 lg:grid-cols-12 lg:items-center">
+        <img class="mx-auto order-2 lg:col-start-1 lg:col-end-6 lg:order-1 lg:mx-0" src="/images/home/facial-human.png" alt="human image">
         <div class="order-1 text-center text-white lg:order-2 lg:text-left lg:col-start-6 lg:col-end-13 lg:w-11/12">
             <h1 class="font-merriweather-sans mb-10 text-4xl md:text-5xl xl:text-6xl lg:mb-8"><span class="block lg:inline-block">Reconocimiento Facial</span> en América
                 Latina</h1>
@@ -13,7 +13,7 @@
             </p>
         </div>
     </div>
-    <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-10/12 lg:grid-cols-12 lg:items-center">
+    <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center">
         <div class="mb-20 text-white text-center lg:mb-0 lg:text-left lg:col-start-1 lg:col-end-8">
             <h2 class="font-merriweather-sans mb-10 text-4xl lg:text-4xl lg:mb-8">Iniciativas mapeadas</h2>
             <p class="text-lg lg:text-xl lg:w-11/12 lg:mb-8">
@@ -96,7 +96,7 @@
                 históricamente marginados.
             </p>
         </div>
-        <img class="mx-auto mb-14 lg:mb-10" src="/images/home/humans-home.png" alt="humans home">
+        <img class="mx-auto mb-14 lg:mb-10" src="/images/home/facial-humans.png" alt="humans home">
         <div class="grid grid-cols-1 mb-16 gap-y-24 lg:grid-cols-2 lg:items-center lg:gap-x-16 text-white lg:mb-20">
             <div class="text-center">
                 <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7"><span class="block lg:inline-block">Peligros del</span> reconocimiento facial</h3>
@@ -106,7 +106,7 @@
                     y exclusiones históricas.
 
                 </p>
-                <button class="py-4 px-6 bg-lemon-green text-white text-xl">
+                <button class="py-4 px-6 bg-blue-title text-white text-xl">
                     <a class="flex items-center" href="{{ relref . "iniciativas-mapeadas.md" }}">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         Más información
@@ -120,7 +120,7 @@
                     del despliegue de las tecnologías de reconocimiento facial en América Latina, sus usos y
                     proveedores, caracterizado hasta ahora por una opacidad excesiva y escasa discusión pública.
                 </p>
-                <button class="py-4 px-6 bg-lemon-green text-white text-xl">
+                <button class="py-4 px-6 bg-blue-title text-white text-xl">
                     <a class="flex items-center" href="#">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         Descarga el reporte
@@ -128,12 +128,18 @@
                 </button>
             </div>
         </div>
-        <div class="text-center mx-auto lg:w-8/12">
+        <div class="mb-12 text-center mx-auto lg:w-8/12 lg:mb-24">
             <h4 class="text-white text-xl lg:text-2xl">
                 La presente investigación fue realizada por el consorcio Al Sur, con el financiamiento del National
                 Endowment for Democracy (NED). El sitio web fue desarrollado por Datasketch, bajo la supervisión de
                 Derechos Digitales.
             </h4>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 items-center gap-y-12">
+            <img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-al-sur.png" alt="Logo al sur">
+            <img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-ned.svg" alt="Logo ned">
+            <img class="h-16 lg:h-20 mx-auto" src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial">
+            <img class="mx-auto" src="/images/public/datasketch-large.svg" alt="Logo al sur">
         </div>
     </div>
 </section>

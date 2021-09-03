@@ -1,12 +1,32 @@
 {{/* NAVBAR */}}
 <header class="absolute text-white font-raleway py-4 lg:py-6 xl:py-9 w-full">
-    <div class="flex justify-between lg:grid lg:grid-cols-12 lg:items-center w-11/12 xl:w-10/12 mx-auto">
-        <div class="lg:hidden">&nbsp;</div>
-        <nav class="nav pt-16 lg:relative lg:pt-0 lg:col-start-5 lg:col-end-13" id="nav">
-            <ul class="w-9/12 mx-auto lg:w-auto lg:mx-auto lg:flex lg:items-center lg:justify-between">
+    <div class="mx-auto w-11/12 flex items-center justify-between lg:grid lg:grid-cols-12">
+        <img class="h-16 lg:w-full xl:h-20 lg:col-start-1 lg:col-end-3" src="/images/public/logo-rc-es.png"
+            alt="Logo reconocimiento facial">
+        <nav class="absolute top-0 -left-full duration-300 z-20 bg-blue-dark h-screen w-9/12 py-16 lg:relative lg:w-full lg:h-auto lg:bg-transparent lg:py-0 lg:left-0 lg:col-start-4 lg:col-end-13"
+            id="nav">
+            <ul class="mx-auto w-10/12 lg:flex lg:justify-between lg:items-center lg:mx-0 lg:w-full lg:text-center">
                 {{ range .Site.Menus.main }}
-                <li class="mb-10"><a class="text-lg hover:text-lemon-green duration-300" href="{{ .URL }}">{{ .Title }}</a></li>
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none" href="{{ .URL }}">{{
+                        .Title }}</a></li>
                 {{ end }}
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                    target="_blank"    href="https://reconocimientofacial.info/">{{ T "label_facial" }}</a></li>
+                <button
+                    class="flex items-center border border-white py-1 px-2 hover:border-lemon-green hover:text-lemon-green uppercase lg:ml-4"
+                    id="button-language">
+                    {{ range .Site.Languages }}
+                    {{ if eq . $.Site.Language }}
+                    {{ . }}
+                    {{ end }}
+                    {{ end }}
+                    <i class="ml-2 fas fa-angle-down"></i>
+                </button>
+                <div id="language" style="display: none;">
+                    {{ range $.Translations }}
+                    <a href="{{ .Permalink }}">{{ .Language }}</a>
+                    {{ end }}
+                </div>
             </ul>
         </nav>
 

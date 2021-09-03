@@ -1,10 +1,11 @@
-const nav = document.querySelector(".nav");
+const nav = document.querySelector("#nav");
 const btnHamburguer = document.querySelector(".menu-icon");
 const overlay = document.querySelector(".overlay");
 
 const menu = () => {
   btnHamburguer.classList.toggle("menu-icon--active");
-  nav.classList.toggle("nav--active");
+  nav.classList.toggle("-left-full");
+  nav.classList.toggle("left-0");
   overlay.classList.toggle("hidde");
 };
 

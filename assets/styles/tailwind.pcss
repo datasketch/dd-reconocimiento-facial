@@ -12,25 +12,6 @@
 }
 
 @layer components {
-  /*                     Nav                      */
-  .nav {
-    @apply absolute top-0 -left-full h-screen lg:h-auto bg-blue-dark lg:bg-transparent z-50;
-    width: 70vw;
-    transition: all 0.3s ease;
-  }
-
-  @screen lg {
-    .nav {
-      @apply lg:left-0 lg:w-full;
-    }
-  }
-
-  .nav--active {
-    left: 0 !important;
-  }
-
-  /*                     nav end                      */
-
   /*             Button Hamburguer               */
   .menu-button {
     @apply relative cursor-pointer lg:hidden z-50;
@@ -121,6 +102,13 @@
     @apply invisible opacity-0;
   }
   /* Modal content end */
+
+  /* TIPPY JS */
+  .tippy-box[data-theme~='transparent'] {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+  }
 }
 
 @layer utilities {
