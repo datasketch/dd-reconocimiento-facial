@@ -19,4 +19,4 @@ window.addEventListener("scroll", function (e) {
 
 window.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !overlay.classList.contains("hidde")) menu();
-});
+}); 

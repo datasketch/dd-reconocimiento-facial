@@ -18,6 +18,9 @@ module.exports = {
         "modal-hidden",
         "modal-overlay",
         "modal-overlay-hidden",
+        "-left-full",
+        "left-0",
+        "hidde"
       ],
     },
   },
