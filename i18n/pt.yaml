@@ -10,6 +10,24 @@
   translation: A pesquisa aborda a existência de diversos sistemas de reconhecimento facial desenvolvidos e implementados sob distintas políticas públicas, em áreas como segurança pública, controle migratório e transporte.
 - id: action_button_initiatives
   translation: Conheça as iniciativas
+- id: home_label_identified_systems_title
+  translation: Sistemas identificados
+- id: home_label_identified_systems_description
+  translation: A pesquisa mostra um crescimento significativo na adoção de sistemas de reconhecimento facial na América Latina, sob a égide de diferentes políticas públicas. A maioria desses sistemas data dos últimos três anos.
+- id: home_label_providers_title
+  translation: Provedores
+- id: home_label_providers_description
+  translation: Embora pareça que o desenho e a implementação de sistemas de reconhecimento facial sejam predominantemente locais, é importante destacar o papel que desempenham empresas de potências como China, Estados Unidos e França e sua relação com empresas locais.
+- id: home_label_hiring_title
+  translation: Contratando
+- id: home_label_hiring_description
+  translation: Em geral, a forma de contratação mais utilizada passa por processos licitatórios, é marcante a existência de doações de tecnologia, bem como práticas diferenciadas em torno da subcontratação de aspectos específicos dos empreendimentos.
+- id: home_label_implementation_areas_title
+  translation: Áreas de implementação
+- id: home_label_implementation_areas_description
+  translation: De longe, o uso mais comum de sistemas de reconhecimento facial é "segurança pública" e "vigilância de espaços públicos". Seguem-se aplicações no âmbito dos transportes, assistência social e migração.
+- id: action_button_data_explorer
+  translation: Explore os dados
 - id: home_label_dowload_report_title
   translation: Baixe o relatório
 - id: home_label_dowload_report_description
@@ -40,3 +58,33 @@
   translation: Explorador de dados
 - id: footer_label_about
   translation: Sobre o projeto
+- id: initiatives_label_title
+  translation: Iniciativas Mapeadas
+- id: initiatives_label_description
+  translation: A pesquisa dá conta da existência de diversos sistemas de reconhecimento facial desenvolvidos e implantados sob diferentes políticas públicas, em áreas como segurança pública, controle de imigração e transporte.
+- id: initiatives_label_how_to
+  translation: Escolha como filtrar iniciativas
+- id: initiatives_action_filter_country
+  translation: País
+- id: initiatives_action_filter_implementation_state
+  translation: Estado de implementação
+- id: initiatives_action_filter_aplication_area
+  translation: Área de aplicação
+- id: initiatives_action_filter_audit
+  translation: Estudos de impacto e auditorias
+- id: initiatives_action_filter_incidents
+  translation: Incidentes
+- id: initiatives_action_filter_rights_involved
+  translation: Direitos envolvidos
+- id: initiatives_countrie_description
+  translation: Selecione um país para verificar os sistemas ali identificados.
+- id: initiatives_implementation_state_description
+  translation: Conheça as iniciativas atualmente ativas, em processo de implementação, em etapa piloto ou que foram interrompidas.
+- id: initiatives_aplication_area_description
+  translation: Aqui você encontrará a lista de iniciativas organizadas de acordo com a área em que foram implementadas.
+- id: initiatives_audit_description
+  translation: Aqui você encontrará a lista de iniciativas organizadas de acordo com a existência (ou não) de estudos prévios de impacto em direitos humanos durante a implementação de sistemas de reconhecimento facial, assim como de auditorias posteriores que asseguram um funcionamento não lesivo de direitos.
+- id: initiatives_incidents_description
+  translation: Aqui se encontra a lista de iniciativas mapeadas de acordo com a detecção (ou não) de incidentes de segurança, usos discriminatórios ou outros tipos de abusos relacionados com a implementação dos sistemas de reconhecimento facial.
+- id: initiatives_rights_involved_description
+  translation: Aqui se encontra a lista de iniciativas organizadas de acordo com os direitos fundamentais afetados como consequência de sua implementação.

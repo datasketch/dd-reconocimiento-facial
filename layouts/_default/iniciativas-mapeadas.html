@@ -4,45 +4,43 @@
     <div class="relative mx-auto lg:w-8/12 lg:mb-40">
         <img src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
         <div class="absolute center-box text-white mx-auto text-center lg:w-8/12">
-            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">Iniciativas mapeadas</h1>
+            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">{{ T "initiatives_label_title" }}</h1>
             <p class="mx-auto lg:text-2xl">
-                La investigación da cuenta de la existencia de diversos sistemas de reconocimiento facial desarrollados
-                e implementados al alero de distintas políticas públicas, en áreas tales como la seguridad pública, el
-                control migratorio y el transporte.
+                {{ T "initiatives_label_description" }}
             </p>
         </div>
     </div>
-    <h4 class="text-white text-center mb-6 lg:mb-12 lg:text-2xl">Escoge como filtrar las iniciativas</h4>
+    <h4 class="text-white text-center mb-6 lg:mb-12 lg:text-2xl">{{ T "initiatives_label_how_to" }}</h4>
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40">
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            País
+            {{ T "initiatives_action_filter_country" }}
         </button>
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            Estado de implementación
+            {{ T "initiatives_action_filter_implementation_state" }}
         </button>
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            Área de aplicación
+            {{ T "initiatives_action_filter_aplication_area" }}
         </button>
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            Impacto y auditorías
+            {{ T "initiatives_action_filter_audit" }}
         </button>
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            Incidentes
+            {{ T "initiatives_action_filter_incidents" }}
         </button>
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            Derechos involucrados
+            {{ T "initiatives_action_filter_rights_involved" }}
         </button>
     </div>
     <div class="text-white mx-auto text-center lg:w-6/12">
-        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">Países mapeados</h2>
-        <p class="mx-auto lg:text-xl mx-auto lg:w-11/12">
-            Selecciona un país para revisar los sistemas allí identificados.
+        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "initiatives_action_filter_country" }}</h2>
+        <p class="mx-auto lg:text-xl lg:w-11/12">
+            {{ T "initiatives_countrie_description" }}
         </p>
     </div>
 </div>

@@ -42,42 +42,36 @@
 <section class="py-20 bg-cover bg-center bg-banner-explore-data-home-lg lg:py-28">
     <div class="mx-auto w-10/12 lg:w-6/12 text-center mb-12 lg:mb-24">
         <h2 class="font-merriweather-sans mb-4 text-3xl md:text-4xl xl:text-5xl lg:mb-6 text-white">
-            Sistemas identificados
+            {{ T "home_label_identified_systems_title" }}
         </h2>
         <p class="text-white lg:text-lg">
-            La investigación da cuenta de un crecimiento importante de la adopción de sistemas de reconocimiento facial
-            en América Latina, al alero de distintas políticas públicas. La mayor parte de estos sistemas datan de los
-            últimos tres años.
+            {{ T "home_label_identified_systems_description" }}
         </p>
     </div>
     <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
         <img class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1" src="/images/home/blue-graphic.png"
             alt="blue graphic">
         <div class="order-1 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-2">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Proveedores</h2>
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_providers_title" }}</h2>
             <p class="text-xl mb-8">
-                Si bien pareciera ser que el diseño e implementación de los sistemas de reconocimiento facial es
-                mayoritariamente local, es importante señalar el rol que tienen las empresas de potencias como China,
-                Estados Unidos y Francia y su relación con compañías locales.
+                {{ T "home_label_providers_description" }}
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Explora los datos
+                    {{ T "action_button_data_explorer" }}
                 </a>
             </button>
         </div>
         <div class="order-3 text-white text-center lg:text-left lg:col-start-1 lg:col-end-6 lg:order-3">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Contratación</h2>
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_hiring_title" }}</h2>
             <p class="text-xl mb-8">
-                En general la forma más utilizada de contratación pasa por procesos de licitación, llama mucho la
-                atención la existencia de donaciones de tecnología, así como también distintas prácticas en torno a la
-                subcontratación de aspectos específicos de los proyectos.
+                {{ T "home_label_hiring_description" }}
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Explora los datos
+                    {{ T "action_button_data_explorer" }}
                 </a>
             </button>
         </div>
@@ -86,16 +80,14 @@
         <img class="order-6 lg:col-start-1 lg:col-end-6 lg:order-5" src="/images/home/blue-graphic.png"
             alt="blue graphic">
         <div class="order-5 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-6">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Áreas de implementación</h2>
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_implementation_areas_title" }}</h2>
             <p class="text-xl mb-8">
-                Por lejos, el uso más recurrente de los sistemas de reconocimiento facial es “seguridad pública” y
-                “vigilancia de espacios públicos”. Le siguen aplicaciones en el marco del transporte, asistencia social
-                y migración.
+                {{ T "home_label_implementation_areas_description" }}
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Explora los datos
+                    {{ T "action_button_data_explorer" }}
                 </a>
             </button>
         </div>
