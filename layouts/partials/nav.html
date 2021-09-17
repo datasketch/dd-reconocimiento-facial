@@ -6,12 +6,22 @@
         <nav class="absolute top-0 -left-full duration-300 z-20 bg-blue-dark h-screen w-9/12 py-16 lg:relative lg:w-full lg:h-auto lg:bg-transparent lg:py-0 lg:left-0 lg:col-start-4 lg:col-end-13"
             id="nav">
             <ul class="mx-auto w-10/12 lg:flex lg:justify-between lg:items-center lg:mx-0 lg:w-full lg:text-center">
+                {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none" href="{{ .URL }}">{{
+                {{ $menu_item_url := .URL | relLangURL }}
+                {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+                {{ if eq $menu_item_url $page_url }}
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg text-lemon-green duration-300 lg:leading-none"
+                    href="{{ .URL }}">{{
+                    .Title }}</a></li>
+                {{ else }}
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="{{ .URL }}">{{
                         .Title }}</a></li>
                 {{ end }}
+                {{ end }}
                 <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
-                    target="_blank"    href="https://reconocimientofacial.info/">{{ T "label_facial" }}</a></li>
+                        target="_blank" href="https://reconocimientofacial.info/">{{ T "home_label_facial" }}</a></li>
                 <button
                     class="flex items-center border border-white py-1 px-2 hover:border-lemon-green hover:text-lemon-green uppercase lg:ml-4"
                     id="button-language">
@@ -24,7 +34,7 @@
                 </button>
                 <div id="language" style="display: none;">
                     {{ range $.Translations }}
-                    <a href="{{ .Permalink }}">{{ .Language }}</a>
+                    <a class="button-language" href="{{ .Permalink }}">{{ .Language }}</a>
                     {{ end }}
                 </div>
             </ul>

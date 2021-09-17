@@ -1,2 +1,42 @@
-- id: label_facial
+- id: home_label_facial
   translation: Facial recognition
+- id: home_label_title
+  translation: Facial Recognition in Latin America
+- id: home_label_subtitle
+  translation: Facial recognition has advanced quickly and quietly in Latin American. Here you will learn about some of the continent’s initiatives, their objectives, the companies responsible for their implementation and the human rights violation risks associated with their use.
+- id: home_label_mapped_title
+  translation: Mapped initiatives
+- id: home_label_mapped_description
+  translation: Our research found several facial recognition systems developed and implemented by different public policies throughout the continent, in areas such as public security, migration control and transport.
+- id: action_button_initiatives
+  translation: Find out more about the initiatives
+- id: home_label_dowload_report_title
+  translation: Download the report
+- id: home_label_dowload_report_description
+  translation: Click here and download [Name of the report] prepared by Al Sur, with all the detailed information regarding the operation and deployment of facial recognition technologies in Latin America.
+- id: action_download_report
+  translation: Download the report
+- id: home_label_facial_recognition_title
+  translation: Facial recognition
+- id: home_label_facial_recognition_description
+  translation: Facial recognition is a biometric identification technology that, through the analysis of certain features of the human face, seeks to establish a person's identity. The deployment of this technology without the necessary safeguards and appropriate regulations can result in serious violations of fundamental rights, especially for people belonging to historically marginalized groups.
+- id: home_label_danger_facial_recognition_title
+  translation: Dangers of facial recognition
+- id: home_label_danger_facial_recognition_description
+  translation: Facial recognition erodes the autonomy of individuals in favour of a system that seeks absolute control through the technical management of identities, reproducing historical inequalities and exclusions.
+- id: home_label_about_project_title
+  translation: About the project
+- id: home_label_about_project_description
+  translation: The research conducted by the Al Sur Consortium brings an overview of the deployment of facial recognition technologies in Latin America, their uses and providers, characterized so far by excessive opacity and little public discussion.
+- id: action_button_more_information
+  translation: More information
+- id: home_label_credits
+  translation: This research was conducted by the Al Sur consortium, with funding from the National Endowment for Democracy (NED). The website was developed by Data Sketch, under the supervision of Derechos Digitales.
+- id: footer_label_mapped_initiatives
+  translation: Mapped Initiatives
+- id: footer_label_providers
+  translation: Providers
+- id: footer_label_data_explorer
+  translation: Data explorer
+- id: footer_label_about
+  translation: About

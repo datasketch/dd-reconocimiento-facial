@@ -1,0 +1,42 @@
+- id: home_label_facial
+  translation: Reconocimiento facial
+- id: home_label_title
+  translation: Reconocimiento Facial en América Latina
+- id: home_label_subtitle
+  translation: El reconocimiento facial ha avanzado rápida y silenciosamente en nuestra región. Aquí podrás conocer algunas de las iniciativas existentes, sus objetivos, las empresas responsables de su implementación y los riesgos en materia de derechos humanos que conlleva su uso.
+- id: home_label_mapped_title
+  translation: Iniciativas mapeadas
+- id: home_label_mapped_description
+  translation: La investigación da cuenta de la existencia de diversos sistemas de reconocimiento facial desarrollados e implementados al alero de distintas políticas públicas, en áreas tales como la seguridad pública, el control migratorio y el transporte.
+- id: action_button_initiatives
+  translation: Conoce las iniciativas
+- id: home_label_dowload_report_title
+  translation: Descarga el reporte
+- id: home_label_dowload_report_description
+  translation: Haz clic aquí y descarga [Nombre del reporte] preparado por Al Sur,  con toda la información detallada respecto al funcionamiento y despliegue de las tecnologías de reconocimiento facial en nuestra región.
+- id: action_download_report
+  translation: Descarga el reporte
+- id: home_label_facial_recognition_title
+  translation: Reconocimiento facial
+- id: home_label_facial_recognition_description
+  translation: El reconocimiento facial es una tecnología de identificación biométrica que, por medio del análisis de rasgos característicos del rostro humano, busca establecer la identidad de una persona. El despliegue de esta tecnología sin los necesarios resguardos ni controles apropiados puede tener como consecuencia graves vulneraciones a los derechos fundamentales, especialmente de personas pertenecientes a grupos históricamente marginados.
+- id: home_label_danger_facial_recognition_title
+  translation: Peligros del reconocimiento facial
+- id: home_label_danger_facial_recognition_description
+  translation: El reconocimiento facial erosiona la autonomía de las personas en favor de un sistema que pretende el control absoluto, mediante la gestión técnica de las identidades, reproduciendo las desigualdades y exclusiones históricas.
+- id: home_label_about_project_title
+  translation: Sobre el proyecto
+- id: home_label_about_project_description
+  translation: La investigación realizada por el Consorcio Al Sur tiene por objetivo dibujar un panorama general del despliegue de las tecnologías de reconocimiento facial en América Latina, sus usos y proveedores, caracterizado hasta ahora por una opacidad excesiva y escasa discusión pública.
+- id: action_button_more_information
+  translation: Más información
+- id: home_label_credits
+  translation: La presente investigación fue realizada por el consorcio Al Sur, con el financiamiento del National Endowment for Democracy (NED). El sitio web fue desarrollado por Data Sketch, bajo la supervisión de Derechos Digitales.
+- id: footer_label_mapped_initiatives
+  translation: Iniciativas Mapeadas
+- id: footer_label_providers
+  translation: Proveedores
+- id: footer_label_data_explorer
+  translation: Explorador de datos
+- id: footer_label_about
+  translation: Sobre el proyecto

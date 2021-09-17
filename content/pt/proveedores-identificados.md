@@ -1,7 +1,7 @@
 ---
-title: Providers
+title: Provedores
 weight: 3
 menu: main
 layout: proveedores-identificados
-url: /en/providers
+url: /pt/provedores
 ---

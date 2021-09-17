@@ -7,27 +7,22 @@
             alt="human image">
         <div class="order-1 text-center text-white lg:order-2 lg:text-left lg:col-start-6 lg:col-end-13 lg:w-11/12">
             <h1 class="font-merriweather-sans mb-10 text-4xl md:text-5xl xl:text-6xl lg:mb-8"><span
-                    class="block lg:inline-block">Reconocimiento Facial</span> en América
-                Latina</h1>
+                    class="block lg:inline-block">{{ T "home_label_title" }}</h1>
             <p class="text-lg lg:text-xl lg:w-11/12">
-                El reconocimiento facial ha avanzado rápida y silenciosamente en nuestra región. Aquí podrás conocer
-                algunas de las iniciativas existentes, sus objetivos, las empresas responsables de su implementación y
-                los riesgos en materia de derechos humanos que conlleva su uso.
+               {{ T "home_label_subtitle" }}
             </p>
         </div>
     </div>
     <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center">
         <div class="mb-20 text-white text-center lg:mb-0 lg:text-left lg:col-start-1 lg:col-end-8">
-            <h2 class="font-merriweather-sans mb-10 text-4xl lg:text-4xl lg:mb-8">Iniciativas mapeadas</h2>
+            <h2 class="font-merriweather-sans mb-10 text-4xl lg:text-4xl lg:mb-8">{{ T "home_label_mapped_title" }}</h2>
             <p class="text-lg lg:text-xl lg:w-11/12 lg:mb-8">
-                La investigación da cuenta de la existencia de diversos sistemas de reconocimiento facial desarrollados
-                e implementados al alero de distintas políticas públicas, en áreas tales como la seguridad pública, el
-                control migratorio y el transporte.
+                {{ T "home_label_mapped_description" }}
             </p>
             <button class="hidden lg:block py-4 px-6 bg-blue-dark text-white text-xl">
                 <a class="flex items-center" href="{{ relref . " iniciativas-mapeadas.md" }}">
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    Conocer iniciativas
+                    {{ T "action_button_initiatives" }}
                 </a>
             </button>
         </div>
@@ -36,7 +31,7 @@
         <button class="mx-auto w-10/12 py-4 px-6 bg-blue-dark text-white lg:text-xl lg:hidden ">
             <a class="flex items-center text-xl" href="{{ relref . " iniciativas-mapeadas.md" }}">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                Conocer iniciativas
+                {{ T "action_button_initiatives" }}
             </a>
         </button>
     </div>
@@ -44,16 +39,26 @@
 {{/* BANNER HOME END */}}
 
 {{/* DATA EXPLORE */}}
-<section class="py-20 bg-cover bg-center bg-banner-explore-data-home-lg lg:py-32">
+<section class="py-20 bg-cover bg-center bg-banner-explore-data-home-lg lg:py-28">
+    <div class="mx-auto w-10/12 lg:w-6/12 text-center mb-12 lg:mb-24">
+        <h2 class="font-merriweather-sans mb-4 text-3xl md:text-4xl xl:text-5xl lg:mb-6 text-white">
+            Sistemas identificados
+        </h2>
+        <p class="text-white lg:text-lg">
+            La investigación da cuenta de un crecimiento importante de la adopción de sistemas de reconocimiento facial
+            en América Latina, al alero de distintas políticas públicas. La mayor parte de estos sistemas datan de los
+            últimos tres años.
+        </p>
+    </div>
     <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
         <img class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1" src="/images/home/blue-graphic.png"
             alt="blue graphic">
         <div class="order-1 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-2">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Lorem ipsum dolor</h2>
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Proveedores</h2>
             <p class="text-xl mb-8">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Si bien pareciera ser que el diseño e implementación de los sistemas de reconocimiento facial es
+                mayoritariamente local, es importante señalar el rol que tienen las empresas de potencias como China,
+                Estados Unidos y Francia y su relación con compañías locales.
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
@@ -63,11 +68,11 @@
             </button>
         </div>
         <div class="order-3 text-white text-center lg:text-left lg:col-start-1 lg:col-end-6 lg:order-3">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Lorem ipsum dolor</h2>
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Contratación</h2>
             <p class="text-xl mb-8">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                En general la forma más utilizada de contratación pasa por procesos de licitación, llama mucho la
+                atención la existencia de donaciones de tecnología, así como también distintas prácticas en torno a la
+                subcontratación de aspectos específicos de los proyectos.
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
@@ -78,6 +83,22 @@
         </div>
         <img class="order-4 lg:col-start-7 lg:col-end-12 lg:order-4" src="/images/home/blue-graphic.png"
             alt="blue graphic">
+        <img class="order-6 lg:col-start-1 lg:col-end-6 lg:order-5" src="/images/home/blue-graphic.png"
+            alt="blue graphic">
+        <div class="order-5 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-6">
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">Áreas de implementación</h2>
+            <p class="text-xl mb-8">
+                Por lejos, el uso más recurrente de los sistemas de reconocimiento facial es “seguridad pública” y
+                “vigilancia de espacios públicos”. Le siguen aplicaciones en el marco del transporte, asistencia social
+                y migración.
+            </p>
+            <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
+                <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
+                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                    Explora los datos
+                </a>
+            </button>
+        </div>
     </div>
 </section>
 {{/* DATA EXPLORE END */}}
@@ -90,61 +111,52 @@
 <section class="py-16 bg-blue-dark lg:py-24">
     <div class="mx-auto w-11/12 lg:w-10/12">
         <div class="text-center mb-10 text-white w-11/12 lg:w-8/12 mx-auto lg:mb-0">
-            <h2 class="font-merriweather-sans text-4xl mb-5 lg:text-6xl lg:mb-10">Reconocimiento facial</h2>
+            <h2 class="font-merriweather-sans text-4xl mb-5 lg:text-6xl lg:mb-10">{{ T "home_label_facial_recognition_title" }}</h2>
             <p class="text-lg lg:mb-10 mx-auto lg:w-10/12 lg:text-xl">
-                El reconocimiento facial es una tecnología de identificación biométrica que, por medio del análisis de
-                rasgos característicos del rostro humano, busca establecer la identidad de una persona. El despliegue de
-                esta tecnología sin los necesarios resguardos ni controles apropiados puede tener como consecuencia
-                graves vulneraciones a los derechos fundamentales, especialmente de personas pertenecientes a grupos
-                históricamente marginados.
+                {{ T "home_label_facial_recognition_description" }}
             </p>
         </div>
         <img class="mx-auto mb-14 lg:mb-10" src="/images/home/facial-humans.png" alt="humans home">
         <div class="grid grid-cols-1 mb-16 gap-y-24 lg:grid-cols-2 lg:items-center lg:gap-x-16 text-white lg:mb-20">
             <div class="text-center">
-                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7"><span
-                        class="block lg:inline-block">Peligros del</span> reconocimiento facial</h3>
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T "home_label_danger_facial_recognition_title" }}</h3>
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
-                    El reconocimiento facial erosiona la autonomía de las personas en favor de un sistema que pretende
-                    el control absoluto, mediante la gestión técnica de las identidades, reproduciendo las desigualdades
-                    y exclusiones históricas.
-
+                    {{ T "home_label_danger_facial_recognition_description" }}
                 </p>
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
                     <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/" target="_blank">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                        Más información
+                        {{ T "action_button_more_information" }}
                     </a>
                 </button>
             </div>
             <div class="text-center">
-                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">Sobre el proyecto</h3>
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T "home_label_about_project_title" }}</h3>
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
-                    La investigación realizada por el Consorcio Al Sur tiene por objetivo dibujar un panorama general
-                    del despliegue de las tecnologías de reconocimiento facial en América Latina, sus usos y
-                    proveedores, caracterizado hasta ahora por una opacidad excesiva y escasa discusión pública.
+                    {{ T "home_label_about_project_description" }}
                 </p>
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
                     <a class="flex items-center" href="#">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                        Descarga el reporte
+                        {{ T "action_download_report" }}
                     </a>
                 </button>
             </div>
         </div>
         <div class="mb-12 text-center mx-auto lg:w-8/12 lg:mb-24">
             <h4 class="text-white text-xl lg:text-2xl">
-                La presente investigación fue realizada por el consorcio Al Sur, con el financiamiento del National
-                Endowment for Democracy (NED). El sitio web fue desarrollado por Datasketch, bajo la supervisión de
-                Derechos Digitales.
+                {{ T "home_label_credits" }}
             </h4>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-4 items-center gap-y-12">
-            <a target="_blank" href="https://www.alsur.lat/"><img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
-            <a target="_blank" href="https://www.ned.org/"> <img class="h-12 lg:h-16 mx-auto" src="/images/public/logo-ned.svg" alt="Logo ned"></a>
-            <a target="_blank" href="https://www.derechosdigitales.org/"><img class="h-16 lg:h-20 mx-auto" src="/images/public/logo-rc-es.png"
-                    alt="Logo reconocimiento facial"></a>
-            <a target="_blank" href="https://www.datasketch.co/"><img class="mx-auto" src="/images/public/datasketch-large.svg" alt="Logo al sur"></a>
+            <a target="_blank" href="https://www.alsur.lat/"><img class="h-12 lg:h-16 mx-auto"
+                    src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+            <a target="_blank" href="https://www.ned.org/"> <img class="h-12 lg:h-16 mx-auto"
+                    src="/images/public/logo-ned.svg" alt="Logo ned"></a>
+            <a target="_blank" href="https://www.derechosdigitales.org/"><img class="h-16 lg:h-20 mx-auto"
+                    src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial"></a>
+            <a target="_blank" href="https://www.datasketch.co/"><img class="mx-auto"
+                    src="/images/public/datasketch-large.svg" alt="Logo al sur"></a>
         </div>
     </div>
 </section>

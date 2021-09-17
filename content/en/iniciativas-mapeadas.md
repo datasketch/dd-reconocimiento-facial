@@ -1,7 +1,7 @@
 ---
-title: Initiatives mapped
+title: Mapped Initiatives
 weight: 2
 menu: main
 layout: iniciativas-mapeadas
-url: /en/initiatives-mapped
+url: /en/mapped-initiatives
 ---
