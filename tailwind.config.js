@@ -20,7 +20,8 @@ module.exports = {
         "modal-overlay-hidden",
         "-left-full",
         "left-0",
-        "hidde"
+        "hidde",
+        "tippy-box[data-theme~='transparent']"
       ],
     },
   },
