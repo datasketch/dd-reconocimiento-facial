@@ -1,7 +1,7 @@
 "use strict";
 
 // Elements
-const countriesParent = document.querySelector(".countries-container");
+const initiativesParent = document.querySelector(".initiatives-container");
 const modal = document.querySelector(".modal");
 const buttonClose = document.querySelector(".modal-button--close");
 const overlay = document.querySelector(".modal-overlay");
@@ -16,13 +16,12 @@ const closeModal = () => {
   overlay.classList.add("modal-overlay-hidden");
 };
 
-countriesParent.addEventListener("click", function (e) {
+initiativesParent.addEventListener("click", function (e) {
   const childElement = e.target.closest(".modal-button--open");
   if (!childElement) return;
 
   // show data per index json
   const id = childElement.getAttribute("data-id");
-
   openModal();
 });
 

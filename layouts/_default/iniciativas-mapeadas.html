@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- BANNER INITIATIVES MAPPED -->
 <div class="bg-cover bg-center bg-banner-iniciativas-lg lg:py-40">
-    <div class="relative mx-auto lg:w-8/12 lg:mb-40">
+    <div class="relative mx-auto lg:w-8/12">
         <img src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
         <div class="absolute center-box text-white mx-auto text-center lg:w-8/12">
             <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">{{ T "initiatives_label_title" }}</h1>
@@ -10,7 +10,7 @@
             </p>
         </div>
     </div>
-    <h4 class="text-white text-center mb-6 lg:mb-12 lg:text-2xl">{{ T "initiatives_label_how_to" }}</h4>
+    {{/* <h4 class="text-white text-center mb-6 lg:mb-12 lg:text-2xl">{{ T "initiatives_label_how_to" }}</h4>
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40">
         <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
@@ -42,199 +42,52 @@
         <p class="mx-auto lg:text-xl lg:w-11/12">
             {{ T "initiatives_countrie_description" }}
         </p>
-    </div>
+    </div> */}}
 </div>
 <!-- BANNER INITIATIVES MAPPED END -->
 
-<!-- COUNTRIES -->
+<!-- INITIATIVES -->
 <section class="py-20 lg:py-22">
-    <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Selecciona un país</h3>
+    {{/* <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Selecciona un país</h3>
     <div class="mx-auto mb-12 lg:mb-24 lg:w-3/12">
         <button
             class="flex mx-auto lg:w-full items-center justify-evenly py-2 px-6 text-black border-2 border-black lg:text-xl">
             Todos
             <img src="/images/public/icons/icon-arrow-bottom.svg" alt="icon arrow bottom">
         </button>
-    </div>
-    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 countries-container">
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
+    </div> */}}
+    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 initiatives-container">
+        {{/* CHILD ELEMENT */}}
+
+        {{/* <div class="initiatives">
+            <div class="initiatives-padding">
+                <span class="initiatives-country">País</span>
+                <h3 class="initiatives-title">
                     Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
                     Santiago
                 </h3>
             </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
+            <button data-id="1" class="initiatives-button modal-button--open">
                 Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                <img class="initiatives-image" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
-        <div class="border border-blue">
-            <div class="p-8">
-                <span class="block mb-4 italic text-blue">País</span>
-                <h3 class="font-bold lg:text-xl">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
-                </h3>
-            </div>
-            <button data-id="1"
-                class="bg-blue text-white text-xl flex justify-center items-center py-4 w-full modal-button--open">
-                Ver ficha
-                <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            </button>
-        </div>
+        </div> */}}
+
+        {{/* CHILD ELEMENT END */}}
     </div>
 </section>
-<!-- COUNTRIES END -->
+<!-- INITIATIVES END -->
 
 <!-- MODAL -->
 {{ partial "modal-initiatives.html" . }}
 <!-- MODAL END -->
+
+<input type="hidden" name="data" id="data-iniciativasMapeadas" value="{{ jsonify .Site.Data.iniciativasMapeadas }}">
 {{ end }}
 
 {{ define "js" }}
 {{ $modal := resources.Get "js/utils/modal.js" | js.Build (dict "minify" true) }}
+{{ $database := resources.Get "js/api/iniciativas-mapeadas.js" | js.Build (dict "minify" true) }}
 <script src="{{ $modal.Permalink }}"></script>
+<script src="{{ $database.Permalink }}"></script>
 {{ end }}
