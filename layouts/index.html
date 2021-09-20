@@ -9,7 +9,7 @@
             <h1 class="font-merriweather-sans mb-10 text-4xl md:text-5xl xl:text-6xl lg:mb-8"><span
                     class="block lg:inline-block">{{ T "home_label_title" }}</h1>
             <p class="text-lg lg:text-xl lg:w-11/12">
-               {{ T "home_label_subtitle" }}
+                {{ T "home_label_subtitle" }}
             </p>
         </div>
     </div>
@@ -26,8 +26,9 @@
                 </a>
             </button>
         </div>
-        <img class="mb-16 mx-auto lg:mb-0 lg:mx-0 lg:col-start-8 lg:col-end-13" src="/images/home/mapa.svg"
-            alt="human image">
+        <iframe
+            class="mb-16 mx-auto lg:mb-0 lg:mx-0 lg:col-start-8 lg:col-end-13 w-full h-96 object-cover object-center"
+            src="{{ relref . " /graficas/pais-implementacion.md" }}" frameborder="0"></iframe>
         <button class="mx-auto w-10/12 py-4 px-6 bg-blue-dark text-white lg:text-xl lg:hidden ">
             <a class="flex items-center text-xl" href="{{ relref . " iniciativas-mapeadas.md" }}">
                 <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
@@ -49,8 +50,8 @@
         </p>
     </div>
     <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
-        <img class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1" src="/images/home/blue-graphic.png"
-            alt="blue graphic">
+        <iframe class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1 w-full h-96 object-center object-cover"
+            src="{{ relref . " /graficas/implementados-proveedor.md" }}" frameborder="0"></iframe>
         <div class="order-1 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-2">
             <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_providers_title" }}</h2>
             <p class="text-xl mb-8">
@@ -75,12 +76,13 @@
                 </a>
             </button>
         </div>
-        <img class="order-4 lg:col-start-7 lg:col-end-12 lg:order-4" src="/images/home/blue-graphic.png"
-            alt="blue graphic">
-        <img class="order-6 lg:col-start-1 lg:col-end-6 lg:order-5" src="/images/home/blue-graphic.png"
-            alt="blue graphic">
+        <iframe class="order-4 lg:col-start-7 lg:col-end-12 lg:order-4 w-full h-96 object-center object-cover"
+            src="{{ relref . " /graficas/tipo-contrato.md" }}" frameborder="0"></iframe>
+        <iframe class="order-6 lg:col-start-1 lg:col-end-6 lg:order-5 w-full h-96 object-center object-cover"
+            src="{{ relref . " /graficas/area-aplicacion.md" }}" frameborder="0"></iframe>
         <div class="order-5 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-6">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_implementation_areas_title" }}</h2>
+            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_implementation_areas_title" }}
+            </h2>
             <p class="text-xl mb-8">
                 {{ T "home_label_implementation_areas_description" }}
             </p>
@@ -103,7 +105,8 @@
 <section class="py-16 bg-blue-dark lg:py-24">
     <div class="mx-auto w-11/12 lg:w-10/12">
         <div class="text-center mb-10 text-white w-11/12 lg:w-8/12 mx-auto lg:mb-0">
-            <h2 class="font-merriweather-sans text-4xl mb-5 lg:text-6xl lg:mb-10">{{ T "home_label_facial_recognition_title" }}</h2>
+            <h2 class="font-merriweather-sans text-4xl mb-5 lg:text-6xl lg:mb-10">{{ T
+                "home_label_facial_recognition_title" }}</h2>
             <p class="text-lg lg:mb-10 mx-auto lg:w-10/12 lg:text-xl">
                 {{ T "home_label_facial_recognition_description" }}
             </p>
@@ -111,7 +114,8 @@
         <img class="mx-auto mb-14 lg:mb-10" src="/images/home/facial-humans.png" alt="humans home">
         <div class="grid grid-cols-1 mb-16 gap-y-24 lg:grid-cols-2 lg:items-center lg:gap-x-16 text-white lg:mb-20">
             <div class="text-center">
-                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T "home_label_danger_facial_recognition_title" }}</h3>
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T
+                    "home_label_danger_facial_recognition_title" }}</h3>
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
                     {{ T "home_label_danger_facial_recognition_description" }}
                 </p>
@@ -123,7 +127,8 @@
                 </button>
             </div>
             <div class="text-center">
-                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T "home_label_about_project_title" }}</h3>
+                <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T
+                    "home_label_about_project_title" }}</h3>
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
                     {{ T "home_label_about_project_description" }}
                 </p>

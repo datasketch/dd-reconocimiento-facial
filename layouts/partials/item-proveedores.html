@@ -1,0 +1,12 @@
+<div class="border border-blue flex flex-col justify-between">
+    <div class="p-8">
+        <span class="block mb-4 italic text-blue">{{ .pais }}</span>
+        <h3 class="font-bold lg:text-xl">
+            {{ .nombre }}
+        </h3>
+    </div>
+    <button class="bg-blue-dark flex items-center justify-center text-white text-xl py-4 w-full" data-modal="{{ .id }}">
+        Ver ficha
+        <img class="ml-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+    </button>
+</div>
