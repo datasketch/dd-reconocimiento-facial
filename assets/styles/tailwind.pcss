@@ -75,7 +75,7 @@
 
   /* Modal content */
   .modal {
-    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 grid grid-cols-1 lg:grid-cols-12 w-11/12 xl:w-10/12 duration-300;
+    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 grid grid-cols-1 lg:grid-cols-12 w-11/12 xl:w-10/12 duration-300 invisible opacity-0 scale-0;
   }
 
   .modal-left {
@@ -110,23 +110,23 @@
   }
 
   .modal-list-content {
-    @apply text-xl lg:mb-2;
+    @apply text-lg lg:mb-2;
   }
 
   .modal-button--close {
     @apply absolute top-2 right-4;
   }
 
-  .modal-hidden {
-    @apply invisible opacity-0 scale-0;
+  .modal-active {
+    @apply visible opacity-100 scale-100;
   }
 
   .modal-overlay {
-    @apply fixed top-0 left-0 h-screen w-full bg-black opacity-25 cursor-pointer duration-300;
+    @apply fixed top-0 left-0 h-screen w-full bg-black cursor-pointer duration-300 invisible opacity-0;
   }
 
-  .modal-overlay-hidden {
-    @apply invisible opacity-0;
+  .modal-overlay-active {
+    @apply visible opacity-25;
   }
 
   .modal-icon {

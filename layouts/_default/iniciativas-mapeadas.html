@@ -79,7 +79,7 @@
 <!-- INITIATIVES END -->
 
 <!-- MODAL -->
-{{ partial "modal-initiatives" . }}
+<!-- {{ partial "modal-initiatives" . }} -->
 <!-- MODAL END -->
 
 <input type="hidden" name="data" id="data-iniciativasMapeadas" value="{{ jsonify .Site.Data.iniciativasMapeadas }}">
@@ -88,6 +88,6 @@
 {{ define "js" }}
 {{ $modal := resources.Get "js/utils/modal.js" | js.Build (dict "minify" true) }}
 {{ $database := resources.Get "js/api/iniciativas-mapeadas.js" | js.Build (dict "minify" true) }}
-<script src="{{ $modal.Permalink }}"></script>
 <script src="{{ $database.Permalink }}"></script>
+<script src="{{ $modal.Permalink }}"></script>
 {{ end }}
