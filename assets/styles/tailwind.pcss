@@ -78,12 +78,24 @@
     @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 grid grid-cols-1 lg:grid-cols-12 w-11/12 xl:w-10/12 duration-300 invisible opacity-0 scale-0;
   }
 
+  .modal-title {
+    @apply font-merriweather-sans font-bold lg:text-2xl lg:mb-10;
+  }
+
+  .modal-link {
+    @apply text-blue-title text-lg lg:text-xl italic;
+  }
+
+  .modal-underline {
+    @apply underline;
+  }
+
   .modal-left {
     @apply bg-white lg:col-start-1 lg:col-end-7 xl:col-start-1 xl:col-end-8 p-4 lg:p-8 xl:px-20 xl:py-14 text-body;
   }
 
   .modal-country {
-    @apply block italic text-light-green lg:mb-6 lg:text-xl;
+    @apply block italic text-light-green lg:mb-6 text-lg lg:text-xl;
   }
 
   .modal-description {
@@ -92,6 +104,10 @@
 
   .modal-right {
     @apply bg-blue-dark lg:col-start-7 lg:col-end-13 xl:col-start-8 xl:col-end-13 p-4 lg:p-8 xl:px-20 xl:py-14 text-white;
+  }
+
+  .modal-right-dark {
+    @apply bg-body;
   }
 
   .modal-estado-implementacion,
@@ -159,6 +175,30 @@
   }
 
   .initiatives-image {
+    @apply ml-6;
+  }
+
+  .provider-item {
+    @apply border border-blue flex flex-col justify-between;
+  }
+
+  .provider-padding {
+    @apply p-8;
+  }
+
+  .provider-country {
+    @apply block mb-4 italic text-blue;
+  }
+
+  .provider-title {
+    @apply font-bold lg:text-xl;
+  }
+
+  .provider-button {
+    @apply bg-blue-dark flex items-center justify-center text-white text-xl py-4 w-full;
+  }
+
+  .provider-image {
     @apply ml-6;
   }
 }

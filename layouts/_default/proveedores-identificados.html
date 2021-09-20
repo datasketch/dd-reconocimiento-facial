@@ -46,11 +46,54 @@
             <img src="/images/public/icons/icon-arrow-bottom.svg" alt="icon arrow bottom">
         </button>
     </div> -->
-    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12">
-        {{ range .Site.Data.proveedoresIdentificados }}
-        {{ partial "item-proveedores" . }}
-        {{ end }}
+    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 provider-container">
+        {{/* CHILD ELEMENT PROVIDER */}}
+        {{/*  <div class="provider-item">
+            <div class="provider-padding">
+                <span class="provider-country">País</span>
+                <h3 class="provider-title">
+                    Unión temporal
+                </h3>
+            </div>
+            <button class="provider-button" data-modal="1">
+                Ver ficha
+                <img class="provider-image" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+            </button>
+        </div>  */}}
+        {{/* CHILD ELEMENT PROVIDER END */}}
     </div>
 </section>
+
+{{/*  <div class="modal modal-active">
+    <div class="modal-left">
+        <span class="modal-country">Chile</span>
+        <h3 class="font-merriweather-sans font-bold lg:text-2xl lg:mb-10">
+            Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de Santiago
+        </h3>
+        <p class="modal-link">Sitio web: <a class="modal-underline" href="#">www.loremipsumdolor.sit amet</a></p>
+    </div>
+    <div class="modal-right modal-right-dark">
+        <span class="modal-proveedores">Sistemas que ha desarrollado</span>
+        <ul class="modal-list--blue-light">
+            <li class="modal-list-content">Lorem ipsum dolor sit amet</li>
+            <li class="modal-list-content">Lorem ipsum dolor sit amet</li>
+            <li class="modal-list-content">Lorem ipsum dolor sit amet</li>
+            <li class="modal-list-content">Lorem ipsum dolor sit amet</li>
+        </ul>
+    </div>
+    <button class="modal-button--close">
+        <i class="fas fa-times modal-icon"></i>
+    </button>
+</div>
+<div class="modal-overlay modal-overlay-active"></div>  */}}
+
 <!-- COUNTRIES END -->
+<input type="hidden" name="data" id="data-proveedoresIdentificados"
+    value="{{ jsonify .Site.Data.proveedoresIdentificados }}">
+{{ end }}
+{{ define "js" }}
+{{ $modal := resources.Get "js/utils/modal.js" | js.Build (dict "minify" true) }}
+{{ $database := resources.Get "js/api/proveedores-identificados.js" | js.Build (dict "minify" true) }}
+<script src="{{ $database.Permalink }}"></script>
+<script src="{{ $modal.Permalink }}"></script>
 {{ end }}

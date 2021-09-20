@@ -40,7 +40,7 @@ initiativesParent.addEventListener("click", function (e) {
     pais: data.pais,
     proveedores: [data.proveedor1, data.proveedor2, data.proveedor3, data.proveedor4],
   };
-  const modal = new Modal(body, data);
+  const modal = new Modal(body, data, 1);
 });
 
 const init = () => {
