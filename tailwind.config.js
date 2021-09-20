@@ -12,6 +12,7 @@ module.exports = {
         "overlay",
         "hidden",
         "modal",
+        "modal-title",
         "modal-active",
         "modal-left",
         "modal-country",
