@@ -117,7 +117,7 @@ class Modal {
         document
           .querySelector(".modal-overlay")
           .classList.add("modal-overlay-active");
-      }, 150);
+      }, 300);
     } else if (opc === 2) {
       this._renderModalProviders();
       setTimeout(() => {
@@ -125,7 +125,7 @@ class Modal {
         document
           .querySelector(".modal-overlay")
           .classList.add("modal-overlay-active");
-      }, 150);
+      }, 300);
     }
   }
 

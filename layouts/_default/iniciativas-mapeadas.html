@@ -10,52 +10,70 @@
             </p>
         </div>
     </div>
-    {{/* <h4 class="text-white text-center mb-6 lg:mb-12 lg:text-2xl">{{ T "initiatives_label_how_to" }}</h4>
-    <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40">
-        <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
+    <h4 class="text-white text-center mb-6 lg:mb-12 lg:text-2xl">{{ T "initiatives_label_how_to" }}</h4>
+    <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40"
+        id="button-container">
+        <button class="button-filter button-filter--active">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_country" }}
         </button>
-        <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
+        <!-- <button class="button-filter">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_implementation_state" }}
         </button>
-        <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
+        <button class="button-filter">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_aplication_area" }}
         </button>
-        <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
+        <button class="button-filter">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_audit" }}
         </button>
-        <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
+        <button class="button-filter">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_incidents" }}
         </button>
-        <button class="flex items-center py-4 px-6 bg-blue text-white lg:text-xl">
+        <button class="button-filter">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_rights_involved" }}
-        </button>
+        </button> -->
     </div>
-    <div class="text-white mx-auto text-center lg:w-6/12">
+    <div class="text-white mx-auto text-center lg:w-6/12" id="initiative-information">
         <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "initiatives_action_filter_country" }}</h2>
         <p class="mx-auto lg:text-xl lg:w-11/12">
             {{ T "initiatives_countrie_description" }}
         </p>
-    </div> */}}
+    </div>
 </div>
 <!-- BANNER INITIATIVES MAPPED END -->
 
 <!-- INITIATIVES -->
 <section class="py-20 lg:py-22">
-    {{/* <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Selecciona un país</h3>
-    <div class="mx-auto mb-12 lg:mb-24 lg:w-3/12">
-        <button
-            class="flex mx-auto lg:w-full items-center justify-evenly py-2 px-6 text-black border-2 border-black lg:text-xl">
-            Todos
-            <img src="/images/public/icons/icon-arrow-bottom.svg" alt="icon arrow bottom">
-        </button>
-    </div> */}}
+    <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Selecciona un país</h3>
+    <div class="text-center mb-10 lg:mb-20">
+        <div class="inline-block relative w-64">
+            <select
+                name="filterByCountries"
+                id="filterByCountries"
+                class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
+                <option active value="Todos">Todos</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Panamá">Panamá</option>
+                <option value="México">México</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+            </div>
+        </div>
+    </div>
     <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 initiatives-container">
         {{/* CHILD ELEMENT */}}
 
