@@ -10,7 +10,6 @@ const selectCountries = document.querySelector("#filterByCountries");
 const selectState = document.querySelector("#filterByState");
 const initiativeMessage = document.querySelectorAll(".initiative-message");
 const filterInitiative = document.querySelectorAll(".filter-initiative");
-console.log(filterInitiative);
 res.remove();
 
 // show mappeds init
