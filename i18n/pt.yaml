@@ -88,3 +88,5 @@
   translation: Aqui se encontra a lista de iniciativas mapeadas de acordo com a detecção (ou não) de incidentes de segurança, usos discriminatórios ou outros tipos de abusos relacionados com a implementação dos sistemas de reconhecimento facial.
 - id: initiatives_rights_involved_description
   translation: Aqui se encontra a lista de iniciativas organizadas de acordo com os direitos fundamentais afetados como consequência de sua implementação.
+- id: action_button_see_file
+  translation: Ver arquivo

@@ -15,7 +15,7 @@
     </div>
     <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center">
         <div class="mb-20 text-white text-center lg:mb-0 lg:text-left lg:col-start-1 lg:col-end-8">
-            <h2 class="font-merriweather-sans mb-10 text-4xl lg:text-4xl lg:mb-8">{{ T "home_label_mapped_title" }}</h2>
+            <h2 class="font-merriweather-sans mb-10 text-2xl lg:text-3xl lg:mb-8">{{ T "home_label_mapped_title" }}</h2>
             <p class="text-lg lg:text-xl lg:w-11/12 lg:mb-8">
                 {{ T "home_label_mapped_description" }}
             </p>
@@ -42,7 +42,7 @@
 {{/* DATA EXPLORE */}}
 <section class="py-20 bg-cover bg-center bg-banner-explore-data-home-lg lg:py-28">
     <div class="mx-auto w-10/12 lg:w-6/12 text-center mb-12 lg:mb-24">
-        <h2 class="font-merriweather-sans mb-4 text-3xl md:text-4xl xl:text-5xl lg:mb-6 text-white">
+        <h2 class="font-merriweather-sans mb-4 text-2xl lg:text-3xl lg:mb-6 text-white">
             {{ T "home_label_identified_systems_title" }}
         </h2>
         <p class="text-white lg:text-lg">
@@ -50,11 +50,24 @@
         </p>
     </div>
     <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
-        <iframe class="order-2 lg:col-start-1 lg:col-end-6 lg:order-1 w-full h-96 object-center object-cover"
-            src="{{ relref . " /graficas/implementados-proveedor.md" }}" frameborder="0"></iframe>
-        <div class="order-1 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-2">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_providers_title" }}</h2>
-            <p class="text-xl mb-8">
+        <iframe class="lg:col-start-1 lg:col-end-7 w-full h-96 object-center object-cover order-2 lg:order-1"
+            src="{{ relref . " /graficas/area-aplicacion.md" }}" frameborder="0"></iframe>
+        <div class="text-white text-center lg:text-left lg:col-start-8 lg:col-end-12 order-1 lg:order-2">
+            <h2 class="font-merriweather-sans text-xl lg:text-2xl mb-8">{{ T "home_label_implementation_areas_title" }}
+            </h2>
+            <p class="text-lg mb-8">
+                {{ T "home_label_implementation_areas_description" }}
+            </p>
+            <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
+                <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
+                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                    {{ T "action_button_data_explorer" }}
+                </a>
+            </button>
+        </div>
+        <div class="text-white text-center lg:text-left lg:col-start-1 lg:col-end-5 order-3 lg:order-4">
+            <h2 class="font-merriweather-sans text-xl lg:text-2xl mb-8">{{ T "home_label_providers_title" }}</h2>
+            <p class="text-lg mb-8">
                 {{ T "home_label_providers_description" }}
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
@@ -64,27 +77,14 @@
                 </a>
             </button>
         </div>
-        <div class="order-3 text-white text-center lg:text-left lg:col-start-1 lg:col-end-6 lg:order-3">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_hiring_title" }}</h2>
-            <p class="text-xl mb-8">
-                {{ T "home_label_hiring_description" }}
-            </p>
-            <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
-                <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
-                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-                    {{ T "action_button_data_explorer" }}
-                </a>
-            </button>
-        </div>
-        <iframe class="order-4 lg:col-start-7 lg:col-end-12 lg:order-4 w-full h-96 object-center object-cover"
+        <iframe class="lg:col-start-6 lg:col-end-12 w-full h-96 object-center object-cover order-3 lg:order-4"
+            src="{{ relref . " /graficas/implementados-proveedor.md" }}" frameborder="0"></iframe>
+        <iframe class="lg:col-start-1 lg:col-end-7 w-full h-96 object-center object-cover order-6 lg:order-5"
             src="{{ relref . " /graficas/tipo-contrato.md" }}" frameborder="0"></iframe>
-        <iframe class="order-6 lg:col-start-1 lg:col-end-6 lg:order-5 w-full h-96 object-center object-cover"
-            src="{{ relref . " /graficas/area-aplicacion.md" }}" frameborder="0"></iframe>
-        <div class="order-5 text-white text-center lg:text-left lg:col-start-7 lg:col-end-12 lg:order-6">
-            <h2 class="font-merriweather-sans text-3xl lg:text-4xl mb-8">{{ T "home_label_implementation_areas_title" }}
-            </h2>
-            <p class="text-xl mb-8">
-                {{ T "home_label_implementation_areas_description" }}
+        <div class="text-white text-center lg:text-left lg:col-start-8 lg:col-end-12 order-5 lg:order-6">
+            <h2 class="font-merriweather-sans text-xl lg:text-2xl mb-8">{{ T "home_label_hiring_title" }}</h2>
+            <p class="text-lg mb-8">
+                {{ T "home_label_hiring_description" }}
             </p>
             <button class="py-4 w-full px-6 bg-blue-dark text-white text-xl lg:w-auto">
                 <a class="flex items-center" href="{{ relref . " explorador-de-datos.md" }}">
