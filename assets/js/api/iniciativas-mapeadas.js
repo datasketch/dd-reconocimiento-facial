@@ -6,8 +6,11 @@ const res = document.querySelector("#data-iniciativasMapeadas");
 const body = document.querySelector("body");
 const buttonParent = document.querySelector("#button-container");
 const buttonFilter = document.querySelectorAll(".button-filter");
-const initiativeInformation = document.querySelector("#initiative-information");
 const selectCountries = document.querySelector("#filterByCountries");
+const selectState = document.querySelector("#filterByState");
+const initiativeMessage = document.querySelectorAll(".initiative-message");
+const filterInitiative = document.querySelectorAll(".filter-initiative");
+console.log(filterInitiative);
 res.remove();
 
 // show mappeds init
@@ -31,6 +34,13 @@ const showMappedByState = (data, state) => {
   initiativesParent.innerHTML = "";
   result.forEach((item) => renderMappedInitiative(initiativesParent, item));
 };
+
+// const testing = () => {
+//   const data = JSON.parse(res.value);
+//   const states = new Set(...[data.map((item) => item.estado)]);
+//   console.log(states);
+// };
+// testing();
 
 // show mappeds by aplication area
 const showMappedByAplicationArea = (data, area) => {};
@@ -93,27 +103,46 @@ initiativesParent.addEventListener("click", function (e) {
 
 buttonParent.addEventListener("click", function (e) {
   const button = e.target.closest(".button-filter");
+  const id = button.getAttribute("data-tab");
+
+  // Reset mapped initiatives
+  showMappedInitiatives(JSON.parse(res.value));
 
   // Reset active
   buttonFilter.forEach((button) => {
     button.classList.remove("button-filter--active");
   });
 
+  // Reset initiative message
+  initiativeMessage.forEach((message) => {
+    message.classList.add("hidden");
+  });
+
+  // Reset filter initiative
+  filterInitiative.forEach((initiative) => {
+    initiative.classList.add("hidden");
+  });
+
   // Show active button filter
   if (!button.classList.contains("button-filter--active"))
     button.classList.add("button-filter--active");
 
-  // Scroll in to initiative information
-  setTimeout(() => {
-    initiativeInformation.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  }, 300);
+  // Show initiative message
+  initiativeMessage[id].classList.remove("hidden");
+
+  // Shoe filter initiative
+  if (!filterInitiative[id]) return;
+  filterInitiative[id].classList.remove("hidden");
 });
 
 // Show mapped by countries event
 selectCountries.addEventListener("change", function (e) {
   if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
   else showMappedByCountry(JSON.parse(res.value), e.target.value);
+});
+
+// shoe mapped by state event
+selectState.addEventListener("change", function (e) {
+  if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
+  else showMappedByState(JSON.parse(res.value), e.target.value);
 });
