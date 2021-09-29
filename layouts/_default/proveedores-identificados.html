@@ -1,38 +1,52 @@
 {{ define "main" }}
+
+{{ $data := .Site.Data.proveedoresIdentificados }}
+{{ $pais := slice }}
+{{ $sector := slice }}
+
+<!-- GET CATEGORIES -->
+{{ range $data }}
+{{ if .pais }}
+{{ $pais = $pais | append .pais }}
+{{ end }}
+{{ if .sector }}
+{{ $sector = $sector | append .sector }}
+{{ end }}
+{{ end }}
+
 <!-- BANNER INITIATIVES MAPPED -->
 <div class="bg-cover bg-center bg-banner-proveedores-lg lg:py-40">
     <div class="relative mx-auto lg:w-8/12 mb-20 lg:mb-40">
         <img src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
         <div class="absolute center-box text-white mx-auto text-center lg:w-8/12">
-            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">Proveedores identificados</h1>
+            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">{{ T "provider_label_title" }}</h1>
             <p class="mx-auto lg:text-2xl">
-                Aquí encontrarás el listado de proveedores de tecnología asociados al desarrollo de los distintos
-                sistemas de reconocimiento facial identificados en la región.
+                {{ T "provider_label_description" }}
             </p>
         </div>
     </div>
-    <h4 class="text-white text-center mb-6 lg:mb-10 lg:text-2xl">Escoge como filtrar los proveedores identificados</h4>
+    <h4 class="text-white text-center mb-6 lg:mb-10 lg:text-2xl">{{ T "provider_label_how_filter" }}</h4>
     <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40"
         id="button-container">
         <button data-tab="0" class="button-filter button-filter--dark button-filter--active">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            País de origen
+            {{ T "provider_action_filter_origen_country" }}
         </button>
         <button data-tab="1" class="button-filter button-filter--dark">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            Sector
+            {{ T "provider_action_filter_sector" }}
         </button>
     </div>
     <div class="text-white mx-auto text-center lg:w-6/12 provider-message">
-        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">País de origen</h2>
+        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "provider_action_filter_origen_country" }}</h2>
         <p class="lg:text-xl mx-auto lg:w-11/12">
-            Aquí encontrarás el listado de proveedores de acuerdo a su país de procedencia.
+            {{ T "provider_label_origen_country_description" }}
         </p>
     </div>
     <div class="text-white mx-auto text-center lg:w-6/12 hidden provider-message">
-        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">Sector</h2>
+        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "provider_action_filter_sector" }}</h2>
         <p class="lg:text-xl mx-auto lg:w-11/12">
-            Aquí encontrarás el listado de proveedores de acuerdo su carácter público o privado.
+            {{ T "provider_label_sector_description" }}
         </p>
     </div>
 </div>
@@ -42,35 +56,15 @@
 <section class="py-20 lg:py-22">
     <!-- FILTER BY COUNTRIES -->
     <div class="filter-provider">
-        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Selecciona un país</h3>
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">{{ T "initiatives_label_select_country" }}</h3>
         <div class="text-center mb-10 lg:mb-20">
             <div class="inline-block relative w-64">
                 <select name="filterByCountries" id="filterByCountries"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
                     <option active value="Todos">Todos</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Francia">Francia</option>
-                    <option value="España">España</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Perú">Perú</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Argentina / Japon">Argentina / Japon</option>
-                    <option value="Francia con una fábrica en Costa Rica">Francia con una fábrica en Costa Rica</option>
-                    <option value="Costa Rica">Costa Rica</option>
-                    <option value="Alemania">Alemania</option>
-                    <option value="Argentina / Francia">Argentina / Francia</option>
-                    <option value="Cuba">Cuba</option>
-                    <option value="Canadá">Canadá</option>
-                    <option value="China">China</option>
-                    <option value="México">México</option>
-                    <option value="Corea del Sur">Corea del Sur</option>
-                    <option value="Estados Unidos">Estados Unidos</option>
-                    <option value="Chile">Chile</option>
-                    <option value="EUA">EUA</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Brasil; Francia; Estados Unidos de América">Brasil; Francia; Estados Unidos de
-                        América</option>
-                    <option value="Brasil/Inglaterra">Brasil/Inglaterra</option>
+                    {{ range sort (uniq $pais) "value" "asc" }}
+                    <option active value="{{ . }}">{{ . }}</option>
+                    {{ end }}
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -83,14 +77,15 @@
     <!-- FILTER BY COUNTRIES END -->
     <!-- FILTER BY SECTOR -->
     <div class="filter-provider hidden">
-        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Selecciona un sector</h3>
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">{{ T "provider_action_sector" }}</h3>
         <div class="text-center mb-10 lg:mb-20">
             <div class="inline-block relative w-64">
                 <select name="filterBySector" id="filterBySector"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
                     <option active value="Todos">Todos</option>
-                    <option value="Público">Público</option>
-                    <option value="Privado">Privado</option>
+                    {{ range sort (uniq $sector) "value" "desc" }}
+                    <option active value="{{ . }}">{{ . }}</option>
+                    {{ end }}
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

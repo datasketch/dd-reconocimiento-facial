@@ -19,7 +19,13 @@ const showModalProviders = (id) => {
 };
 
 const showProvider = (data) => {
-  data.forEach((item) => renderProvider(providerParent, item));
+  providerParent.innerHTML = "";
+  let sort = data.sort((a, b) => {
+    if(a.pais > b.pais) return 1;
+    if(a.pais < b.pais) return -1;
+    return 0;
+  })
+  sort.forEach((item) => renderProvider(providerParent, item));
 };
 
 // show mappeds by country

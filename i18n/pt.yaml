@@ -88,5 +88,27 @@
   translation: Aqui se encontra a lista de iniciativas mapeadas de acordo com a detecção (ou não) de incidentes de segurança, usos discriminatórios ou outros tipos de abusos relacionados com a implementação dos sistemas de reconhecimento facial.
 - id: initiatives_rights_involved_description
   translation: Aqui se encontra a lista de iniciativas organizadas de acordo com os direitos fundamentais afetados como consequência de sua implementação.
-- id: action_button_see_file
-  translation: Ver arquivo
+- id: initiatives_label_select_country
+  translation: Selecione um pais
+- id: initiatives_label_select_state
+  translation: Selecione um estado de aplicativo
+- id: provider_label_title
+  translation: Provedores identificados
+- id: provider_label_description
+  translation: Aqui você encontra a lista de fornecedores de tecnologia associados ao desenvolvimento dos diferentes sistemas de reconhecimento facial identificados na região.
+- id: provider_label_how_filter
+  translation: Escolha como filtrar os provedores identificados
+- id: provider_action_filter_origen_country
+  translation: País de origem
+- id: provider_action_filter_sector
+  translation: Setor
+- id: provider_label_origen_country_description
+  translation: Aqui você encontra a lista de fornecedores de acordo com seu país de origem.
+- id: provider_label_sector_description
+  translation: Aqui encontra a lista de prestadores de acordo com a sua natureza pública ou privada.
+- id: provider_action_sector
+  translation: Selecione um setor
+- id: data_explore_label_title
+  translation: Explorador de dados
+- id: data_explore_label_subtitle
+  translation: Iniciativas Mapeadas

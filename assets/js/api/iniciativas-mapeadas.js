@@ -15,7 +15,12 @@ res.remove();
 // show mappeds init
 const showMappedInitiatives = (data) => {
   initiativesParent.innerHTML = "";
-  data.forEach((item) => renderMappedInitiative(initiativesParent, item));
+  let sort = data.sort((a, b) => {
+    if (a.pais > b.pais) return 1;
+    if (a.pais < b.pais) return -1;
+    return 0;
+  });
+  sort.forEach((item) => renderMappedInitiative(initiativesParent, item));
 };
 
 // show mappeds by country
