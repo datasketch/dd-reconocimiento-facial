@@ -112,6 +112,7 @@ initiativesParent.addEventListener("click", function (e) {
       data.proveedor3,
       data.proveedor4,
     ],
+    area: data.area
   };
   const modal = new Modal(body, data, 1);
 });

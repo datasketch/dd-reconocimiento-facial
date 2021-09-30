@@ -51,7 +51,7 @@ class Modal {
 
                 <span class="modal-area-aplicacion">Área de aplicación</span>
                 <ul class="modal-list">
-                    <li class="modal-list-content">Seguridad publica y Transporte</li>
+                    <li class="modal-list-content">${this.#dataBase.area}</li>
                 </ul>
 
                 <span class="modal-proveedores">Proveedores</span>
