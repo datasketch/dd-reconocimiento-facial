@@ -91,7 +91,13 @@
 - id: initiatives_label_select_country
   translation: Selecione um pais
 - id: initiatives_label_select_state
-  translation: Selecione um estado de aplicativo
+  translation: Selecione um estado de implementação
+- id: initiatives_label_select_aplication
+  translation: Selecione uma área de aplicação
+- id: initiatives_label_select_audit_impact
+  translation: Selecione impacto e auditoria
+- id: initiatives_label_select_incident
+  translation: Selecione o incidente
 - id: provider_label_title
   translation: Provedores identificados
 - id: provider_label_description

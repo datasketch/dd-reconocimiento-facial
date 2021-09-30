@@ -46,7 +46,7 @@ class Modal {
             <div class="modal-right">
                 <span class="modal-estado-implementacion">Estado de la implementación</span>
                 <ul class="modal-list">
-                    <li class="modal-list-content">${this.#dataBase.estado}</li>
+                    <li class="modal-list-content">${this.#dataBase.status}</li>
                 </ul>
 
                 <span class="modal-area-aplicacion">Área de aplicación</span>

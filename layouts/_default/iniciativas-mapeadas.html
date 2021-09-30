@@ -2,15 +2,27 @@
 
 {{ $data := .Site.Data.iniciativasMapeadas }}
 {{ $pais := slice }}
-{{ $estado := slice }}
+{{ $status := slice }}
+{{ $area := slice }}
+{{ $impacto := slice }}
+{{ $incidente := slice }}
 
 <!-- GET CATEGORIES -->
 {{ range $data }}
 {{ if .pais }}
 {{ $pais = $pais | append .pais }}
 {{ end }}
-{{ if .estado }}
-{{ $estado = $estado | append .estado }}
+{{ if .status }}
+{{ $status = $status | append .status }}
+{{ end }}
+{{ if .area }}
+{{ $area = $area | append .area }}
+{{ end }}
+{{ if .impacto }}
+{{ $impacto = $impacto | append .impacto }}
+{{ end }}
+{{ if .incidentes }}
+{{ $incidente = $incidente | append .incidentes }}
 {{ end }}
 {{ end }}
 
@@ -48,10 +60,10 @@
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_incidents" }}
         </button>
-        <button data-tab="5" class="button-filter">
+        <!-- <button data-tab="5" class="button-filter">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_rights_involved" }}
-        </button>
+        </button> -->
     </div>
     <div class="text-white mx-auto text-center lg:w-6/12 initiative-message">
         <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "initiatives_action_filter_country" }}</h2>
@@ -124,7 +136,7 @@
                 <select name="filterByState" id="filterByState"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
                     <option active value="Todos">Todas</option>
-                    {{ range sort (uniq $estado) "value" "asc" }}
+                    {{ range sort (uniq $status) "value" "asc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
                 </select>
@@ -137,6 +149,69 @@
         </div>
     </div>
     <!-- FILTER BY STATE END -->
+    <!-- FILTER BY AREA -->
+    <div class="filter-initiative hidden">
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">{{ T "initiatives_label_select_aplication" }}</h3>
+        <div class="text-center mb-10 lg:mb-20 filterInitiative">
+            <div class="inline-block relative w-64">
+                <select name="filterByArea" id="filterByArea"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
+                    <option active value="Todos">Todas</option>
+                    {{ range sort (uniq $area) "value" "asc" }}
+                    <option active value="{{ . }}">{{ . }}</option>
+                    {{ end }}
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FILTER BY AREA END -->
+    <!-- FILTER BY IMPACT AND AUDIT -->
+    <div class="filter-initiative hidden">
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">{{ T "initiatives_label_select_audit_impact" }}</h3>
+        <div class="text-center mb-10 lg:mb-20 filterInitiative">
+            <div class="inline-block relative w-64">
+                <select name="filterByImpactAudit" id="filterByImpactAudit"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
+                    <option active value="Todos">Todas</option>
+                    {{ range sort (uniq $impacto) "value" "asc" }}
+                    <option active value="{{ . }}">{{ . }}</option>
+                    {{ end }}
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FILTER BY IMPACT AND AUDIT END -->
+    <!-- FILTER BY INCIDENT -->
+    <div class="filter-initiative hidden">
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">{{ T "initiatives_label_select_incident" }}</h3>
+        <div class="text-center mb-10 lg:mb-20 filterInitiative">
+            <div class="inline-block relative w-64">
+                <select name="filterByIncident" id="filterByIncident"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
+                    <option active value="Todos">Todas</option>
+                    {{ range sort (uniq $incidente) "value" "desc" }}
+                    <option active value="{{ . }}">{{ . }}</option>
+                    {{ end }}
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FILTER BY INCIDENT END -->
     <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 initiatives-container">
         {{/* CHILD ELEMENT */}}
 

@@ -69,7 +69,7 @@
 - id: initiatives_action_filter_implementation_state
   translation: Estado de implementación
 - id: initiatives_action_filter_aplication_area
-  translation: Area de aplicación
+  translation: Área de aplicación
 - id: initiatives_action_filter_audit
   translation: Impacto y auditorías
 - id: initiatives_action_filter_incidents
@@ -91,7 +91,13 @@
 - id: initiatives_label_select_country
   translation: Selecciona un país
 - id: initiatives_label_select_state
-  translation: Selecciona un estado de aplicación
+  translation: Selecciona un estado de implementación
+- id: initiatives_label_select_aplication
+  translation: Seleccione un área de aplicación
+- id: initiatives_label_select_audit_impact
+  translation: Seleccione un impacto y auditoría
+- id: initiatives_label_select_incident
+  translation: Selecciona un incidente
 - id: provider_label_title
   translation: Proveedores identificados
 - id: provider_label_description
