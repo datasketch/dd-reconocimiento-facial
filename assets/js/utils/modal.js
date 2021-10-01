@@ -51,7 +51,7 @@ class Modal {
 
                 <span class="modal-area-aplicacion">Área de aplicación</span>
                 <ul class="modal-list">
-                    <li class="modal-list-content">${this.#dataBase.area}</li>
+                    ${this._renderModalArea()}
                 </ul>
 
                 <span class="modal-proveedores">Proveedores</span>
@@ -91,6 +91,20 @@ class Modal {
       <div class="modal-overlay"></div>
     `;
     this.#parentEl.insertAdjacentHTML("beforeend", html);
+  }
+
+  _renderModalArea() {
+    let html = "";
+
+    let string = [...this.#dataBase.area]
+
+    if (string.length > 0) {
+      string.forEach((item) => {
+        html += `<li class="modal-list-content">${item}</li>`;
+      })
+    }
+    console.log(html);
+    return html;
   }
 
   _renderModalProvider() {

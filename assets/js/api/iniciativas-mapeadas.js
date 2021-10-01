@@ -14,6 +14,22 @@ const selectIncident = document.querySelector("#filterByIncident");
 const initiativeMessage = document.querySelectorAll(".initiative-message");
 const filterInitiative = document.querySelectorAll(".filter-initiative");
 res.remove();
+const data = [];
+
+JSON.parse(res.value).forEach(item => {
+  const result = {
+    id: item.id,
+    nombre: item.nombre,
+    pais: item.pais,
+    descripcion: item.descripcion,
+    status: item.status,
+    area: item.area.split(",").map(item => item.trim()),
+    impacto: item.impacto.split(",").map(item => item.trim()),
+    incidentes: item.incidentes,
+    proveedores: [item.proveedor1, item.proveedor2, item.proveedor3, item.proveedor4]
+  }
+  data.push(result)
+})
 
 // show mappeds init
 const showMappedInitiatives = (data) => {
@@ -44,7 +60,7 @@ const showMappedByState = (data, state) => {
 
 // show mappeds by area
 const showMappedByArea = (data, area) => {
-  const result = data.filter((item) => item.area === area);
+  const result = data.filter(item => item.area.includes(area))
 
   initiativesParent.innerHTML = "";
   result.forEach((item) => renderMappedInitiative(initiativesParent, item));
@@ -52,7 +68,7 @@ const showMappedByArea = (data, area) => {
 
 // show mappeds by impact audit
 const showMappedByImpactAudit = (data, impact) => {
-  const result = data.filter((item) => item.impacto === impact);
+  const result = data.filter((item) => item.impacto.includes(impact));
 
   initiativesParent.innerHTML = "";
   result.forEach((item) => renderMappedInitiative(initiativesParent, item));
@@ -67,20 +83,14 @@ const showMappedByIncident = (data, incident) => {
 };
 
 const showModalMappedInitiatives = (id) => {
-  const data = JSON.parse(res.value);
-  const result = data.filter((item) => item.id === +id);
-  return result;
+  return data.filter((item) => item.id === +id);
 };
 
 // INIT MAPPEDS
 const init = () => {
-  showMappedInitiatives(JSON.parse(res.value));
+  showMappedInitiatives(data);
 };
 init();
-
-// showMappedByCountry(JSON.parse(res.value), "Colombia");
-
-// showMappedByState(JSON.parse(res.value), "En proceso de implementación");
 
 // EVENT HANDLERS
 
@@ -91,30 +101,7 @@ initiativesParent.addEventListener("click", function (e) {
   // show data per index json
   const id = childElement.getAttribute("data-id");
   const result = showModalMappedInitiatives(id)[0];
-
-  let data = new Object(result);
-  data = {
-    aplicacionAsistenciaSocial: data.aplicacionAsistenciaSocial,
-    aplicacionEducacion: data.aplicacionEducacion,
-    aplicacionElecciones: data.aplicacionElecciones,
-    aplicacionOtro: data.aplicacionOtro,
-    aplicacionSalud: data.aplicacionSalud,
-    aplicacionSeguridadPublica: data.aplicacionSeguridadPublica,
-    aplicacionTransporte: data.aplicacionTransporte,
-    descripcion: data.descripcion,
-    status: data.status,
-    id: data.id,
-    nombre: data.nombre,
-    pais: data.pais,
-    proveedores: [
-      data.proveedor1,
-      data.proveedor2,
-      data.proveedor3,
-      data.proveedor4,
-    ],
-    area: data.area
-  };
-  const modal = new Modal(body, data, 1);
+  const modal = new Modal(body, result, 1);
 });
 
 buttonParent.addEventListener("click", function (e) {
@@ -153,30 +140,30 @@ buttonParent.addEventListener("click", function (e) {
 
 // Show mapped by countries event
 selectCountries.addEventListener("change", function (e) {
-  if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
-  else showMappedByCountry(JSON.parse(res.value), e.target.value);
+  if (e.target.value === "Todos") showMappedInitiatives(data);
+  else showMappedByCountry(data, e.target.value);
 });
 
 // show mapped by state event
 selectState.addEventListener("change", function (e) {
-  if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
-  else showMappedByState(JSON.parse(res.value), e.target.value);
+  if (e.target.value === "Todos") showMappedInitiatives(data);
+  else showMappedByState(data, e.target.value);
 });
 
 // show mapped by area event
 selectArea.addEventListener("change", function (e) {
-  if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
-  else showMappedByArea(JSON.parse(res.value), e.target.value);
+  if (e.target.value === "Todos") showMappedInitiatives(data);
+  else showMappedByArea(data, e.target.value);
 });
 
 // show mapped by impact audit event
 selectImpactAudit.addEventListener("change", function (e) {
-  if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
-  else showMappedByImpactAudit(JSON.parse(res.value), e.target.value);
+  if (e.target.value === "Todos") showMappedInitiatives(data);
+  else showMappedByImpactAudit(data, e.target.value);
 });
 
 // show mapped by incident event
 selectIncident.addEventListener("change", function (e) {
-  if (e.target.value === "Todos") showMappedInitiatives(JSON.parse(res.value));
-  else showMappedByIncident(JSON.parse(res.value), e.target.value);
+  if (e.target.value === "Todos") showMappedInitiatives(data);
+  else showMappedByIncident(data, e.target.value);
 });

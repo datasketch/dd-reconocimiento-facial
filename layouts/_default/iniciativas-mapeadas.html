@@ -16,10 +16,10 @@
 {{ $status = $status | append .status }}
 {{ end }}
 {{ if .area }}
-{{ $area = $area | append .area }}
+{{ $area = $area | append (split .area ", ")}}
 {{ end }}
 {{ if .impacto }}
-{{ $impacto = $impacto | append .impacto }}
+{{ $impacto = $impacto | append (split .impacto ", ") }}
 {{ end }}
 {{ if .incidentes }}
 {{ $incidente = $incidente | append .incidentes }}
