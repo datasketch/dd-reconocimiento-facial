@@ -118,3 +118,21 @@
   translation: Explorador de datos
 - id: data_explore_label_subtitle
   translation: Iniciativas Mapeadas
+- id: data_explore_know_tool_label_title
+  translation: Conocer herramienta
+- id: data_explore_know_tool_label_description
+  translation: Esta herramienta para explorar los datos de las Iniciativas Mapeadas está dividida en tres paneles, que te permitirán visualizar de forma sencilla la información recolectada en el proyecto.
+- id: data_explore_first_panel_label_title
+  translation: Primer panel
+- id: data_explore_first_panel_label_description
+  translation: En el primer panel encontrarás una serie de preguntas guía y podrás hacer clic en cualquiera de ellas. A continuación, en la sección de “Información general”, podrás seleccionar los filtros específicos para la pregunta que hayas escogido.
+- id: data_explore_second_panel_label_title
+  translation: Segundo panel
+- id: data_explore_second_panel_label_description
+  translation: En el segundo panel encontrarás la visualización de los datos que filtraste en el primer panel. Allí, en la sección “Selecciona el tipo de gráfica”, podrás escoger el tipo de visualización que desees y descargarla en varios formatos.
+- id: data_explore_third_panel_label_title
+  translation: Tercer panel
+- id: data_explore_third_panel_label_description
+  translation: Este es el panel de detalle y allí encontrarás los pasos a seguir para obtener y explorar a fondo la visualización que se genera en el segundo panel. Además, al hacer clic en alguno de los valores de la visualización que escogiste, también encontrarás el detalle de las iniciativas correspondientes.
+- id: action_button_know_tool
+  translation: Conocer herramienta

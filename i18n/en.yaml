@@ -118,3 +118,21 @@
   translation: Data explorer
 - id: data_explore_label_subtitle
   translation: Mapped Initiatives
+- id: data_explore_know_tool_label_title
+  translation: Get to know the tool
+- id: data_explore_know_tool_label_description
+  translation: This tool to explore the data of the Mapped Initiatives is divided into three panels, which will allow you to easily visualize the information collected in the project.
+- id: data_explore_first_panel_label_title
+  translation: First panel
+- id: data_explore_first_panel_label_description
+  translation: In the first panel you will find a series of guiding questions and you can click on any of them. Then, in the "General Information" section, you will be able to select the specific filters for the question you have chosen.
+- id: data_explore_second_panel_label_title
+  translation: Second panel
+- id: data_explore_second_panel_label_description
+  translation: In the second panel you will find the visualization of the data you filtered in the first panel. There, in the "Select chart type" section, you will be able to choose the type of visualization you want and download it in various formats.
+- id: data_explore_third_panel_label_title
+  translation: Third panel
+- id: data_explore_third_panel_label_description
+  translation: This is the detail panel and there you will find the steps to follow to obtain and explore in depth the visualization that is generated in the second panel. In addition, by clicking on any of the values of the visualization you have chosen, you will also find the detail of the corresponding initiatives.
+- id: action_button_know_tool
+  translation: Know tool
