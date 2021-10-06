@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graficas on Reconocimiento facial</title>
+    <link>/pt/graficas/</link>
+    <description>Recent content in Graficas on Reconocimiento facial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language><atom:link href="/pt/graficas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Area de aplicación</title>
+      <link>/graficas/area-aplicacion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graficas/area-aplicacion.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>País implementacion</title>
+      <link>/graficas/pais-implementacion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graficas/pais-implementacion.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proveedor</title>
+      <link>/graficas/implementados-proveedor.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graficas/implementados-proveedor.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tipo de contrato</title>
+      <link>/graficas/tipo-contrato.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/graficas/tipo-contrato.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

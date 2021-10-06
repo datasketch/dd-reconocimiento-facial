@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<link rel="stylesheet" href="https://use.typekit.net/nxa4zfx.css">
+<link rel="stylesheet" href="/styles/all.min.css">
+<link rel="stylesheet" href="/styles/tippy.min.css">
+<link rel="stylesheet" href="/styles/tailwind.min.css">
+    
+    <title>Data explorer</title>
+</head>
+
+<body class="tk-myriad-hebrew bg-white overflow-x-hidden">
+    
+<header class="absolute text-white font-raleway py-4 lg:py-6 xl:py-9 w-full">
+    <div class="mx-auto w-11/12 flex items-center justify-between lg:grid lg:grid-cols-12">
+        <img class="h-16 lg:w-full xl:h-20 lg:col-start-1 lg:col-end-3" src="/images/public/logo-rc-es.png"
+            alt="Logo reconocimiento facial">
+        <nav class="absolute top-0 -left-full duration-300 z-20 bg-blue-dark h-screen w-9/12 py-16 lg:relative lg:w-full lg:h-auto lg:bg-transparent lg:py-0 lg:left-0 lg:col-start-4 lg:col-end-13"
+            id="nav">
+            <ul class="mx-auto w-10/12 lg:flex lg:justify-between lg:items-center lg:mx-0 lg:w-full lg:text-center">
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="/en/">About</a></li>
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="/en/mapped-initiatives/">Mapped Initiatives</a></li>
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="/en/providers/">Providers</a></li>
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg text-lemon-green duration-300 lg:leading-none"
+                    href="/en/data-explorer/">Data explorer</a></li>
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        target="_blank" href="https://reconocimientofacial.info/">Facial recognition</a></li>
+                <button
+                    class="flex items-center border border-white py-1 px-2 hover:border-lemon-green hover:text-lemon-green uppercase lg:ml-4"
+                    id="button-language">
+                    
+                    
+                    
+                    
+                    en
+                    
+                    
+                    
+                    
+                    <i class="ml-2 fas fa-angle-down"></i>
+                </button>
+                <div id="language" style="display: none;">
+                    
+                    <a class="button-language" href="/explorador-de-datos/">es</a>
+                    
+                    <a class="button-language" href="/pt/explorador-de-dados/">pt</a>
+                    
+                </div>
+            </ul>
+        </nav>
+
+        
+        <div class="menu-button py-4">
+            <span class="menu-icon" id="menu-icon"></span>
+        </div>
+        
+    </div>
+</header>
+
+    <main>
+        
+<div class="bg-banner-datos-lg bg-cover bg-center lg:pt-40 lg:pb-28">
+    <div class="mx-auto lg:w-6/12 text-white text-center">
+        <h1 class="font-merriweather-sans lg:text-6xl lg:mb-16">Data explorer<span
+                class="block lg:text-4xl">Mapped Initiatives</span></h1>
+        <button class="py-4 px-6 bg-blue-dark text-white lg:text-xl lg:mb-16 inline-flex items-center" id="btn-tool">
+            <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+            Know tool
+        </button>
+        <div class="hidden mb-8 lg:mb-12 xl:mb-16" id="message-tool">
+            <h2 class="font-merriweather-sans text-4xl lg:text-5xl mb-4 lg:mb-6">Get to know the tool</h2>
+            <p class="text-white lg:text-lg mb-8 lg:mb-16">
+                This tool to explore the data of the Mapped Initiatives is divided into three panels, which will allow you to easily visualize the information collected in the project.
+            </p>
+            <h3 class="text-white text-3xl lg:text-4xl mb-4 lg:mb-6">First panel</h3>
+            <p class="text-white lg:text-lg mb-4 lg:mb-6">
+                In the first panel you will find a series of guiding questions and you can click on any of them. Then, in the &#34;General Information&#34; section, you will be able to select the specific filters for the question you have chosen.
+            </p>
+            <img class="mx-auto mb-8 lg:mb-12" src="/images/gif/gif-primer-panel.gif" alt="gif primer panel">
+            <h3 class="text-white text-3xl lg:text-4xl mb-4 lg:mb-6">Second panel</h3>
+            <p class="text-white lg:text-lg mb-4 lg:mb-6">
+                In the second panel you will find the visualization of the data you filtered in the first panel. There, in the &#34;Select chart type&#34; section, you will be able to choose the type of visualization you want and download it in various formats.
+            </p>
+            <img class="mx-auto mb-8 lg:mb-12" src="/images/gif/gif-segundo-panel.gif" alt="gif segundo panel">
+            <h3 class="text-white text-3xl lg:text-4xl mb-4 lg:mb-6">Third panel</h3>
+            <p class="text-white lg:text-lg mb-4 lg:mb-6">
+                This is the detail panel and there you will find the steps to follow to obtain and explore in depth the visualization that is generated in the second panel. In addition, by clicking on any of the values of the visualization you have chosen, you will also find the detail of the corresponding initiatives.
+            </p>
+            <img class="mx-auto" src="/images/gif/gif-tercer-panel.gif" alt="gif tercer panel">
+        </div>
+    </div>
+    <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/"
+        frameborder="0"></iframe>
+</div>
+
+<section class="py-16 lg:py-20">
+    <div class="relative mx-auto w-10/12 lg:w-7/12 text-center">
+        <img class="hidden lg:block" src="/images/home/methodology.png" alt="methodology">
+        <div class="relative lg:absolute center-box lg:w-9/12">
+            <h2 class="font-merriweather-sans text-blue-dark text-4xl mb-10 lg:text-6xl lg:mb-8">
+                Download the report
+            </h2>
+            <p class="text-xl mb-10">
+                Click here and download [Name of the report] prepared by Al Sur, with all the detailed information regarding the operation and deployment of facial recognition technologies in Latin America.
+            </p>
+            <button class="py-4 px-6 bg-blue-dark text-white text-xl">
+                <a class="flex items-center" href="#">
+                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                    Download the report
+                </a>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelector("#btn-tool").addEventListener('click', function (e) {
+        document.querySelector("#message-tool").classList.toggle("hidden")
+    })
+</script>
+
+    </main>
+    <footer class="bg-footer-lg bg-cover bg-center py-20">
+    <div class="mx-auto w-11/12 text-white grid grid-cols-1 gap-y-12 lg:grid-cols-4 lg:items-center">
+        <a target="_blank" href="https://www.alsur.lat/"><img class="order-3 h-12 lg:h-16 mx-auto lg:order-1" src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+        <a target="_blank" href="https://www.ned.org/"><img class="order-4 h-12 lg:h-16 mx-auto lg:order-2" src="/images/public/logo-ned.svg" alt="Logo ned"></a>
+        <ul class="order-1 mx-auto text-center lg:order-3 lg:text-left">
+            <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="/en/mapped-initiatives/">Mapped Initiatives</a></li>
+            <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="/en/providers/">Providers</a></li>
+            <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="/en/data-explorer/">Data explorer</a></li>
+            <li><a class="text-lg hover:text-lemon-green duration-300" target="_blank" href="https://reconocimientofacial.info/sobre-el-proyecto/">About</a></li>
+        </ul>
+        <div class="order-2 mx-auto text-center lg:order-4 lg:text-left">
+            <h4 class="text-lg mb-2">Contáctanos</h4>
+            <div class="flex justify-center lg:justify-between items-center my-10">
+                <a target="_blank" href="https://twitter.com/AlSurOrgs">
+                    <img src="/images/public/icons/icon-twitter.svg" alt="icon twitter social">
+                </a>
+            </div>
+            <img src="/images/public/datasketch.svg" alt="logo datasketch">
+        </div>
+    </div>
+</footer>
+    <div class="overlay hidde"></div>
+    
+    
+    <script src="/js/utils/tippy.js"></script>
+    <script src="/js/default.js"></script>
+    
+</body>
+
+</html>

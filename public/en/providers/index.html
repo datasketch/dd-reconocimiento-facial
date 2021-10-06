@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<link rel="stylesheet" href="https://use.typekit.net/nxa4zfx.css">
+<link rel="stylesheet" href="/styles/all.min.css">
+<link rel="stylesheet" href="/styles/tippy.min.css">
+<link rel="stylesheet" href="/styles/tailwind.min.css">
+    
+    <title>Providers</title>
+</head>
+
+<body class="tk-myriad-hebrew bg-white overflow-x-hidden">
+    
+<header class="absolute text-white font-raleway py-4 lg:py-6 xl:py-9 w-full">
+    <div class="mx-auto w-11/12 flex items-center justify-between lg:grid lg:grid-cols-12">
+        <img class="h-16 lg:w-full xl:h-20 lg:col-start-1 lg:col-end-3" src="/images/public/logo-rc-es.png"
+            alt="Logo reconocimiento facial">
+        <nav class="absolute top-0 -left-full duration-300 z-20 bg-blue-dark h-screen w-9/12 py-16 lg:relative lg:w-full lg:h-auto lg:bg-transparent lg:py-0 lg:left-0 lg:col-start-4 lg:col-end-13"
+            id="nav">
+            <ul class="mx-auto w-10/12 lg:flex lg:justify-between lg:items-center lg:mx-0 lg:w-full lg:text-center">
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="/en/">About</a></li>
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="/en/mapped-initiatives/">Mapped Initiatives</a></li>
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg text-lemon-green duration-300 lg:leading-none"
+                    href="/en/providers/">Providers</a></li>
+                
+                
+                
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        href="/en/data-explorer/">Data explorer</a></li>
+                
+                
+                <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
+                        target="_blank" href="https://reconocimientofacial.info/">Facial recognition</a></li>
+                <button
+                    class="flex items-center border border-white py-1 px-2 hover:border-lemon-green hover:text-lemon-green uppercase lg:ml-4"
+                    id="button-language">
+                    
+                    
+                    
+                    
+                    en
+                    
+                    
+                    
+                    
+                    <i class="ml-2 fas fa-angle-down"></i>
+                </button>
+                <div id="language" style="display: none;">
+                    
+                    <a class="button-language" href="/proveedores-identificados/">es</a>
+                    
+                    <a class="button-language" href="/pt/provedores/">pt</a>
+                    
+                </div>
+            </ul>
+        </nav>
+
+        
+        <div class="menu-button py-4">
+            <span class="menu-icon" id="menu-icon"></span>
+        </div>
+        
+    </div>
+</header>
+
+    <main>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg-cover bg-center bg-banner-proveedores-lg lg:py-40">
+    <div class="relative mx-auto lg:w-8/12 mb-20 lg:mb-40">
+        <img src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
+        <div class="absolute center-box text-white mx-auto text-center lg:w-8/12">
+            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">Identified suppliers</h1>
+            <p class="mx-auto lg:text-2xl">
+                Here you will find the list of technology providers associated with the development of the different facial recognition systems identified in the region.
+            </p>
+        </div>
+    </div>
+    <h4 class="text-white text-center mb-6 lg:mb-10 lg:text-2xl">Choose how to filter the identified providers</h4>
+    <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40"
+        id="button-container">
+        <button data-tab="0" class="button-filter button-filter--dark button-filter--active">
+            <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+            Country of origin
+        </button>
+        <button data-tab="1" class="button-filter button-filter--dark">
+            <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+            Sector
+        </button>
+    </div>
+    <div class="text-white mx-auto text-center lg:w-6/12 provider-message">
+        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">Country of origin</h2>
+        <p class="lg:text-xl mx-auto lg:w-11/12">
+            Here you will find the list of providers according to their country of origin.
+        </p>
+    </div>
+    <div class="text-white mx-auto text-center lg:w-6/12 hidden provider-message">
+        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">Sector</h2>
+        <p class="lg:text-xl mx-auto lg:w-11/12">
+            Here you will find the list of providers according to their public or private nature.
+        </p>
+    </div>
+</div>
+
+
+
+<section class="py-20 lg:py-22">
+    
+    <div class="filter-provider">
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Select a country</h3>
+        <div class="text-center mb-10 lg:mb-20">
+            <div class="inline-block relative w-64">
+                <select name="filterByCountries" id="filterByCountries"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
+                    <option active value="Todos">Todos</option>
+                    
+                    <option active value="Alemania">Alemania</option>
+                    
+                    <option active value="Argentina">Argentina</option>
+                    
+                    <option active value="Argentina / Francia">Argentina / Francia</option>
+                    
+                    <option active value="Argentina / Japon">Argentina / Japon</option>
+                    
+                    <option active value="Brasil">Brasil</option>
+                    
+                    <option active value="Brasil/Inglaterra">Brasil/Inglaterra</option>
+                    
+                    <option active value="Brasil; Francia; Estados Unidos de América">Brasil; Francia; Estados Unidos de América</option>
+                    
+                    <option active value="Canadá">Canadá</option>
+                    
+                    <option active value="Chile">Chile</option>
+                    
+                    <option active value="China">China</option>
+                    
+                    <option active value="Colombia">Colombia</option>
+                    
+                    <option active value="Corea del Sur">Corea del Sur</option>
+                    
+                    <option active value="Costa Rica">Costa Rica</option>
+                    
+                    <option active value="Cuba">Cuba</option>
+                    
+                    <option active value="España">España</option>
+                    
+                    <option active value="Estados Unidos">Estados Unidos</option>
+                    
+                    <option active value="EUA">EUA</option>
+                    
+                    <option active value="Francia">Francia</option>
+                    
+                    <option active value="Francia con una fábrica en Costa Rica">Francia con una fábrica en Costa Rica</option>
+                    
+                    <option active value="México">México</option>
+                    
+                    <option active value="Paraguay">Paraguay</option>
+                    
+                    <option active value="Perú">Perú</option>
+                    
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="filter-provider hidden">
+        <h3 class="text-center lg:text-2xl font-bold lg:mb-6">Select a sector</h3>
+        <div class="text-center mb-10 lg:mb-20">
+            <div class="inline-block relative w-64">
+                <select name="filterBySector" id="filterBySector"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
+                    <option active value="Todos">Todos</option>
+                    
+                    <option active value="Público">Público</option>
+                    
+                    <option active value="Privado">Privado</option>
+                    
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 provider-container">
+        
+        
+        
+    </div>
+</section>
+
+
+
+
+<input type="hidden" name="data" id="data-proveedoresIdentificados"
+    value="[{&#34;id&#34;:1,&#34;nombre&#34;:&#34;EMTEL&#34;,&#34;pais&#34;:&#34;Colombia&#34;,&#34;sector&#34;:&#34;Público&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema Integrado de Videovigilancia Inteligente para Transmilenio (SIVIT).&#34;,&#34;sitioWeb&#34;:&#34;https://www.emtel.com.co/&#34;},{&#34;id&#34;:2,&#34;nombre&#34;:&#34;Inversiones Tecnológicas de América&#34;,&#34;pais&#34;:&#34;Colombia&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema Integrado de Videovigilancia Inteligente para Transmilenio (SIVIT).&#34;,&#34;sitioWeb&#34;:&#34;https://ita-sa.com/es/index.html&#34;},{&#34;id&#34;:3,&#34;nombre&#34;:&#34;Empresa de Telecomunicaciones de Bogotá (ETB)&#34;,&#34;pais&#34;:&#34;Colombia&#34;,&#34;sector&#34;:&#34;Público&#34;,&#34;sistemaDesarrollado&#34;:&#34;Ágata (Agencia de Analítica de Datos) de Bogotá.&#34;,&#34;sitioWeb&#34;:&#34;https://etb.com/Empresas/Soluciones_en_Ciberseguridad.aspx&#34;},{&#34;id&#34;:4,&#34;nombre&#34;:&#34;IDEMIA \u0026 SECURITY SUCURSAL COLOMBIA&#34;,&#34;pais&#34;:&#34;Colombia&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;“Cédula de identidad digital”&#34;,&#34;sitioWeb&#34;:&#34;https://www.idemia.com/es&#34;},{&#34;id&#34;:5,&#34;nombre&#34;:&#34;BYTTE SAS&#34;,&#34;pais&#34;:&#34;Colombia&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema integrado de información Multibiométrico&#34;,&#34;sitioWeb&#34;:&#34;https://www.bytte.com.co/pagweb/&#34;},{&#34;id&#34;:6,&#34;nombre&#34;:&#34;Unión Temporal Tecnocom 2017 (Compañía Internacional de Integración S.A. y TecniDidácticos  IND S.A.S)&#34;,&#34;pais&#34;:&#34;Colombia&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema Multibiométrico ABIS (Automatic Biometric Identification System)&#34;,&#34;sitioWeb&#34;:&#34;https://www.ci2.co/es/somos - https://www.tnd.com.co/&#34;},{&#34;id&#34;:7,&#34;nombre&#34;:&#34;IDEMIA&#34;,&#34;pais&#34;:&#34;Francia&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema Multibiométrico ABIS (Automatic Biometric Identification System)&#34;,&#34;sitioWeb&#34;:&#34;https://www.idemia.com/es&#34;},{&#34;id&#34;:8,&#34;nombre&#34;:&#34;HERTA Security&#34;,&#34;pais&#34;:&#34;España&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema Multibiométrico ABIS (Automatic Biometric Identification System)&#34;,&#34;sitioWeb&#34;:&#34;http://www.herta.ai&#34;},{&#34;id&#34;:9,&#34;nombre&#34;:&#34;Tecnología, Seguridad y Vigilancia del Paraguay S.R.L&#34;,&#34;pais&#34;:&#34;Paraguay&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Reconocimiento facial en las calles de las ciudades de Paraguay&#34;,&#34;sitioWeb&#34;:&#34;http://www.tsv.com.py/&#34;},{&#34;id&#34;:10,&#34;nombre&#34;:&#34;Asunción Comunicaciones S.A&#34;,&#34;pais&#34;:&#34;Paraguay&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Implementación por primera vez en un evento deportivo por el sistema AFIS por el Ministerio del Int&#34;,&#34;sitioWeb&#34;:&#34;www.asucom.com.py&#34;},{&#34;id&#34;:11,&#34;nombre&#34;:&#34;ASUNCION COMUNICACIONES S.A&#34;,&#34;pais&#34;:&#34;Paraguay&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Ampliacion de Capacidades, Garantias y Facial del Sistema AFIS - Plurianual  del ministerio del int&#34;,&#34;sitioWeb&#34;:&#34;www.asucom.com.py&#34;},{&#34;id&#34;:12,&#34;nombre&#34;:&#34;ASUNCION COMUNICACIONES S.A&#34;,&#34;pais&#34;:&#34;Paraguay&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Ampliacion de Capacidades, Garantias y Facial del Sistema AFIS - Plurianual  del ministerio del int&#34;,&#34;sitioWeb&#34;:&#34;www.asucom.com.py&#34;},{&#34;id&#34;:13,&#34;nombre&#34;:&#34;Desarrollos Terrestres&#34;,&#34;pais&#34;:&#34;Perú&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Cámaras con reconocimiento facial en Gamarra&#34;,&#34;sitioWeb&#34;:&#34;https://desarrollosterrestres.com/&#34;},{&#34;id&#34;:14,&#34;nombre&#34;:&#34;DANAIDE SA&#34;,&#34;pais&#34;:&#34;Argentina&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema de Reconocimiento Facial de Prófugos (SRFP)&#34;,&#34;sitioWeb&#34;:&#34;https://www.danaide.com.ar/&#34;},{&#34;id&#34;:15,&#34;nombre&#34;:&#34;NEC ARGENTINA SA&#34;,&#34;pais&#34;:&#34;Argentina / Japon&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema de Reconocimiento Facial de Tigre NeoCenter&#34;,&#34;sitioWeb&#34;:&#34;https://ar.nec.com/es_AR/global/solutions/safety/surveillance/index.html y https://ar.nec.com/es_AR/case/byindustry/tigre.html&#34;},{&#34;id&#34;:16,&#34;nombre&#34;:&#34;IDEMIA Identity \u0026 Security France S.A.S.&#34;,&#34;pais&#34;:&#34;Francia con una fábrica en Costa Rica&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema de Identificación Biométrica Automatizada (ABIS)&#34;,&#34;sitioWeb&#34;:&#34;https://www.idemia.com/&#34;},{&#34;id&#34;:17,&#34;nombre&#34;:&#34;IAFIS Costa Rica Limitada&#34;,&#34;pais&#34;:&#34;Costa Rica&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema de Identificación Biométrica Automatizada (ABIS)&#34;,&#34;sitioWeb&#34;:&#34;https://www.iafisgroup.com/&#34;},{&#34;id&#34;:18,&#34;nombre&#34;:&#34;Componentes El Orbe, S.A&#34;,&#34;pais&#34;:&#34;Costa Rica&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema de Identificación Biométrica Automatizada (ABIS)&#34;,&#34;sitioWeb&#34;:&#34;http://elorbe.la/home-public/&#34;},{&#34;id&#34;:19,&#34;nombre&#34;:&#34;Grupo de Soluciones Informáticas SA (GSI)&#34;,&#34;pais&#34;:&#34;Costa Rica&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Pasaporte Biométrico para el Bicentenario&#34;,&#34;sitioWeb&#34;:&#34;https://e-gsi.net/&#34;},{&#34;id&#34;:20,&#34;nombre&#34;:&#34;SERTRACEN&#34;,&#34;pais&#34;:&#34;Costa Rica&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Pasaporte Biométrico para el Bicentenario&#34;,&#34;sitioWeb&#34;:&#34;http://sertracen.net/&#34;},{&#34;id&#34;:21,&#34;nombre&#34;:&#34;Dinámica Consultores Internacional S.A&#34;,&#34;pais&#34;:&#34;Costa Rica&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Pasaporte Biométrico para el Bicentenario&#34;,&#34;sitioWeb&#34;:&#34;https://www.dcicr.com/&#34;},{&#34;id&#34;:22,&#34;nombre&#34;:&#34;Veridos&#34;,&#34;pais&#34;:&#34;Alemania&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Pasaporte Biométrico para el Bicentenario&#34;,&#34;sitioWeb&#34;:&#34;https://www.veridos.com/es/home.html&#34;},{&#34;id&#34;:23,&#34;nombre&#34;:&#34;Nubicom&#34;,&#34;pais&#34;:&#34;Argentina&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Reconocimiento Facial Salta&#34;,&#34;sitioWeb&#34;:&#34;https://www.nubicom.com.a&#34;},{&#34;id&#34;:24,&#34;nombre&#34;:&#34;Morpho Safran (ahora IDEMIA)&#34;,&#34;pais&#34;:&#34;Argentina / Francia&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;SIBIOS Sistema Federal de Identificación Biométrica para la Seguridad&#34;,&#34;sitioWeb&#34;:&#34;https://idemia.com/market/public-security-identity&#34;},{&#34;id&#34;:25,&#34;nombre&#34;:&#34;DATYS&#34;,&#34;pais&#34;:&#34;Cuba&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;SIBIOS Sistema Federal de Identificación Biométrica para la Seguridad&#34;,&#34;sitioWeb&#34;:&#34;http://www.datys.cu/spa/site/index&#34;},{&#34;id&#34;:26,&#34;nombre&#34;:&#34;General Dynamics Mission Systems&#34;,&#34;pais&#34;:&#34;Canadá&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Proyecto de Reconocimiento Facial Biométrico del Aeropuerto de Tocumen Terminal 1, Terminal 2 y Paso&#34;,&#34;sitioWeb&#34;:&#34;https://www.gd.com/&#34;},{&#34;id&#34;:27,&#34;nombre&#34;:&#34;Dahua&#34;,&#34;pais&#34;:&#34;China&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Sistema de Video-Inteligencia del Estado de Coahuila&#34;,&#34;sitioWeb&#34;:&#34;https://www.dahuasecurity.com/&#34;},{&#34;id&#34;:28,&#34;nombre&#34;:&#34;Huawei&#34;,&#34;pais&#34;:&#34;China&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Centro de Operaciones de Seguridad y Emergencias C2&#34;,&#34;sitioWeb&#34;:&#34;www.huawei.com&#34;},{&#34;id&#34;:29,&#34;nombre&#34;:&#34;General Dynamics Mission Systems&#34;,&#34;pais&#34;:&#34;Canadá&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Centro de Operaciones Nacionales&#34;,&#34;sitioWeb&#34;:&#34;https://www.gd.com/&#34;},{&#34;id&#34;:30,&#34;nombre&#34;:&#34;Teléfonos de México, S.A.B. de C.V.&#34;,&#34;pais&#34;:&#34;México&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Implementación del Centro de Comando y Control (C29 de la Central de Abastos de la Ciudad de México.&#34;,&#34;sitioWeb&#34;:&#34;https://telmex.com/&#34;},{&#34;id&#34;:31,&#34;nombre&#34;:&#34;Hanwa&#34;,&#34;pais&#34;:&#34;Corea del Sur&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Implementación del Centro de Comando y Control (C29 de la Central de Abastos de la Ciudad de México.&#34;,&#34;sitioWeb&#34;:&#34;https://es.hanwhasecurity.com/&#34;},{&#34;id&#34;:32,&#34;nombre&#34;:&#34;MicoFocus&#34;,&#34;pais&#34;:&#34;Estados Unidos&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Implementación del Centro de Comando y Control (C29 de la Central de Abastos de la Ciudad de México.&#34;,&#34;sitioWeb&#34;:&#34;https://www.microfocus.com/en-us/about&#34;},{&#34;id&#34;:33,&#34;nombre&#34;:&#34;Integra Technologies&#34;,&#34;pais&#34;:&#34;México&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Proyecto de Videovigilancia Urbana Integral con Tecnología Analítica&#34;,&#34;sitioWeb&#34;:&#34;https://www.cintegra.mx/&#34;},{&#34;id&#34;:34,&#34;nombre&#34;:&#34;Hikvision&#34;,&#34;pais&#34;:&#34;China&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Proyecto de Videovigilancia Urbana Integral con Tecnología Analítica&#34;,&#34;sitioWeb&#34;:&#34;https://us.hikvision.com/en&#34;},{&#34;id&#34;:35,&#34;nombre&#34;:&#34;Enel Distribución Chile S.A RUT:96.800.570-7&#34;,&#34;pais&#34;:&#34;Chile&#34;,&#34;sector&#34;:&#34;&#34;,&#34;sistemaDesarrollado&#34;:&#34;software de reconocimiento facial.&#34;,&#34;sitioWeb&#34;:&#34;&#34;},{&#34;id&#34;:36,&#34;nombre&#34;:&#34;Sistemas de Seguridad y Tecnologías SpA, RUT:76.564.570-0&#34;,&#34;pais&#34;:&#34;Chile&#34;,&#34;sector&#34;:&#34;&#34;,&#34;sistemaDesarrollado&#34;:&#34;software de reconocimiento facial.&#34;,&#34;sitioWeb&#34;:&#34;&#34;},{&#34;id&#34;:37,&#34;nombre&#34;:&#34;Admobilize&#34;,&#34;pais&#34;:&#34;EUA&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;ViaQuatro&#34;,&#34;sitioWeb&#34;:&#34;https://www.admobilize.com/&#34;},{&#34;id&#34;:38,&#34;nombre&#34;:&#34;Serviço Federal de Processamento de Dados - SERPRO&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Público&#34;,&#34;sistemaDesarrollado&#34;:&#34;Validación de la licencia nacional de conducir por datos biométricos.&#34;,&#34;sitioWeb&#34;:&#34;https://www.serpro.gov.br/&#34;},{&#34;id&#34;:39,&#34;nombre&#34;:&#34;Serviço Federal de Processamento de Dados - SERPRO&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Público&#34;,&#34;sistemaDesarrollado&#34;:&#34;Prueba de vida para adquirir benefício/pensión de INSS - Instituto Nacional de Seguridad Social.&#34;,&#34;sitioWeb&#34;:&#34;https://www.serpro.gov.br/&#34;},{&#34;id&#34;:40,&#34;nombre&#34;:&#34;Empresa de Tecnología e Información de Previdencia Social - DATAPREV&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Público&#34;,&#34;sistemaDesarrollado&#34;:&#34;Prueba de vida para adquirir benefício/pensión de INSS - Instituto Nacional de Seguridad Social.&#34;,&#34;sitioWeb&#34;:&#34;https://portal3.dataprev.gov.br/&#34;},{&#34;id&#34;:41,&#34;nombre&#34;:&#34;Consórcio Engie Ineo Johnson (Engie Brasil Soluções Integradas Ltda; Ineo Infracom; Johnson Controls Be Do Brasil Ltda)&#34;,&#34;pais&#34;:&#34;Brasil; Francia; Estados Unidos de América&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Edital de Licitação do Metrô de São Paulo&#34;,&#34;sitioWeb&#34;:&#34;http://www.metro.sp.gov.br/noticias/28-06-2019-metro-compra-sistema-de-monitoramento-eletronico-com-reconhecimento-facial.fss / https://aplic.metrosp.com.br/as0001/frontendTransparencia/index.php/arquivo/view/id/21618&#34;},{&#34;id&#34;:42,&#34;nombre&#34;:&#34;Staff of Security Technologies do Brasil Software ltda&#34;,&#34;pais&#34;:&#34;Brasil/Inglaterra&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;São João de Campina Grande, Paraíba&#34;,&#34;sitioWeb&#34;:&#34;https://www.staffsolutions.com.br/&#34;},{&#34;id&#34;:43,&#34;nombre&#34;:&#34;Brisanet Telecomunicações&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;São João de Campina Grande, Paraíba&#34;,&#34;sitioWeb&#34;:&#34;https://blog.brisanet.com.br/index.php/2020/03/16/brisanet-inova-no-maior-sao-joao-do-mundo/&#34;},{&#34;id&#34;:44,&#34;nombre&#34;:&#34;Polícia Militar da Paraíba&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Público&#34;,&#34;sistemaDesarrollado&#34;:&#34;São João de Campina Grande, Paraíba&#34;,&#34;sitioWeb&#34;:&#34;https://www.pm.pb.gov.br/&#34;},{&#34;id&#34;:45,&#34;nombre&#34;:&#34;Medow Entretenimento \u0026 Cultura&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;São João de Campina Grande, Paraíba&#34;,&#34;sitioWeb&#34;:&#34;https://www.instagram.com/medowentretenimento/&#34;},{&#34;id&#34;:46,&#34;nombre&#34;:&#34;Tecway&#34;,&#34;pais&#34;:&#34;Brasil&#34;,&#34;sector&#34;:&#34;Privado&#34;,&#34;sistemaDesarrollado&#34;:&#34;Centro Integrado de Câmeras de Monitoramento (CICC) de Itacoatiara&#34;,&#34;sitioWeb&#34;:&#34;https://casadosdados.com.br/solucao/cnpj/tecway-servicos-e-locacao-de-equipamentos-ltda-13392705000143&#34;}]">
+
+    </main>
+    <footer class="bg-footer-lg bg-cover bg-center py-20">
+    <div class="mx-auto w-11/12 text-white grid grid-cols-1 gap-y-12 lg:grid-cols-4 lg:items-center">
+        <a target="_blank" href="https://www.alsur.lat/"><img class="order-3 h-12 lg:h-16 mx-auto lg:order-1" src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+        <a target="_blank" href="https://www.ned.org/"><img class="order-4 h-12 lg:h-16 mx-auto lg:order-2" src="/images/public/logo-ned.svg" alt="Logo ned"></a>
+        <ul class="order-1 mx-auto text-center lg:order-3 lg:text-left">
+            <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="/en/mapped-initiatives/">Mapped Initiatives</a></li>
+            <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="/en/providers/">Providers</a></li>
+            <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="/en/data-explorer/">Data explorer</a></li>
+            <li><a class="text-lg hover:text-lemon-green duration-300" target="_blank" href="https://reconocimientofacial.info/sobre-el-proyecto/">About</a></li>
+        </ul>
+        <div class="order-2 mx-auto text-center lg:order-4 lg:text-left">
+            <h4 class="text-lg mb-2">Contáctanos</h4>
+            <div class="flex justify-center lg:justify-between items-center my-10">
+                <a target="_blank" href="https://twitter.com/AlSurOrgs">
+                    <img src="/images/public/icons/icon-twitter.svg" alt="icon twitter social">
+                </a>
+            </div>
+            <img src="/images/public/datasketch.svg" alt="logo datasketch">
+        </div>
+    </div>
+</footer>
+    <div class="overlay hidde"></div>
+    
+    
+    <script src="/js/utils/tippy.js"></script>
+    <script src="/js/default.js"></script>
+    
+
+
+<script src="/js/api/proveedores-identificados.js"></script>
+<script src="/js/utils/modal.js"></script>
+
+</body>
+
+</html>
