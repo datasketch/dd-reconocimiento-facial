@@ -8,7 +8,8 @@
             {{ T "action_button_know_tool" }}
         </button>
         <div class="hidden mb-8 lg:mb-12 xl:mb-16" id="message-tool">
-            <h2 class="font-merriweather-sans text-4xl lg:text-5xl mb-4 lg:mb-6">{{ T "data_explore_know_tool_label_title" }}</h2>
+            <h2 class="font-merriweather-sans text-4xl lg:text-5xl mb-4 lg:mb-6">{{ T
+                "data_explore_know_tool_label_title" }}</h2>
             <p class="text-white lg:text-lg mb-8 lg:mb-16">
                 {{ T "data_explore_know_tool_label_description" }}
             </p>
@@ -17,7 +18,8 @@
                 {{ T "data_explore_first_panel_label_description" }}
             </p>
             <img class="mx-auto mb-8 lg:mb-12" src="/images/gif/gif-primer-panel.gif" alt="gif primer panel">
-            <h3 class="text-white text-3xl lg:text-4xl mb-4 lg:mb-6">{{ T "data_explore_second_panel_label_title" }}</h3>
+            <h3 class="text-white text-3xl lg:text-4xl mb-4 lg:mb-6">{{ T "data_explore_second_panel_label_title" }}
+            </h3>
             <p class="text-white lg:text-lg mb-4 lg:mb-6">
                 {{ T "data_explore_second_panel_label_description" }}
             </p>
@@ -29,8 +31,16 @@
             <img class="mx-auto" src="/images/gif/gif-tercer-panel.gif" alt="gif tercer panel">
         </div>
     </div>
+    {{ if eq .Site.Language.LanguageName "Español" }}
     <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/"
         frameborder="0"></iframe>
+    {{ else if eq .Site.Language.LanguageName "English" }}
+    <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/?lang=en"
+        frameborder="0"></iframe>
+    {{ else if eq .Site.Language.LanguageName "Português" }}
+    <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/?lang=pt_BR"
+        frameborder="0"></iframe>
+    {{ end }}
 </div>
 {{/* DOWNLAD THE REPORT */}}
 {{ partial "download-report.html" . }}

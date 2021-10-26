@@ -45,19 +45,21 @@
 - id: home_label_about_project_title
   translation: Sobre o projeto
 - id: home_label_about_project_description
-  translation: A pesquisa realizada pelo Consórcio Al Sur tem o objetivo de traçar um panorama geral do emprego das tecnologias de reconhecimento facial na América Latina, seus usos e provedores, caracterizado até agora por uma falta de transparência excessiva e escasso debate público.
+  translation: A pesquisa realizada pelo Consórcio <a class="font-bold" href="https://www.alsur.lat/pt-br" target="_blank">Al sur</a> tem o objetivo de traçar um panorama geral do emprego das tecnologias de reconhecimento facial na América Latina, seus usos e provedores, caracterizado até agora por uma falta de transparência excessiva e escasso debate público.
 - id: action_button_more_information
   translation: Mais informação
 - id: home_label_credits
-  translation: Esta pesquisa foi realizada pelo consórcio Al Sur, com o financiamento de National Endowment for Democracy (NED). A página na internet foi desenvolvida por Data Sketch, sob a supervisão de Derechos Digitales.
+  translation: Esta pesquisa foi realizada pelo consórcio <a class="font-bold" href="https://www.alsur.lat/pt-br" target="_blank">Al Sur</a>, com o financiamento de <a class="font-bold" href="https://www.ned.org/" target="_blank">National Endowment for Democracy (NED).</a> A página na internet foi desenvolvida por <a class="font-bold" href="https://www.datasketch.co/?lang=pt" target="_blank">Data Sketch</a>, sob a supervisão de Derechos Digitales.
 - id: footer_label_mapped_initiatives
   translation: Iniciativas Mapeadas
 - id: footer_label_providers
   translation: Provedores
 - id: footer_label_data_explorer
   translation: Explorador de dados
-- id: footer_label_about
-  translation: Sobre o projeto
+- id: footer_label_all_our_content
+  translation: Todo nosso conteúdo é CC
+- id: footer_label_contact
+  translation: Contate-Nos
 - id: initiatives_label_title
   translation: Iniciativas Mapeadas
 - id: initiatives_label_description
@@ -135,4 +137,4 @@
 - id: data_explore_third_panel_label_description
   translation: Este é o painel de detalhes e aqui encontrará os passos a seguir para obter e explorar em profundidade a visualização gerada no segundo painel. Além disso, ao clicar em qualquer um dos valores de visualização escolhidos, encontrará também os detalhes das iniciativas correspondentes.
 - id: action_button_know_tool
-  translation: conhecer ferramenta
+  translation: Conhecer ferramenta

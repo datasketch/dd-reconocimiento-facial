@@ -9,10 +9,22 @@
                 {{ T "home_label_dowload_report_description" }}
             </p>
             <button class="py-4 px-6 bg-blue-dark text-white text-xl">
-                <a class="flex items-center" href="#">
+                {{ if eq .Site.Language.LanguageName "Español" }}
+                <a class="flex items-center" href="/reports/ALSUR-Reconocimiento_facial_en_Latam-ES.pdf" download>
                     <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                     {{ T "action_download_report" }}
                 </a>
+                {{ else if eq .Site.Language.LanguageName "English" }}
+                <a class="flex items-center" href="/reports/ALSUR-Reconocimiento_facial_en_Latam-EN.pdf" download>
+                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                    {{ T "action_download_report" }}
+                </a>
+                {{ else if eq .Site.Language.LanguageName "Português" }}
+                <a class="flex items-center" href="/reports/ALSUR-Reconocimiento_facial_en_Latam-PT.pdf" download>
+                    <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                    {{ T "action_download_report" }}
+                </a>
+                {{ end }}
             </button>
         </div>
     </div>

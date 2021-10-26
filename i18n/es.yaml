@@ -45,19 +45,21 @@
 - id: home_label_about_project_title
   translation: Sobre el proyecto
 - id: home_label_about_project_description
-  translation: La investigación realizada por el Consorcio Al Sur tiene por objetivo dibujar un panorama general del despliegue de las tecnologías de reconocimiento facial en América Latina, sus usos y proveedores, caracterizado hasta ahora por una opacidad excesiva y escasa discusión pública.
+  translation: La investigación realizada por el Consorcio <a class="font-bold" href="https://www.alsur.lat/" target="_blank">Al sur</a> tiene por objetivo dibujar un panorama general del despliegue de las tecnologías de reconocimiento facial en América Latina, sus usos y proveedores, caracterizado hasta ahora por una opacidad excesiva y escasa discusión pública.
 - id: action_button_more_information
   translation: Más información
 - id: home_label_credits
-  translation: La presente investigación fue realizada por el consorcio Al Sur, con el financiamiento del National Endowment for Democracy (NED). El sitio web fue desarrollado por Data Sketch, bajo la supervisión de Derechos Digitales.
+  translation: La presente investigación fue realizada por el consorcio <a class="font-bold" href="https://www.alsur.lat/" target="_blank">Al sur</a>, con el financiamiento del <a class="font-bold" href="https://www.ned.org/" target="_blank">National Endowment for Democracy (NED).</a> El sitio web fue desarrollado por <a class="font-bold" href="https://www.datasketch.co/" target="_blank">Data Sketch</a>, bajo la supervisión de Derechos Digitales.
 - id: footer_label_mapped_initiatives
   translation: Iniciativas Mapeadas
 - id: footer_label_providers
   translation: Proveedores
 - id: footer_label_data_explorer
   translation: Explorador de datos
-- id: footer_label_about
-  translation: Sobre el proyecto
+- id: footer_label_all_our_content
+  translation: Todo nuestro contenido es CC
+- id: footer_label_contact
+  translation: Contáctanos
 - id: initiatives_label_title
   translation: Iniciativas mapeadas
 - id: initiatives_label_description

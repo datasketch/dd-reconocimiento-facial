@@ -45,19 +45,21 @@
 - id: home_label_about_project_title
   translation: About the project
 - id: home_label_about_project_description
-  translation: The research conducted by the Al Sur Consortium brings an overview of the deployment of facial recognition technologies in Latin America, their uses and providers, characterized so far by excessive opacity and little public discussion.
+  translation: The research conducted by the <a class="font-bold" href="https://www.alsur.lat/en" target="_blank">Al sur</a> Consortium brings an overview of the deployment of facial recognition technologies in Latin America, their uses and providers, characterized so far by excessive opacity and little public discussion.
 - id: action_button_more_information
   translation: More information
 - id: home_label_credits
-  translation: This research was conducted by the Al Sur consortium, with funding from the National Endowment for Democracy (NED). The website was developed by Data Sketch, under the supervision of Derechos Digitales.
+  translation: This research was conducted by the <a class="font-bold" href="https://www.alsur.lat/en" target="_blank">Al sur</a> consortium, with funding from the <a class="font-bold" href="https://www.ned.org/" target="_blank">National Endowment for Democracy (NED).</a> The website was developed by <a class="font-bold" href="https://www.datasketch.co/?lang=en" target="_blank">Data Sketch</a>, under the supervision of Derechos Digitales.
 - id: footer_label_mapped_initiatives
   translation: Mapped Initiatives
 - id: footer_label_providers
   translation: Providers
 - id: footer_label_data_explorer
   translation: Data explorer
-- id: footer_label_about
-  translation: About
+- id: footer_label_all_our_content
+  translation: All our content is CC
+- id: footer_label_contact
+  translation: Contact us
 - id: initiatives_label_title
   translation: Mapped Initiatives
 - id: initiatives_label_description

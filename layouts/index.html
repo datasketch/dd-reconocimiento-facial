@@ -119,43 +119,62 @@
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
                     {{ T "home_label_danger_facial_recognition_description" }}
                 </p>
+                {{ if eq .Site.Language.LanguageName "Español" }}
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
                     <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/" target="_blank">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         {{ T "action_button_more_information" }}
                     </a>
                 </button>
+                {{ else if eq .Site.Language.LanguageName "English" }}
+                <button class="py-4 px-6 bg-blue-title text-white text-xl">
+                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/?lang=en_US" target="_blank">
+                        <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                        {{ T "action_button_more_information" }}
+                    </a>
+                </button>
+                {{ else if eq .Site.Language.LanguageName "Português" }}
+                <button class="py-4 px-6 bg-blue-title text-white text-xl">
+                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/?lang=pt_BR" target="_blank">
+                        <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                        {{ T "action_button_more_information" }}
+                    </a>
+                </button>
+                {{ end }}
             </div>
             <div class="text-center">
                 <h3 class="font-merriweather-sans mb-5 text-2xl lg:text-3xl lg:mb-7">{{ T
                     "home_label_about_project_title" }}</h3>
                 <p class="text-xl mx-auto mb-7 lg:w-10/12 lg:mb-10">
-                    {{ T "home_label_about_project_description" }}
+                    {{ T "home_label_about_project_description" | safeHTML }}
                 </p>
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
-                    <a class="flex items-center" href="#">
+                    {{ if eq .Site.Language.LanguageName "Español" }}
+                    <a class="flex items-center" href="/reports/ALSUR-Reconocimiento_facial_en_Latam-ES.pdf" download>
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         {{ T "action_download_report" }}
                     </a>
+                    {{ else if eq .Site.Language.LanguageName "English" }}
+                    <a class="flex items-center" href="/reports/ALSUR-Reconocimiento_facial_en_Latam-EN.pdf" download>
+                        <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                        {{ T "action_download_report" }}
+                    </a>
+                    {{ else if eq .Site.Language.LanguageName "Português" }}
+                    <a class="flex items-center" href="/reports/ALSUR-Reconocimiento_facial_en_Latam-PT.pdf" download>
+                        <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
+                        {{ T "action_download_report" }}
+                    </a>
+                    {{ end }}
                 </button>
             </div>
         </div>
-        <div class="mb-12 text-center mx-auto lg:w-8/12 lg:mb-24">
+        <div class="text-center mx-auto lg:w-8/12">
             <h4 class="text-white text-xl lg:text-2xl">
-                {{ T "home_label_credits" }}
+                {{ T "home_label_credits" | safeHTML }}
             </h4>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 items-center gap-y-12">
-            <a target="_blank" href="https://www.alsur.lat/"><img class="h-12 lg:h-16 mx-auto"
-                    src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
-            <a target="_blank" href="https://www.ned.org/"> <img class="h-12 lg:h-16 mx-auto"
-                    src="/images/public/logo-ned.svg" alt="Logo ned"></a>
-            <a target="_blank" href="https://www.derechosdigitales.org/"><img class="h-16 lg:h-20 mx-auto"
-                    src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial"></a>
-            <a target="_blank" href="https://www.datasketch.co/"><img class="mx-auto"
-                    src="/images/public/datasketch-large.svg" alt="Logo al sur"></a>
         </div>
     </div>
 </section>
 {{/* FACIAL RECOGNITION END */}}
 {{ end }}
+{{/* <a class="font-bold" href="https://www.alsur.lat/" target="_blank"></a> */}}

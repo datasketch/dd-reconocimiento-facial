@@ -1,15 +1,36 @@
 <footer class="bg-footer-lg bg-cover bg-center py-20">
     <div class="mx-auto w-11/12 text-white grid grid-cols-1 gap-y-12 lg:grid-cols-4 lg:items-center">
-        <a target="_blank" href="https://www.alsur.lat/"><img class="order-3 h-12 lg:h-16 mx-auto lg:order-1" src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
-        <a target="_blank" href="https://www.ned.org/"><img class="order-4 h-12 lg:h-16 mx-auto lg:order-2" src="/images/public/logo-ned.svg" alt="Logo ned"></a>
+        {{ if eq .Site.Language.LanguageName "Español" }}
+        <a target="_blank" href="https://www.alsur.lat/"><img class="order-3 h-12 lg:h-16 mx-auto lg:order-1"
+                src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+        {{ else if eq .Site.Language.LanguageName "English" }}
+        <a target="_blank" href="https://www.alsur.lat/en"><img class="order-3 h-12 lg:h-16 mx-auto lg:order-1"
+                src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+        {{ else if eq .Site.Language.LanguageName "Português" }}
+        <a target="_blank" href="https://www.alsur.lat/pt-br"><img class="order-3 h-12 lg:h-16 mx-auto lg:order-1"
+                src="/images/public/logo-al-sur.png" alt="Logo al sur"></a>
+        {{ end }}
+        <a target="_blank" href="https://www.ned.org/"><img class="order-4 h-12 lg:h-16 mx-auto lg:order-2"
+                src="/images/public/logo-ned.svg" alt="Logo ned"></a>
         <ul class="order-1 mx-auto text-center lg:order-3 lg:text-left">
             <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="{{ relref . "iniciativas-mapeadas.md" }}">{{ T "footer_label_mapped_initiatives" }}</a></li>
             <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="{{ relref . "proveedores-identificados.md" }}">{{ T "footer_label_providers" }}</a></li>
             <li class="mb-4"><a class="text-lg hover:text-lemon-green duration-300" href="{{ relref . "explorador-de-datos.md" }}">{{ T "footer_label_data_explorer" }}</a></li>
-            <li><a class="text-lg hover:text-lemon-green duration-300" target="_blank" href="https://reconocimientofacial.info/sobre-el-proyecto/">{{ T "footer_label_about" }}</a></li>
+            {{ if eq .Site.Language.LanguageName "Español" }}
+            <li><a class="text-lg hover:text-lemon-green duration-300" target="_blank"
+                    href="https://www.alsur.lat/todo-nuestro-contenido-es-cc">{{ T "footer_label_all_our_content" }}</a>
+            </li>
+            {{ else if eq .Site.Language.LanguageName "English" }}
+            <li><a class="text-lg hover:text-lemon-green duration-300" target="_blank"
+                    href="https://www.alsur.lat/en/all-our-content-cc">{{ T "footer_label_all_our_content" }}</a></li>
+            {{ else if eq .Site.Language.LanguageName "Português"}}
+            <li><a class="text-lg hover:text-lemon-green duration-300" target="_blank"
+                    href="https://www.alsur.lat/pt-br/todo-nosso-conteudo-e-cc">{{ T "footer_label_all_our_content"
+                    }}</a></li>
+            {{ end }}
         </ul>
         <div class="order-2 mx-auto text-center lg:order-4 lg:text-left">
-            <h4 class="text-lg mb-2">Contáctanos</h4>
+            <h4 class="text-lg mb-2">{{ T "footer_label_contact" }}</h4>
             <div class="flex justify-center lg:justify-between items-center my-10">
                 <a target="_blank" href="https://twitter.com/AlSurOrgs">
                     <img src="/images/public/icons/icon-twitter.svg" alt="icon twitter social">
