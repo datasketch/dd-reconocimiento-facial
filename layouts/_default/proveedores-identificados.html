@@ -15,18 +15,18 @@
 {{ end }}
 
 <!-- BANNER INITIATIVES MAPPED -->
-<div class="bg-cover bg-center bg-banner-proveedores-lg lg:py-40">
+<div class="bg-cover bg-center bg-banner-proveedores-lg pt-36 pb-28 lg:py-40">
     <div class="relative mx-auto lg:w-8/12 mb-20 lg:mb-40">
-        <img src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
-        <div class="absolute center-box text-white mx-auto text-center lg:w-8/12">
-            <h1 class="font-merriweather-sans lg:text-6xl lg:mb-8">{{ T "provider_label_title" }}</h1>
-            <p class="mx-auto lg:text-2xl">
+        <img class="hidden lg:block" src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
+        <div class="relative w-10/12 md:w-8/12 lg:absolute center-box text-white mx-auto text-center lg:w-10/12 xl:w-8/12">
+            <h1 class="font-merriweather-sans text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 lg:mb-4 xl:mb-8">{{ T "provider_label_title" }}</h1>
+            <p class="mx-auto md:text-xl lg:text-2xl">
                 {{ T "provider_label_description" }}
             </p>
         </div>
     </div>
-    <h4 class="text-white text-center mb-6 lg:mb-10 lg:text-2xl">{{ T "provider_label_how_filter" }}</h4>
-    <div class="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto lg:mb-40"
+    <h4 class="text-white text-center mb-6 lg:mb-12 text-xl lg:text-2xl">{{ T "provider_label_how_filter" }}</h4>
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:items-center lg:gap-x-16 gap-y-6 w-10/12 mx-auto mb-20 lg:mb-40"
         id="button-container">
         <button data-tab="0" class="button-filter button-filter--dark button-filter--active">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
