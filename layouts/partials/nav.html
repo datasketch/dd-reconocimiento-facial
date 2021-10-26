@@ -1,8 +1,19 @@
 {{/* NAVBAR */}}
 <header class="absolute text-white font-raleway py-4 lg:py-6 xl:py-9 w-full">
     <div class="mx-auto w-11/12 flex items-center justify-between lg:grid lg:grid-cols-12">
-        <img class="h-16 lg:w-full xl:h-20 lg:col-start-1 lg:col-end-3" src="/images/public/logo-rc-es.png"
-            alt="Logo reconocimiento facial">
+        {{ if eq .Site.Language.LanguageName "Español" }}
+        <a class="lg:col-start-1 lg:col-end-3" target="_blank" href="https://reconocimientofacial.info/">
+            <img class="h-16 lg:w-full xl:h-20" src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial">
+        </a>
+        {{ else if eq .Site.Language.LanguageName "English" }}
+        <a class="lg:col-start-1 lg:col-end-3" target="_blank" href="https://reconocimientofacial.info/?lang=en_US">
+            <img class="h-16 lg:w-full xl:h-20" src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial">
+        </a>
+        {{ else if eq .Site.Language.LanguageName "Português"}}
+        <a class="lg:col-start-1 lg:col-end-3" target="_blank" href="https://reconocimientofacial.info/?lang=pt_BR">
+            <img class="h-16 lg:w-full xl:h-20" src="/images/public/logo-rc-es.png" alt="Logo reconocimiento facial">
+        </a>
+        {{ end }}
         <nav class="absolute top-0 -left-full duration-300 z-20 bg-blue-dark h-screen w-9/12 py-16 lg:relative lg:w-full lg:h-auto lg:bg-transparent lg:py-0 lg:left-0 lg:col-start-4 lg:col-end-13"
             id="nav">
             <ul class="mx-auto w-10/12 lg:flex lg:justify-between lg:items-center lg:mx-0 lg:w-full lg:text-center">
@@ -12,8 +23,8 @@
                 {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
                 {{ if eq $menu_item_url $page_url }}
                 <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg text-lemon-green duration-300 lg:leading-none"
-                    href="{{ .URL }}">{{
-                    .Title }}</a></li>
+                        href="{{ .URL }}">{{
+                        .Title }}</a></li>
                 {{ else }}
                 <li class="mb-10 lg:mb-0 lg:mx-4"><a class="text-lg hover:text-lemon-green duration-300 lg:leading-none"
                         href="{{ .URL }}">{{
