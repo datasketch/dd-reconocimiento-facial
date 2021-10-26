@@ -18,8 +18,10 @@
 <div class="bg-cover bg-center bg-banner-proveedores-lg pt-36 pb-28 lg:py-40">
     <div class="relative mx-auto lg:w-8/12 mb-20 lg:mb-40">
         <img class="hidden lg:block" src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
-        <div class="relative w-10/12 md:w-8/12 lg:absolute center-box text-white mx-auto text-center lg:w-10/12 xl:w-8/12">
-            <h1 class="font-merriweather-sans text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 lg:mb-4 xl:mb-8">{{ T "provider_label_title" }}</h1>
+        <div
+            class="relative w-10/12 md:w-8/12 lg:absolute center-box text-white mx-auto text-center lg:w-10/12 xl:w-8/12">
+            <h1 class="font-merriweather-sans text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 lg:mb-4 xl:mb-8">{{ T
+                "provider_label_title" }}</h1>
             <p class="mx-auto md:text-xl lg:text-2xl">
                 {{ T "provider_label_description" }}
             </p>
@@ -37,17 +39,19 @@
             {{ T "provider_action_filter_sector" }}
         </button>
     </div>
-    <div class="text-white mx-auto text-center lg:w-6/12 provider-message">
-        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "provider_action_filter_origen_country" }}</h2>
-        <p class="lg:text-xl mx-auto lg:w-11/12">
-            {{ T "provider_label_origen_country_description" }}
-        </p>
-    </div>
-    <div class="text-white mx-auto text-center lg:w-6/12 hidden provider-message">
-        <h2 class="font-merriweather-sans lg:text-5xl lg:mb-8">{{ T "provider_action_filter_sector" }}</h2>
-        <p class="lg:text-xl mx-auto lg:w-11/12">
-            {{ T "provider_label_sector_description" }}
-        </p>
+    <div class="mx-auto w-10/12 lg:w-full">
+        <div class="text-white mx-auto text-center lg:w-6/12 provider-message">
+            <h2 class="font-merriweather-sans text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-6 xl:mb-8">{{ T "provider_action_filter_origen_country" }}</h2>
+            <p class="lg:text-xl mx-auto lg:w-11/12">
+                {{ T "provider_label_origen_country_description" }}
+            </p>
+        </div>
+        <div class="text-white mx-auto text-center lg:w-6/12 hidden provider-message">
+            <h2 class="font-merriweather-sans text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 lg:mb-6 xl:mb-8">{{ T "provider_action_filter_sector" }}</h2>
+            <p class="lg:text-xl mx-auto lg:w-11/12">
+                {{ T "provider_label_sector_description" }}
+            </p>
+        </div>
     </div>
 </div>
 <!-- BANNER INITIATIVES MAPPED END -->
