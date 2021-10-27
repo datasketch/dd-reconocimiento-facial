@@ -1,0 +1,370 @@
+[
+  {
+    "id": 1,
+    "nombre": "EMTEL",
+    "sitioWeb": "https://www.emtel.com.co/",
+    "pais": "Colombia",
+    "sistemaDesarrollado": "Integrated Intelligent Video Surveillance System for Transmilenio (SIVIT).",
+    "sector": "Public"
+  },
+  {
+    "id": 2,
+    "nombre": "Technological Investments of America",
+    "sitioWeb": "https://ita-sa.com/es/index.html",
+    "pais": "Colombia",
+    "sistemaDesarrollado": "Integrated Intelligent Video Surveillance System for Transmilenio (SIVIT).",
+    "sector": "Private"
+  },
+  {
+    "id": 3,
+    "nombre": "Bogotá Telecommunications Company (ETB)",
+    "sitioWeb": "https://etb.com/Empresas/Soluciones_en_Ciberseguridad.aspx",
+    "pais": "Colombia",
+    "sistemaDesarrollado": "Ágata (Data Analytics Agency) of Bogotá.",
+    "sector": "Public"
+  },
+  {
+    "id": 4,
+    "nombre": "IDEMIA & SECURITY SUCURSAL COLOMBIA",
+    "sitioWeb": "https://www.idemia.com/es",
+    "pais": "Colombia",
+    "sistemaDesarrollado": "Digital identity card",
+    "sector": "Private"
+  },
+  {
+    "id": 5,
+    "nombre": "BYTTE SAS",
+    "sitioWeb": "https://www.bytte.com.co/pagweb/",
+    "pais": "Colombia",
+    "sistemaDesarrollado": "Integrated Multibiometric Information System",
+    "sector": "Private"
+  },
+  {
+    "id": 6,
+    "nombre": "Unión Temporal Tecnocom 2017 (International Integration Company SA and TecniDidácticos IND SAS)",
+    "sitioWeb": "https://www.ci2.co/es/somos - https://www.tnd.com.co/",
+    "pais": "Colombia",
+    "sistemaDesarrollado": "ABIS Multibiometric System (Automatic Biometric Identification System)",
+    "sector": "Private"
+  },
+  {
+    "id": 7,
+    "nombre": "IDEMIA",
+    "sitioWeb": "https://www.idemia.com/es",
+    "pais": "France",
+    "sistemaDesarrollado": "ABIS Multibiometric System (Automatic Biometric Identification System)",
+    "sector": "Private"
+  },
+  {
+    "id": 8,
+    "nombre": "HERTA Security",
+    "sitioWeb": "http://www.herta.ai",
+    "pais": "Spain",
+    "sistemaDesarrollado": "ABIS Multibiometric System (Automatic Biometric Identification System)",
+    "sector": "Private"
+  },
+  {
+    "id": 9,
+    "nombre": "Technology, Security and Surveillance of Paraguay SRL",
+    "sitioWeb": "http://www.tsv.com.py/",
+    "pais": "Paraguay",
+    "sistemaDesarrollado": "Facial recognition in the streets of the cities of Paraguay",
+    "sector": "Private"
+  },
+  {
+    "id": 10,
+    "nombre": "Asunción Comunicaciones SA",
+    "sitioWeb": "www.asucom.com.py",
+    "pais": "Paraguay",
+    "sistemaDesarrollado": "Implementation for the first time in a sporting event by the AFIS system by the Ministry of Int",
+    "sector": "Private"
+  },
+  {
+    "id": 11,
+    "nombre": "ASUNCION COMUNICACIONES SA",
+    "sitioWeb": "www.asucom.com.py",
+    "pais": "Paraguay",
+    "sistemaDesarrollado": "Expansion of Capacities, Guarantees and Facial of the AFIS System - Pluriannual of the Ministry of Int",
+    "sector": "Private"
+  },
+  {
+    "id": 12,
+    "nombre": "ASUNCION COMUNICACIONES SA",
+    "sitioWeb": "www.asucom.com.py",
+    "pais": "Paraguay",
+    "sistemaDesarrollado": "Expansion of Capacities, Guarantees and Facial of the AFIS System - Pluriannual of the Ministry of Int",
+    "sector": "Private"
+  },
+  {
+    "id": 13,
+    "nombre": "Land Developments",
+    "sitioWeb": "https://desarrollosterrestres.com/",
+    "pais": "Peru",
+    "sistemaDesarrollado": "Cameras with facial recognition in Gamarra",
+    "sector": "Private"
+  },
+  {
+    "id": 14,
+    "nombre": "DANAIDE SA",
+    "sitioWeb": "https://www.danaide.com.ar/",
+    "pais": "Argentina",
+    "sistemaDesarrollado": "Fugitive Facial Recognition System (SRFP)",
+    "sector": "Private"
+  },
+  {
+    "id": 15,
+    "nombre": "NEC ARGENTINA SA",
+    "sitioWeb": "https://ar.nec.com/es_AR/global/solutions/safety/surveillance/index.html y https://ar.nec.com/es_AR/case/byindustry/tigre.html",
+    "pais": "Argentina / Japan",
+    "sistemaDesarrollado": "NeoCenter Tiger Facial Recognition System",
+    "sector": "Private"
+  },
+  {
+    "id": 16,
+    "nombre": "IDEMIA Identity & Security France SAS",
+    "sitioWeb": "https://www.idemia.com/",
+    "pais": "France with a factory in Costa Rica",
+    "sistemaDesarrollado": "Automated Biometric Identification System (ABIS)",
+    "sector": "Private"
+  },
+  {
+    "id": 17,
+    "nombre": "IAFIS Costa Rica Limited",
+    "sitioWeb": "https://www.iafisgroup.com/",
+    "pais": "Costa Rica",
+    "sistemaDesarrollado": "Automated Biometric Identification System (ABIS)",
+    "sector": "Private"
+  },
+  {
+    "id": 18,
+    "nombre": "Components El Orbe, SA",
+    "sitioWeb": "http://elorbe.la/home-public/",
+    "pais": "Costa Rica",
+    "sistemaDesarrollado": "Automated Biometric Identification System (ABIS)",
+    "sector": "Private"
+  },
+  {
+    "id": 19,
+    "nombre": "Grupo de Soluciones Informáticas SA (GSI)",
+    "sitioWeb": "https://e-gsi.net/",
+    "pais": "Costa Rica",
+    "sistemaDesarrollado": "Biometric Passport for the Bicentennial",
+    "sector": "Private"
+  },
+  {
+    "id": 20,
+    "nombre": "SERTRACEN",
+    "sitioWeb": "http://sertracen.net/",
+    "pais": "Costa Rica",
+    "sistemaDesarrollado": "Biometric Passport for the Bicentennial",
+    "sector": "Private"
+  },
+  {
+    "id": 21,
+    "nombre": "Dinamica Consultores Internacional SA",
+    "sitioWeb": "https://www.dcicr.com/",
+    "pais": "Costa Rica",
+    "sistemaDesarrollado": "Biometric Passport for the Bicentennial",
+    "sector": "Private"
+  },
+  {
+    "id": 22,
+    "nombre": "Veridos",
+    "sitioWeb": "https://www.veridos.com/es/home.html",
+    "pais": "Germany",
+    "sistemaDesarrollado": "Biometric Passport for the Bicentennial",
+    "sector": "Private"
+  },
+  {
+    "id": 23,
+    "nombre": "Nubicom",
+    "sitioWeb": "https://www.nubicom.com.a",
+    "pais": "Argentina",
+    "sistemaDesarrollado": "Salta Facial Recognition",
+    "sector": "Private"
+  },
+  {
+    "id": 24,
+    "nombre": "Morpho Safran (now IDEMIA)",
+    "sitioWeb": "https://idemia.com/market/public-security-identity",
+    "pais": "Argentina / France",
+    "sistemaDesarrollado": "SIBIOS Federal Biometric Identification System for Security",
+    "sector": "Private"
+  },
+  {
+    "id": 25,
+    "nombre": "DATYS",
+    "sitioWeb": "http://www.datys.cu/spa/site/index",
+    "pais": "Cuba",
+    "sistemaDesarrollado": "SIBIOS Federal Biometric Identification System for Security",
+    "sector": "Private"
+  },
+  {
+    "id": 26,
+    "nombre": "General Dynamics Mission Systems",
+    "sitioWeb": "https://www.gd.com/",
+    "pais": "Canada",
+    "sistemaDesarrollado": "Biometric Facial Recognition Project of Tocumen Airport Terminal 1, Terminal 2 and Paso",
+    "sector": "Private"
+  },
+  {
+    "id": 27,
+    "nombre": "Dahua",
+    "sitioWeb": "https://www.dahuasecurity.com/",
+    "pais": "China",
+    "sistemaDesarrollado": "Video-Intelligence System of the State of Coahuila",
+    "sector": "Private"
+  },
+  {
+    "id": 28,
+    "nombre": "Huawei",
+    "sitioWeb": "www.huawei.com",
+    "pais": "China",
+    "sistemaDesarrollado": "C2 Emergency and Security Operations Center",
+    "sector": "Private"
+  },
+  {
+    "id": 29,
+    "nombre": "General Dynamics Mission Systems",
+    "sitioWeb": "https://www.gd.com/",
+    "pais": "Canada",
+    "sistemaDesarrollado": "National Operations Center",
+    "sector": "Private"
+  },
+  {
+    "id": 30,
+    "nombre": "Telephones of Mexico, SAB de CV",
+    "sitioWeb": "https://telmex.com/",
+    "pais": "Mexico",
+    "sistemaDesarrollado": "Implementation of the Command and Control Center (C29 of the Central de Abastos of Mexico City.",
+    "sector": "Private"
+  },
+  {
+    "id": 31,
+    "nombre": "Hanwa",
+    "sitioWeb": "https://es.hanwhasecurity.com/",
+    "pais": "South Korea",
+    "sistemaDesarrollado": "Implementation of the Command and Control Center (C29 of the Central de Abastos of Mexico City.",
+    "sector": "Private"
+  },
+  {
+    "id": 32,
+    "nombre": "MicoFocus",
+    "sitioWeb": "https://www.microfocus.com/en-us/about",
+    "pais": "USA",
+    "sistemaDesarrollado": "Implementation of the Command and Control Center (C29 of the Central de Abastos of Mexico City.",
+    "sector": "Private"
+  },
+  {
+    "id": 33,
+    "nombre": "Integra Technologies",
+    "sitioWeb": "https://www.cintegra.mx/",
+    "pais": "Mexico",
+    "sistemaDesarrollado": "Comprehensive Urban Video Surveillance Project with Analytical Technology",
+    "sector": "Private"
+  },
+  {
+    "id": 34,
+    "nombre": "Hikvision",
+    "sitioWeb": "https://us.hikvision.com/en",
+    "pais": "China",
+    "sistemaDesarrollado": "Comprehensive Urban Video Surveillance Project with Analytical Technology",
+    "sector": "Private"
+  },
+  {
+    "id": 35,
+    "nombre": "Enel Distribución Chile SA RUT: 96,800,570-7",
+    "sitioWeb": "",
+    "pais": "Chile",
+    "sistemaDesarrollado": "facial recognition software.",
+    "sector": ""
+  },
+  {
+    "id": 36,
+    "nombre": "Sistemas de Seguridad y Tecnología SpA, RUT: 76.564.570-0",
+    "sitioWeb": "",
+    "pais": "Chile",
+    "sistemaDesarrollado": "facial recognition software.",
+    "sector": ""
+  },
+  {
+    "id": 37,
+    "nombre": "Admobilize",
+    "sitioWeb": "https://www.admobilize.com/",
+    "pais": "USA",
+    "sistemaDesarrollado": "ViaQuatro",
+    "sector": "Private"
+  },
+  {
+    "id": 38,
+    "nombre": "Serviço Federal de Processamento de Dados - SERPRO",
+    "sitioWeb": "https://www.serpro.gov.br/",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "Validation of the national driver's license by biometric data.",
+    "sector": "Public"
+  },
+  {
+    "id": 39,
+    "nombre": "Serviço Federal de Processamento de Dados - SERPRO",
+    "sitioWeb": "https://www.serpro.gov.br/",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "Proof of life to acquire a benefit / pension from INSS - National Institute of Social Security.",
+    "sector": "Public"
+  },
+  {
+    "id": 40,
+    "nombre": "Social Security Information and Technology Company - DATAPREV",
+    "sitioWeb": "https://portal3.dataprev.gov.br/",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "Proof of life to acquire a benefit / pension from INSS - National Institute of Social Security.",
+    "sector": "Public"
+  },
+  {
+    "id": 41,
+    "nombre": "Consórcio Engie Ineo Johnson (Engie Brasil Soluções Integradas Ltda; Ineo Infracom; Johnson Controls Be Do Brasil Ltda)",
+    "sitioWeb": "http://www.metro.sp.gov.br/noticias/28-06-2019-metro-compra-sistema-de-monitoramento-eletronico-com-reconhecimento-facial.fss / https://aplic.metrosp.com.br/as0001/frontendTransparencia/index.php/arquivo/view/id/21618",
+    "pais": "Brazil / France / United States of America",
+    "sistemaDesarrollado": "Edital de Licitação do Metrô de São Paulo",
+    "sector": "Private"
+  },
+  {
+    "id": 42,
+    "nombre": "Staff of Security Technologies do Brasil Software ltda",
+    "sitioWeb": "https://www.staffsolutions.com.br/",
+    "pais": "Brazil / England",
+    "sistemaDesarrollado": "São João de Campina Grande, Paraíba",
+    "sector": "Private"
+  },
+  {
+    "id": 43,
+    "nombre": "Brisanet Telecomunicações",
+    "sitioWeb": "https://blog.brisanet.com.br/index.php/2020/03/16/brisanet-inova-no-maior-sao-joao-do-mundo/",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "São João de Campina Grande, Paraíba",
+    "sector": "Private"
+  },
+  {
+    "id": 44,
+    "nombre": "Military Police of Paraíba",
+    "sitioWeb": "https://www.pm.pb.gov.br/",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "São João de Campina Grande, Paraíba",
+    "sector": "Public"
+  },
+  {
+    "id": 45,
+    "nombre": "Medow Entertainment & Culture",
+    "sitioWeb": "https://www.instagram.com/medowentretenimento/",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "São João de Campina Grande, Paraíba",
+    "sector": "Private"
+  },
+  {
+    "id": 46,
+    "nombre": "Tecway",
+    "sitioWeb": "https://casadosdados.com.br/solucao/cnpj/tecway-servicos-e-locacao-de-equipamentos-ltda-13392705000143",
+    "pais": "Brazil",
+    "sistemaDesarrollado": "Integrated Monitoring Camera Center (CICC) of Itacoatiara",
+    "sector": "Private"
+  }
+]
