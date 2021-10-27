@@ -100,6 +100,8 @@
   translation: Select impact and audit
 - id: initiatives_label_select_incident
   translation: Select the incident
+- id: initiatives_label_select_all
+  translation: All
 - id: provider_label_title
   translation: Identified suppliers
 - id: provider_label_description
@@ -138,3 +140,5 @@
   translation: This is the detail panel and there you will find the steps to follow to obtain and explore in depth the visualization that is generated in the second panel. In addition, by clicking on any of the values of the visualization you have chosen, you will also find the detail of the corresponding initiatives.
 - id: action_button_know_tool
   translation: Know tool
+- id: action_button_see_file
+  translation: See file

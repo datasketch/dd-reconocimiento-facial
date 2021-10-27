@@ -100,6 +100,8 @@
   translation: Selecione impacto e auditoria
 - id: initiatives_label_select_incident
   translation: Selecione o incidente
+- id: initiatives_label_select_all
+  translation: Todo
 - id: provider_label_title
   translation: Provedores identificados
 - id: provider_label_description
@@ -138,3 +140,5 @@
   translation: Este é o painel de detalhes e aqui encontrará os passos a seguir para obter e explorar em profundidade a visualização gerada no segundo painel. Além disso, ao clicar em qualquer um dos valores de visualização escolhidos, encontrará também os detalhes das iniciativas correspondentes.
 - id: action_button_know_tool
   translation: Conhecer ferramenta
+- id: action_button_see_file
+  translation: Ver arquivo

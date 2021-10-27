@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $data := .Site.Data.iniciativasMapeadas }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ $pais := slice }}
 {{ $status := slice }}
 {{ $area := slice }}
@@ -8,7 +8,7 @@
 {{ $incidente := slice }}
 
 <!-- GET CATEGORIES -->
-{{ range $data }}
+{{ range $data.iniciativasMapeadas }}
 {{ if .pais }}
 {{ $pais = $pais | append .pais }}
 {{ end }}
@@ -30,7 +30,8 @@
 <div class="bg-cover bg-center bg-banner-iniciativas-lg pt-36 pb-28 lg:py-40">
     <div class="relative mx-auto lg:w-8/12 mb-20 lg:mb-40">
         <img class="hidden lg:block" src="/images/iniciativas-mapeadas/box-lemon-green-lg.png" alt="box lemon green">
-        <div class="relative w-10/12 md:w-8/12 lg:absolute center-box text-white mx-auto text-center lg:w-10/12 xl:w-8/12">
+        <div
+            class="relative w-10/12 md:w-8/12 lg:absolute center-box text-white mx-auto text-center lg:w-10/12 xl:w-8/12">
             <h1 class="font-merriweather-sans text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 lg:mb-4 xl:mb-8">{{ T
                 "initiatives_label_title" }}</h1>
             <p class="mx-auto md:text-xl lg:text-2xl">
@@ -61,10 +62,6 @@
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "initiatives_action_filter_incidents" }}
         </button>
-        <!-- <button data-tab="5" class="button-filter">
-            <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
-            {{ T "initiatives_action_filter_rights_involved" }}
-        </button> -->
     </div>
     <div class="mx-auto w-10/12 lg:w-full">
         <div class="text-white mx-auto text-center lg:w-6/12 initiative-message">
@@ -129,7 +126,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterByCountries" id="filterByCountries"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todos</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $pais) "value" "asc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
@@ -150,7 +147,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterByState" id="filterByState"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todas</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $status) "value" "asc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
@@ -171,7 +168,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterByArea" id="filterByArea"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todas</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $area) "value" "asc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
@@ -192,7 +189,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterByImpactAudit" id="filterByImpactAudit"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todas</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $impacto) "value" "asc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
@@ -213,7 +210,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterByIncident" id="filterByIncident"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todas</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $incidente) "value" "desc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
@@ -229,27 +226,27 @@
     <!-- FILTER BY INCIDENT END -->
     <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-14 mx-auto w-11/12 initiatives-container">
         {{/* CHILD ELEMENT */}}
-
-        {{/* <div class="initiatives">
+        {{/*  {{ range $data.iniciativasMapeadas }}
+        <div class="initiatives">
             <div class="initiatives-padding">
-                <span class="initiatives-country">País</span>
+                <span class="initiatives-country">{{ .pais }}</span>
                 <h3 class="initiatives-title">
-                    Sistema de automatizacion migratorio para el aeropuerto internacional Arturo Merino Benítez de
-                    Santiago
+                    {{ .nombre }}
                 </h3>
             </div>
-            <button data-id="1" class="initiatives-button modal-button--open">
-                Ver ficha
+            <button data-id="{{ .id }}" class="initiatives-button modal-button--open">
+                {{ T "action_button_see_file" }}
                 <img class="initiatives-image" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             </button>
-        </div> */}}
-
+        </div>
+        {{ end }}  */}}
         {{/* CHILD ELEMENT END */}}
     </div>
 </section>
 <!-- INITIATIVES END -->
 
-<input type="hidden" name="data" id="data-iniciativasMapeadas" value="{{ jsonify .Site.Data.iniciativasMapeadas }}">
+<input type="hidden" name="data" id="data-iniciativasMapeadas"
+    value="{{ jsonify $data.iniciativasMapeadas }}">
 {{ end }}
 
 {{ define "js" }}

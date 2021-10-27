@@ -103,7 +103,6 @@ class Modal {
         html += `<li class="modal-list-content">${item}</li>`;
       })
     }
-    console.log(html);
     return html;
   }
 
