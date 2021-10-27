@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-{{ $data := .Site.Data.proveedoresIdentificados }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ $pais := slice }}
 {{ $sector := slice }}
 
 <!-- GET CATEGORIES -->
-{{ range $data }}
+{{ range $data.proveedoresIdentificados }}
 {{ if .pais }}
 {{ $pais = $pais | append .pais }}
 {{ end }}
@@ -143,7 +143,7 @@
 
 <!-- COUNTRIES END -->
 <input type="hidden" name="data" id="data-proveedoresIdentificados"
-    value="{{ jsonify .Site.Data.proveedoresIdentificados }}">
+    value="{{ jsonify $data.proveedoresIdentificados }}">
 {{ end }}
 {{ define "js" }}
 {{ $modal := resources.Get "js/utils/modal.js" | js.Build (dict "minify" true) }}
