@@ -3,6 +3,7 @@ class Modal {
   #parentEl;
   #dataBase;
   #option;
+  #language = document.documentElement.lang;
 
   // Constructor
   constructor(parentEl, dataBase, opc) {
@@ -32,7 +33,9 @@ class Modal {
   }
   // Funciones
   _renderModalIniciativas() {
-    let html = `
+    let html = '';
+    if (this.#language === 'es') {
+      html = `
     <div class="modal">
             <div class="modal-left">
                 <span class="modal-country">${this.#dataBase.pais}</span>
@@ -65,11 +68,82 @@ class Modal {
         </div>
         <div class="modal-overlay"></div>
         `;
+    } else if (this.#language === 'en') {
+      html = `
+    <div class="modal">
+            <div class="modal-left">
+                <span class="modal-country">${this.#dataBase.pais}</span>
+                <h3 class="modal-title">
+                    ${this.#dataBase.nombre}
+                </h3>
+                <p class="modal-description">
+                    ${this.#dataBase.descripcion}
+                </p>
+            </div>
+            <div class="modal-right">
+                <span class="modal-estado-implementacion">Implementation status</span>
+                <ul class="modal-list">
+                    <li class="modal-list-content">${this.#dataBase.status}</li>
+                </ul>
+
+                <span class="modal-area-aplicacion">Application area</span>
+                <ul class="modal-list">
+                    ${this._renderModalArea()}
+                </ul>
+
+                <span class="modal-proveedores">Providers</span>
+                <ul class="modal-list--blue-light">
+                  ${this._renderModalProvider()}
+                </ul>
+            </div>
+            <button class="modal-button--close">
+                <i class="fas fa-times modal-icon"></i>
+            </button>
+        </div>
+        <div class="modal-overlay"></div>
+        `;
+    } else {
+      html = `
+    <div class="modal">
+            <div class="modal-left">
+                <span class="modal-country">${this.#dataBase.pais}</span>
+                <h3 class="modal-title">
+                    ${this.#dataBase.nombre}
+                </h3>
+                <p class="modal-description">
+                    ${this.#dataBase.descripcion}
+                </p>
+            </div>
+            <div class="modal-right">
+                <span class="modal-estado-implementacion">Status de implementação</span>
+                <ul class="modal-list">
+                    <li class="modal-list-content">${this.#dataBase.status}</li>
+                </ul>
+
+                <span class="modal-area-aplicacion">Area de aplicação</span>
+                <ul class="modal-list">
+                    ${this._renderModalArea()}
+                </ul>
+
+                <span class="modal-proveedores">Provedores</span>
+                <ul class="modal-list--blue-light">
+                  ${this._renderModalProvider()}
+                </ul>
+            </div>
+            <button class="modal-button--close">
+                <i class="fas fa-times modal-icon"></i>
+            </button>
+        </div>
+        <div class="modal-overlay"></div>
+        `;
+    }
     this.#parentEl.insertAdjacentHTML("beforeend", html);
   }
 
   _renderModalProviders() {
-    const html = `
+    let html = '';
+    if (this.#language === 'es') {
+      html = `
       <div class="modal">
           <div class="modal-left">
               <span class="modal-country">${this.#dataBase.pais}</span>
@@ -90,6 +164,51 @@ class Modal {
       </div>
       <div class="modal-overlay"></div>
     `;
+    } else if (this.#language === 'en') {
+      html = `
+      <div class="modal">
+          <div class="modal-left">
+              <span class="modal-country">${this.#dataBase.pais}</span>
+              <h3 class="modal-title">
+                 ${this.#dataBase.nombre}
+              </h3>
+              <p class="modal-link">Web site: <a class="modal-underline" target="_blank" href="${this.#dataBase.sitioWeb}">${this.#dataBase.sitioWeb}</a></p>
+          </div>
+          <div class="modal-right modal-right-dark">
+              <span class="modal-proveedores">Systems that have developed</span>
+              <p class="modal-description modal-list--blue-light">
+              ${this.#dataBase.sistemaDesarrollado}
+              </p>
+          </div>
+          <button class="modal-button--close">
+              <i class="fas fa-times modal-icon"></i>
+          </button>
+      </div>
+      <div class="modal-overlay"></div>
+    `;
+    } else {
+      html = `
+      <div class="modal">
+          <div class="modal-left">
+              <span class="modal-country">${this.#dataBase.pais}</span>
+              <h3 class="modal-title">
+                 ${this.#dataBase.nombre}
+              </h3>
+              <p class="modal-link">Site web: <a class="modal-underline" target="_blank" href="${this.#dataBase.sitioWeb}">${this.#dataBase.sitioWeb}</a></p>
+          </div>
+          <div class="modal-right modal-right-dark">
+              <span class="modal-proveedores">Sistemas que desenvolveramo</span>
+              <p class="modal-description modal-list--blue-light">
+              ${this.#dataBase.sistemaDesarrollado}
+              </p>
+          </div>
+          <button class="modal-button--close">
+              <i class="fas fa-times modal-icon"></i>
+          </button>
+      </div>
+      <div class="modal-overlay"></div>
+    `;
+    }
     this.#parentEl.insertAdjacentHTML("beforeend", html);
   }
 
@@ -116,9 +235,10 @@ class Modal {
         html += `<li class="modal-list-content">${item}</li>`;
       });
     } else {
-      html += `<li class="modal-list-content">Sin proveedores</li>`;
+      if (this.#language === 'es') html += `<li class="modal-list-content">Sin proveedores</li>`;
+      else if (this.#language === 'en') html += `<li class="modal-list-content">Without providers</li>`;
+      else html += `<li class="modal-list-content">Sem provedores</li>`;
     }
-
     return html;
   }
 
