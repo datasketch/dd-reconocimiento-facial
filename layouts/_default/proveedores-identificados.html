@@ -65,7 +65,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterByCountries" id="filterByCountries"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todos</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $pais) "value" "asc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
@@ -86,7 +86,7 @@
             <div class="inline-block relative w-64">
                 <select name="filterBySector" id="filterBySector"
                     class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline lg:text-lg">
-                    <option active value="Todos">Todos</option>
+                    <option active value="Todos">{{ T "initiatives_label_select_all" }}</option>
                     {{ range sort (uniq $sector) "value" "desc" }}
                     <option active value="{{ . }}">{{ . }}</option>
                     {{ end }}
