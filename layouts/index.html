@@ -13,7 +13,8 @@
             </p>
         </div>
     </div>
-    <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center container">
+    <div
+        class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center container">
         <div class="mb-20 text-white text-center lg:mb-0 lg:text-left lg:col-start-1 lg:col-end-8">
             <h2 class="font-merriweather-sans mb-10 text-2xl lg:text-3xl lg:mb-8">{{ T "home_label_mapped_title" }}</h2>
             <p class="text-lg lg:text-xl lg:w-11/12 lg:mb-8">
@@ -128,14 +129,16 @@
                 </button>
                 {{ else if eq .Site.Language.LanguageName "English" }}
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
-                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/?lang=en_US" target="_blank">
+                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/?lang=en_US"
+                        target="_blank">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         {{ T "action_button_more_information" }}
                     </a>
                 </button>
                 {{ else if eq .Site.Language.LanguageName "Português" }}
                 <button class="py-4 px-6 bg-blue-title text-white text-xl">
-                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/?lang=pt_BR" target="_blank">
+                    <a class="flex items-center" href="https://reconocimientofacial.info/por-que-no/?lang=pt_BR"
+                        target="_blank">
                         <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
                         {{ T "action_button_more_information" }}
                     </a>
