@@ -2,7 +2,7 @@
 {{/* BANNER HOME */}}
 <div class="py-32 bg-cover bg-center bg-banner-home-lg lg:py-44" id="banner">
     <div
-        class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-10/12 lg:mb-32 lg:grid-cols-12 lg:items-center">
+        class="w-11/12 mb-14 mx-auto grid grid-cols-1 md:w-10/12 lg:w-full xl:w-10/12 lg:mb-32 lg:grid-cols-12 lg:items-center container">
         <img class="mx-auto order-2 lg:col-start-1 lg:col-end-6 lg:order-1 lg:mx-0" src="/images/home/facial-human.png"
             alt="human image">
         <div class="order-1 text-center text-white lg:order-2 lg:text-left lg:col-start-6 lg:col-end-13 lg:w-11/12">
@@ -13,7 +13,7 @@
             </p>
         </div>
     </div>
-    <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center">
+    <div class="mx-auto w-11/12 grid grid-cols-1 md:w-10/12 lg:w-11/12 xl:w-9/12 lg:grid-cols-12 lg:items-center container">
         <div class="mb-20 text-white text-center lg:mb-0 lg:text-left lg:col-start-1 lg:col-end-8">
             <h2 class="font-merriweather-sans mb-10 text-2xl lg:text-3xl lg:mb-8">{{ T "home_label_mapped_title" }}</h2>
             <p class="text-lg lg:text-xl lg:w-11/12 lg:mb-8">
@@ -41,7 +41,7 @@
 
 {{/* DATA EXPLORE */}}
 <section class="py-20 bg-cover bg-center bg-banner-explore-data-home-lg lg:py-28">
-    <div class="mx-auto w-10/12 lg:w-6/12 text-center mb-12 lg:mb-24">
+    <div class="mx-auto w-10/12 lg:w-6/12 text-center mb-12 lg:mb-24 container">
         <h2 class="font-merriweather-sans mb-4 text-2xl lg:text-3xl lg:mb-6 text-white">
             {{ T "home_label_identified_systems_title" }}
         </h2>
@@ -49,7 +49,7 @@
             {{ T "home_label_identified_systems_description" }}
         </p>
     </div>
-    <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24">
+    <div class="mx-auto w-10/12 grid grid-cols-1 gap-y-12 lg:grid-cols-12 lg:items-center lg:gap-y-24 container">
         <iframe class="lg:col-start-1 lg:col-end-7 w-full h-96 object-center object-cover order-2 lg:order-1"
             src="{{ relref . " /graficas/area-aplicacion.md" }}" frameborder="0"></iframe>
         <div class="text-white text-center lg:text-left lg:col-start-8 lg:col-end-12 order-1 lg:order-2">
@@ -103,7 +103,7 @@
 
 {{/* FACIAL RECOGNITION */}}
 <section class="py-16 bg-blue-dark lg:py-24">
-    <div class="mx-auto w-11/12 lg:w-10/12">
+    <div class="mx-auto w-11/12 lg:w-10/12 container">
         <div class="text-center mb-10 text-white w-11/12 lg:w-8/12 mx-auto lg:mb-0">
             <h2 class="font-merriweather-sans text-4xl mb-5 lg:text-6xl lg:mb-10">{{ T
                 "home_label_facial_recognition_title" }}</h2>
@@ -177,4 +177,3 @@
 </section>
 {{/* FACIAL RECOGNITION END */}}
 {{ end }}
-{{/* <a class="font-bold" href="https://www.alsur.lat/" target="_blank"></a> */}}

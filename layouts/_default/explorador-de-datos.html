@@ -1,9 +1,12 @@
 {{ define "main" }}
 <div class="bg-banner-datos-lg bg-cover bg-center pt-36 pb-28 lg:pt-40 lg:pb-28">
-    <div class="mx-auto lg:w-6/12 text-white text-center">
-        <h1 class="font-merriweather-sans text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 md:mb-8 lg:mb-12 xl:mb-16">{{ T "data_explore_label_title" }}<span
-                class="block text-xl md:text-2xl lg:text-3xl xl:text-4xl">{{ T "data_explore_label_subtitle" }}</span></h1>
-        <button class="py-4 px-6 bg-blue-dark text-white lg:text-xl mb-4 md:mb-8 lg:mb-12 xl:mb-16 inline-flex items-center" id="btn-tool">
+    <div class="mx-auto lg:w-6/12 text-white text-center container">
+        <h1 class="font-merriweather-sans text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 md:mb-8 lg:mb-12 xl:mb-16">
+            {{ T "data_explore_label_title" }}<span class="block text-xl md:text-2xl lg:text-3xl xl:text-4xl">{{ T
+                "data_explore_label_subtitle" }}</span></h1>
+        <button
+            class="py-4 px-6 bg-blue-dark text-white lg:text-xl mb-4 md:mb-8 lg:mb-12 xl:mb-16 inline-flex items-center"
+            id="btn-tool">
             <img class="mr-6" src="/images/public/icons/icon-arrow-right.svg" alt="icon arrow right">
             {{ T "action_button_know_tool" }}
         </button>
@@ -13,34 +16,39 @@
             <p class="text-white lg:text-lg mb-8 lg:mb-16">
                 {{ T "data_explore_know_tool_label_description" }}
             </p>
-            <h3 class="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6">{{ T "data_explore_first_panel_label_title" }}</h3>
+            <h3 class="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6">{{ T
+                "data_explore_first_panel_label_title" }}</h3>
             <p class="text-white lg:text-lg mb-4 lg:mb-6">
                 {{ T "data_explore_first_panel_label_description" }}
             </p>
             <img class="mx-auto mb-8 lg:mb-12" src="/images/gif/gif-primer-panel.gif" alt="gif primer panel">
-            <h3 class="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6">{{ T "data_explore_second_panel_label_title" }}
+            <h3 class="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6">{{ T
+                "data_explore_second_panel_label_title" }}
             </h3>
             <p class="text-white lg:text-lg mb-4 lg:mb-6">
                 {{ T "data_explore_second_panel_label_description" }}
             </p>
             <img class="mx-auto mb-8 lg:mb-12" src="/images/gif/gif-segundo-panel.gif" alt="gif segundo panel">
-            <h3 class="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6">{{ T "data_explore_third_panel_label_title" }}</h3>
+            <h3 class="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6">{{ T
+                "data_explore_third_panel_label_title" }}</h3>
             <p class="text-white lg:text-lg mb-4 lg:mb-6">
                 {{ T "data_explore_third_panel_label_description" }}
             </p>
             <img class="mx-auto" src="/images/gif/gif-tercer-panel.gif" alt="gif tercer panel">
         </div>
     </div>
-    {{ if eq .Site.Language.LanguageName "Español" }}
-    <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/"
-        frameborder="0"></iframe>
-    {{ else if eq .Site.Language.LanguageName "English" }}
-    <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/?lang=en"
-        frameborder="0"></iframe>
-    {{ else if eq .Site.Language.LanguageName "Português" }}
-    <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/?lang=pt_BR"
-        frameborder="0"></iframe>
-    {{ end }}
+    <div class="container mx-auto">
+        {{ if eq .Site.Language.LanguageName "Español" }}
+        <iframe class="mx-auto w-10/12 h-screen" src="https://datasketch.shinyapps.io/reconocimiento-facial-app/"
+            frameborder="0"></iframe>
+        {{ else if eq .Site.Language.LanguageName "English" }}
+        <iframe class="mx-auto w-10/12 h-screen"
+            src="https://datasketch.shinyapps.io/reconocimiento-facial-app/?lang=en" frameborder="0"></iframe>
+        {{ else if eq .Site.Language.LanguageName "Português" }}
+        <iframe class="mx-auto w-10/12 h-screen"
+            src="https://datasketch.shinyapps.io/reconocimiento-facial-app/?lang=pt_BR" frameborder="0"></iframe>
+        {{ end }}
+    </div>
 </div>
 {{/* DOWNLAD THE REPORT */}}
 {{ partial "download-report.html" . }}

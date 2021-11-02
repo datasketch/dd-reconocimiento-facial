@@ -49,7 +49,7 @@
 - id: action_button_more_information
   translation: Mais informação
 - id: home_label_credits
-  translation: Esta pesquisa foi realizada pelo consórcio <a class="font-bold" href="https://www.alsur.lat/pt-br" target="_blank">Al Sur</a>, com o financiamento de <a class="font-bold" href="https://www.ned.org/" target="_blank">National Endowment for Democracy (NED).</a> A página na internet foi desenvolvida por <a class="font-bold" href="https://www.datasketch.co/?lang=pt" target="_blank">Data Sketch</a>, sob a supervisão de <a class="font-bold" href="https://www.derechosdigitales.org/" target="_blank">Derechos Digitales.</a>
+  translation: Esta pesquisa foi realizada pelo consórcio <a class="font-bold" href="https://www.alsur.lat/pt-br" target="_blank">Al Sur</a>, com o financiamento de <a class="font-bold" href="https://www.ned.org/" target="_blank">National Endowment for Democracy (NED).</a> A página na internet foi desenvolvida por <a class="font-bold" href="https://www.datasketch.co/?lang=pt" target="_blank">Datasketch</a>, sob a supervisão de <a class="font-bold" href="https://www.derechosdigitales.org/" target="_blank">Derechos Digitales.</a>
 - id: footer_label_mapped_initiatives
   translation: Iniciativas Mapeadas
 - id: footer_label_providers
