@@ -104,21 +104,21 @@
                 href="/en/graficas/"
                 />
   </url><url>
-    <loc>/graficas/pais-implementacion.html</loc>
+    <loc>/graficas/pais-implementacion-en.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="/graficas/pais-implementacion.html"
+                href="/graficas/pais-implementacion-es.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="/graficas/pais-implementacion.html"
+                href="/graficas/pais-implementacion-pt.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/graficas/pais-implementacion.html"
+                href="/graficas/pais-implementacion-en.html"
                 />
   </url><url>
     <loc>/graficas/implementados-proveedor.html</loc>
